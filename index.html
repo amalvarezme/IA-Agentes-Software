@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stream IA | Modo Diapo</title>
+    <title>IA-Agentes-Software</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,74 +15,89 @@
   <body>
     <div class="ambient"></div>
     <div class="deck-app">
+      <nav class="rail" aria-label="Modulos">
+        <div class="rail-module is-pending">
+          <button class="rail-title" type="button" disabled aria-disabled="true">
+            1. IA Agéntica
+          </button>
+        </div>
+        <div class="rail-module is-pending">
+          <button class="rail-title" type="button" disabled aria-disabled="true">
+            2. IA-&gt;Software
+          </button>
+        </div>
+        <div class="rail-module is-pending">
+          <button class="rail-title" type="button" disabled aria-disabled="true">
+            3. Forward Deployed Engineer
+          </button>
+        </div>
+        <div class="rail-module is-pending">
+          <button class="rail-title" type="button" disabled aria-disabled="true">
+            4. SetUp
+          </button>
+        </div>
+        <div class="rail-module" data-module="0">
+          <button class="rail-title" data-first="0">5. IA Generativa</button>
+          <div class="rail-dots" id="dots-0"></div>
+        </div>
+        <div class="rail-module" data-module="1">
+          <button class="rail-title" data-first="4">6. Context Window</button>
+          <div class="rail-dots" id="dots-1"></div>
+        </div>
+        <div class="rail-module" data-module="2">
+          <button class="rail-title" data-first="9">7. Chat vs Agente</button>
+          <div class="rail-dots" id="dots-2"></div>
+        </div>
+        <div class="rail-module" data-module="3">
+          <button class="rail-title" data-first="11">
+            8. Evolución del Contexto
+          </button>
+          <div class="rail-dots" id="dots-3"></div>
+        </div>
+        <div class="rail-module" data-module="4">
+          <button class="rail-title" data-first="16">9. God Agent</button>
+          <div class="rail-dots" id="dots-4"></div>
+        </div>
+        <div class="rail-module" data-module="5">
+          <button class="rail-title" data-first="19">
+            10. SDD Orchestrator
+          </button>
+          <div class="rail-dots" id="dots-5"></div>
+        </div>
+        <div class="rail-module" data-module="6">
+          <button class="rail-title" data-first="25">11. Engram</button>
+          <div class="rail-dots" id="dots-6"></div>
+        </div>
+        <div class="rail-module" data-module="7">
+          <button class="rail-title" data-first="37">
+            12. Skills Registry
+          </button>
+          <div class="rail-dots" id="dots-7"></div>
+        </div>
+        <div class="rail-module" data-module="8">
+          <button class="rail-title" data-first="41">
+            13. Stack y Bibliotecas
+          </button>
+          <div class="rail-dots" id="dots-8"></div>
+        </div>
+        <div class="rail-module" data-module="9">
+          <button class="rail-title" data-first="46">14. Cierre</button>
+          <div class="rail-dots" id="dots-9"></div>
+        </div>
+      </nav>
+
       <header class="topbar">
         <div>
-          <p class="eyebrow">gentleman kanagawa blur · stream mode</p>
           <h1>De Chat a Sistema Cognitivo</h1>
         </div>
-        <div class="status">
-          <span id="mode-badge" class="mode-badge">NORMAL</span>
-          <span id="counter">01 / 48</span>
-          <span class="hint">← → navegar · F focus</span>
-        </div>
+        <img
+          class="topbar-logo"
+          src="assets/images/logo_labIA.png"
+          alt="Laboratorio de Inteligencia Artificial UNAL"
+        />
       </header>
 
-      <div class="progress-track" aria-hidden="true">
-        <div class="progress-fill" id="progress"></div>
-      </div>
-
       <div class="stage-layout">
-        <nav class="rail" aria-label="Modulos">
-          <div class="rail-module" data-module="0">
-            <button class="rail-title" data-first="0">1. IA Generativa</button>
-            <div class="rail-dots" id="dots-0"></div>
-          </div>
-          <div class="rail-module" data-module="1">
-            <button class="rail-title" data-first="4">2. Context Window</button>
-            <div class="rail-dots" id="dots-1"></div>
-          </div>
-          <div class="rail-module" data-module="2">
-            <button class="rail-title" data-first="9">3. Chat vs Agente</button>
-            <div class="rail-dots" id="dots-2"></div>
-          </div>
-          <div class="rail-module" data-module="3">
-            <button class="rail-title" data-first="11">
-              4. Evolución del Contexto
-            </button>
-            <div class="rail-dots" id="dots-3"></div>
-          </div>
-          <div class="rail-module" data-module="4">
-            <button class="rail-title" data-first="16">5. God Agent</button>
-            <div class="rail-dots" id="dots-4"></div>
-          </div>
-          <div class="rail-module" data-module="5">
-            <button class="rail-title" data-first="19">
-              6. SDD Orchestrator
-            </button>
-            <div class="rail-dots" id="dots-5"></div>
-          </div>
-          <div class="rail-module" data-module="6">
-            <button class="rail-title" data-first="25">7. Engram</button>
-            <div class="rail-dots" id="dots-6"></div>
-          </div>
-          <div class="rail-module" data-module="7">
-            <button class="rail-title" data-first="37">
-              8. Skills Registry
-            </button>
-            <div class="rail-dots" id="dots-7"></div>
-          </div>
-          <div class="rail-module" data-module="8">
-            <button class="rail-title" data-first="41">
-              9. Stack y Bibliotecas
-            </button>
-            <div class="rail-dots" id="dots-8"></div>
-          </div>
-          <div class="rail-module" data-module="9">
-            <button class="rail-title" data-first="46">10. Cierre</button>
-            <div class="rail-dots" id="dots-9"></div>
-          </div>
-        </nav>
-
         <main class="viewport" id="viewport">
           <!-- M1: IA GENERATIVA (3) -->
 
@@ -94,11 +109,11 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">01 · IA Generativa</p>
-              <h2>Que es un LLM: prediccion, no pensamiento</h2>
+              <h2>Qué es un LLM: predicción, no pensamiento</h2>
               <p>
                 Un Large Language Model es una red neuronal con billones de
-                parametros entrenada para predecir el siguiente token. No
-                "piensa": completa patrones estadisticos. La calidad del
+                parámetros entrenada para predecir el siguiente token. No
+                "piensa": completa patrones estadísticos. La calidad del
                 resultado depende de la calidad del contexto que le das.
               </p>
             </div>
@@ -478,9 +493,9 @@
               <p class="slide-kicker">02 · IA Generativa</p>
               <h2>Modelos que existen hoy</h2>
               <p>
-                Gemini para razonamiento profundo, Opus para codigo limpio,
+                Gemini para razonamiento profundo, Opus para código limpio,
                 Codex para testing, Copilot para autocompletado. La clave no es
-                cual es "mejor" sino cual usar para cada tarea.
+                cuál es "mejor", sino cuál usar en cada tarea.
               </p>
             </div>
             <figure class="slide-figure">
@@ -753,8 +768,8 @@
               <p class="slide-kicker">03 · IA Generativa</p>
               <h2>Open source chinos: frontier por centavos</h2>
               <p>
-                Kimi K2.6, MiniMax M2.7 y GLM-5 ofrecen ~90% de la capacidad de
-                Opus/GPT a 1/15 del precio. Frontier ya no es exclusivo de las
+                Kimi K2.6, MiniMax M2.7 y GLM-5 dan ~90% de la capacidad de
+                Opus/GPT a 1/15 del precio: frontier ya no es exclusivo de las
                 grandes. El model router puede usar estos motores para tareas
                 de alto volumen.
               </p>
@@ -1166,11 +1181,11 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">04 · IA Generativa</p>
-              <h2>Que NO es un LLM</h2>
+              <h2>Qué NO es un LLM</h2>
               <p>
-                No es base de datos, no aprende de tus conversaciones, no
-                entiende como humano, no es determinista. Si no sabes esto, vas
-                a tener expectativas incorrectas y frustracion constante.
+                No es una base de datos, no aprende de tus conversaciones, no
+                entiende como un humano, no es determinista. Si no sabes esto,
+                tendrás expectativas equivocadas y frustración constante.
               </p>
             </div>
             <figure class="slide-figure">
@@ -1417,11 +1432,11 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">05 · Context Window</p>
-              <h2>La pizarra de tamano fijo</h2>
+              <h2>La pizarra de tamaño fijo</h2>
               <p>
                 El contexto es todo lo que el modelo "ve": system prompt,
-                historial, archivos leidos, tu instruccion. La ventana de
-                contexto es el tamano fisico de esa pizarra, medido en tokens.
+                historial, archivos leídos, tu instrucción. La ventana de
+                contexto es el tamaño físico de esa pizarra, medido en tokens.
               </p>
             </div>
             <figure class="slide-figure">
@@ -1803,10 +1818,10 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">06 · Context Window</p>
-              <h2>Attention decay: mas no es mejor</h2>
+              <h2>Attention decay: más no es mejor</h2>
               <p>
                 A medida que llenas la ventana, el modelo no falla: degrada.
-                Instruction drift, sesgo de recencia, codigo generico. Es sutil
+                Instruction drift, sesgo de recencia, código genérico. Es sutil
                 y peligroso porque el output "parece" correcto.
               </p>
             </div>
@@ -2216,11 +2231,11 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">07 · Context Window</p>
-              <h2>Compactacion: la amnesia forzada</h2>
+              <h2>Compactación: la amnesia forzada</h2>
               <p>
                 Cuando la pizarra se llena, el sistema genera un resumen
                 comprimido y borra los mensajes originales. Pierdes nombres de
-                variables, decisiones de diseno, preferencias del usuario.
+                variables, decisiones de diseño, preferencias del usuario.
               </p>
             </div>
             <figure class="slide-figure">
@@ -2599,11 +2614,11 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">08 · Context Window</p>
-              <h2>Como lo ataca la industria</h2>
+              <h2>Cómo lo ataca la industria</h2>
               <p>
                 Long context (1M+ tokens), RAG, fine-tuning, memory layers,
                 vector stores. Cada approach tiene tradeoffs: costo, latencia,
-                precision, complejidad. Nadie lo resolvio del todo.
+                precisión, complejidad. Nadie lo resolvió del todo.
               </p>
             </div>
             <figure class="slide-figure">
@@ -2849,12 +2864,12 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">09 · Context Window</p>
-              <h2>Por que ninguna solucion es completa</h2>
+              <h2>Por qué ninguna solución es completa</h2>
               <p>
                 Long context degrada calidad. RAG depende de embeddings.
-                Fine-tuning es lento. Memory layers experimentales. Necesitas
-                memoria que sobreviva sesiones, compactaciones y cambios de
-                modelo. Ahi entra Engram.
+                Fine-tuning es lento. Memory layers son experimentales.
+                Necesitas memoria que sobreviva sesiones, compactaciones y
+                cambios de modelo. Ahí entra Engram.
               </p>
             </div>
             <figure class="slide-figure">
@@ -3186,12 +3201,12 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">10 · Chat vs Agente</p>
-              <h2>Chat responde texto. Agente actua.</h2>
+              <h2>Chat responde texto. Agente actúa.</h2>
               <p>
-                Un chat genera texto. Un agente lee tu codigo, edita archivos,
-                ejecuta tests y guarda aprendizaje. Es la diferencia entre
-                pedirle consejo a alguien y tener un par-programmer con acceso a
-                tu proyecto.
+                Un chat genera texto. Un agente lee tu código, edita archivos,
+                ejecuta tests y guarda aprendizaje: es la diferencia entre
+                pedirle consejo a alguien y tener un par-programmer con acceso
+                a tu proyecto.
               </p>
             </div>
             <figure class="slide-figure">
@@ -3501,7 +3516,7 @@
               <p>
                 Terminal, editor de archivos, buscador, memoria. Cada tool es
                 una capacidad externa. Sin tools es chat. Con tools es agente.
-                Asi de simple.
+                Así de simple.
               </p>
             </div>
             <figure class="slide-figure">
@@ -3774,12 +3789,12 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">12 · Evolución del Contexto</p>
-              <h2>Todo empezo con AGENTS.md</h2>
+              <h2>Todo empezó con AGENTS.md</h2>
               <p>
                 La primera idea: un archivo markdown gigante con TODAS las
                 reglas del proyecto. Estilo, patrones, anti-patrones,
-                convenciones, workflows. El agente lo leia al inicio y "sabia"
-                como trabajar.
+                convenciones, workflows. El agente lo leía al inicio y "sabía"
+                cómo trabajar.
               </p>
             </div>
             <figure class="slide-figure">
@@ -4073,8 +4088,8 @@
               <p class="slide-kicker">13 · Evolución del Contexto</p>
               <h2>AGENTS.md crece infinito</h2>
               <p>
-                Cada nueva convencion engordaba el archivo. En proyectos reales
-                puede llegar a miles de lineas. Se come la ventana de contexto
+                Cada nueva convención engordaba el archivo. En proyectos reales
+                puede llegar a miles de líneas: se come la ventana de contexto
                 antes de que escribas tu primer prompt.
               </p>
             </div>
@@ -4317,11 +4332,12 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">14 · Evolución del Contexto</p>
-              <h2>Primera evolucion: Skills</h2>
+              <h2>Primera evolución: Skills</h2>
               <p>
-                En vez de un archivo gigante, un router (AGENTS.md liviano) que
-                apunta a SKILL.md especificos. Solo se carga el contexto que
-                necesitas para la tarea actual. Contexto dinamico bajo demanda.
+                En vez de un archivo gigante, un router (AGENTS.md liviano)
+                que apunta a SKILL.md específicos. Solo se carga el contexto
+                que necesitas para la tarea actual: contexto dinámico bajo
+                demanda.
               </p>
             </div>
             <figure class="slide-figure">
@@ -4632,11 +4648,12 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">15 · Evolución del Contexto</p>
-              <h2>Segunda evolucion: sub-agentes</h2>
+              <h2>Segunda evolución: sub-agentes</h2>
               <p>
-                Skills resuelve QUE contexto cargar. Pero un solo agente sigue
-                acumulando ruido. La solucion: delegar cada fase a un sub-agente
-                efimero con contexto fresco. Nace, ejecuta, reporta y muere.
+                Skills resuelve QUÉ contexto cargar, pero un solo agente sigue
+                acumulando ruido. La solución: delegar cada fase a un
+                sub-agente efímero con contexto fresco. Nace, ejecuta, reporta
+                y muere.
               </p>
             </div>
             <figure class="slide-figure">
@@ -5038,12 +5055,12 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">16 · Evolución del Contexto</p>
-              <h2>El patron actual: todo junto</h2>
+              <h2>El patrón actual: todo junto</h2>
               <p>
-                Orquestador (coordina) + Skills (contexto preciso) + Sub-agentes
-                (ejecucion limpia) + Memoria persistente (continuidad). La
-                arquitectura que resuelve las limitaciones del LLM con
-                ingenieria.
+                Orquestador (coordina) + Skills (contexto preciso) +
+                Sub-agentes (ejecución limpia) + Memoria persistente
+                (continuidad). La arquitectura que resuelve las limitaciones
+                del LLM con ingeniería.
               </p>
             </div>
             <figure class="slide-figure">
@@ -5632,11 +5649,11 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">17 · God Agent</p>
-              <h2>Un agente que hace todo: por que degrada</h2>
+              <h2>Un agente que hace todo: por qué degrada</h2>
               <p>
-                "Analiza, disena, testea e implementa." Un solo agente llena su
-                contexto al 80% antes de escribir la primera linea. Compila pero
-                ignora las decisiones del paso 1.
+                "Analiza, diseña, testea e implementa." Un solo agente llena
+                su contexto al 80% antes de escribir la primera línea: compila
+                pero ignora las decisiones del paso 1.
               </p>
             </div>
             <figure class="slide-figure">
@@ -6119,11 +6136,11 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">18 · God Agent</p>
-              <h2>Divide y venceras: orquestador + sub-agentes</h2>
+              <h2>Divide y vencerás: orquestador + sub-agentes</h2>
               <p>
                 El orquestador no trabaja: coordina. Delega cada tarea a un
-                sub-agente especializado que recibe solo lo que necesita. Maxima
-                precision, cero ruido acumulado.
+                sub-agente especializado que recibe solo lo que necesita.
+                Máxima precisión, cero ruido acumulado.
               </p>
             </div>
             <figure class="slide-figure">
@@ -6644,9 +6661,9 @@
               <p class="slide-kicker">19 · God Agent</p>
               <h2>Fresh context: arrancar limpio</h2>
               <p>
-                Cada sub-agente nace con la pizarra vacia. Solo recibe las
-                instrucciones de su fase. No arrastra ruido de fases anteriores.
-                Esa es la ventaja arquitectonica clave.
+                Cada sub-agente nace con la pizarra vacía. Solo recibe las
+                instrucciones de su fase, sin arrastrar ruido de fases
+                anteriores. Esa es la ventaja arquitectónica clave.
               </p>
             </div>
             <figure class="slide-figure">
@@ -7153,11 +7170,11 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">20 · SDD Orchestrator</p>
-              <h2>La filosofia: ingenieria aplicada a IA</h2>
+              <h2>La filosofía: ingeniería aplicada a IA</h2>
               <p>
-                En vez de "pedir y rezar", estructuramos el trabajo en una linea
-                de montaje de expertos. Spec-Driven Development aplica
-                principios de ingenieria de software al flujo con IA.
+                En vez de "pedir y rezar", estructuramos el trabajo en una
+                línea de montaje de expertos. Spec-Driven Development aplica
+                principios de ingeniería de software al flujo con IA.
               </p>
             </div>
             <figure class="slide-figure">
@@ -7595,9 +7612,9 @@
               <p class="slide-kicker">21 · SDD Orchestrator</p>
               <h2>Los roles especializados</h2>
               <p>
-                Explorer (lee codigo), Proposer (define que), Spec Writer
+                Explorer (lee código), Proposer (define qué), Spec Writer
                 (requisitos), Designer (arquitectura), Task Planner (divide
-                trabajo), Implementer (escribe codigo), Verifier (valida
+                trabajo), Implementer (escribe código), Verifier (valida
                 calidad).
               </p>
             </div>
@@ -8511,11 +8528,11 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">23 · SDD Orchestrator</p>
-              <h2>Ejemplo real: crear endpoint usuarios</h2>
+              <h2>Ejemplo real: crear endpoint de usuarios</h2>
               <p>
                 /sdd:new → Explorer detecta stack → Proposer define alcance →
                 Spec + Design en paralelo → Tasks divide en 4 → Implementer
-                genera codigo → Verifier valida contra specs.
+                genera código → Verifier valida contra specs.
               </p>
             </div>
             <figure class="slide-figure">
@@ -8950,7 +8967,7 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">24 · SDD Orchestrator</p>
-              <h2>Por que escala</h2>
+              <h2>Por qué escala</h2>
               <p>
                 Aislamiento de contexto, checkpoints de calidad, memoria
                 institucional. El Implementer no se distrae con dudas del
@@ -9299,9 +9316,9 @@
               <p class="slide-kicker">25 · SDD Orchestrator</p>
               <h2>SDD Agent Team: la biblioteca</h2>
               <p>
-                Open source. Orquestador delegate-only, sub-agentes con skills,
-                DAG de dependencias, integracion con Engram. Listo para usar en
-                cualquier stack.
+                Open source. Orquestador delegate-only, sub-agentes con
+                skills, DAG de dependencias, integración con Engram. Listo
+                para usar en cualquier stack.
               </p>
             </div>
             <figure class="slide-figure">
@@ -9671,11 +9688,11 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">26 · Engram</p>
-              <h2>El problema: compactacion mata decisiones</h2>
+              <h2>El problema: compactación mata decisiones</h2>
               <p>
-                Trabajas 2 horas definiendo arquitectura. El sistema compacta.
-                El agente ya no recuerda que decidiste usar Clean Architecture
-                con DI. Genera codigo generico.
+                Trabajas 2 horas definiendo arquitectura y el sistema
+                compacta. El agente ya no recuerda qué decidiste usar: Clean
+                Architecture con DI se vuelve código genérico.
               </p>
             </div>
             <figure class="slide-figure">
@@ -10116,9 +10133,9 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">27 · Engram</p>
-              <h2>Como lo ataca la industria</h2>
+              <h2>Cómo lo ataca la industria</h2>
               <p>
-                RAG con vector stores, fine-tuning periodico, memory layers
+                RAG con vector stores, fine-tuning periódico, memory layers
                 experimentales, long context windows. Cada uno tiene costo,
                 complejidad y tradeoffs diferentes.
               </p>
@@ -10473,11 +10490,11 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">28 · Engram</p>
-              <h2>Mi enfoque: memoria senal, no total</h2>
+              <h2>Mi enfoque: memoria señal, no total</h2>
               <p>
-                No guardamos todo (eso es ruido). Guardamos senales: decisiones,
-                errores resueltos, patrones. Observaciones estructuradas con
-                What/Why/Where/Learned.
+                No guardamos todo, eso es ruido. Guardamos señales:
+                decisiones, errores resueltos, patrones. Observaciones
+                estructuradas con What/Why/Where/Learned.
               </p>
             </div>
             <figure class="slide-figure">
@@ -10961,12 +10978,12 @@
               <p class="slide-kicker">29 · Engram</p>
               <h2>Progressive disclosure: 3 capas de eficiencia</h2>
               <p>
-                En vez de volcar todo en el contexto, Engram revela informacion
-                progresivamente. El agente decide que tan profundo ir segun lo
-                que necesita. Minimo de tokens, maxima precision. 3 capas:
-                mem_search (compacto: titulos + snippets), mem_context/timeline
-                (contexto de sesion), y mem_get_observation (contenido completo
-                sin truncar).
+                En vez de volcar todo en el contexto, Engram revela
+                información progresivamente: el agente decide qué tan
+                profundo ir según lo que necesita. Mínimo de tokens, máxima
+                precisión, en 3 capas: mem_search (compacto: títulos +
+                snippets), mem_context/timeline (contexto de sesión) y
+                mem_get_observation (contenido completo sin truncar).
               </p>
             </div>
             <figure class="slide-figure">
@@ -11247,7 +11264,7 @@
               <h2>Arquitectura: Go + SQLite + FTS5</h2>
               <p>
                 Un binario. Sin dependencias externas. SQLite con Full-Text
-                Search 5. Se conecta via MCP a 12 agentes: Claude Code,
+                Search 5. Se conecta vía MCP a 12 agentes: Claude Code,
                 OpenCode, Kilo Code, Gemini CLI, Cursor, VS Code Copilot,
                 Codex, Windsurf, Antigravity, Kimi Code, Qwen Code, Kiro IDE
                 — y cualquier agente MCP-compatible.
@@ -11700,9 +11717,10 @@
               <p class="slide-kicker">32 · Engram</p>
               <h2>El Engram Loop: dos sesiones</h2>
               <p>
-                Sesion 1: disenar → mem_save. Sesion 2: implementar → mem_search
-                recupera decision → codigo consistente. Sin Engram la sesion 2
-                ignora la 1. Con Engram hay continuidad real.
+                Sesión 1: diseñar → mem_save. Sesión 2: implementar →
+                mem_search recupera la decisión → código consistente. Sin
+                Engram la sesión 2 ignora la 1; con Engram hay continuidad
+                real.
               </p>
             </div>
             <figure class="slide-figure">
@@ -12042,11 +12060,12 @@
               <p class="slide-kicker">33 · Engram</p>
               <h2>Dos formas de sincronizar: git o Cloud</h2>
               <p>
-                Dos caminos válidos para sync, ambos sirven solo y para
-                equipo. Git sync usa tu repo existente, sin infra extra,
-                async (commit-based). Engram Cloud es un servidor self-hosted
-                con dashboard web, autosync real-time, multi-user con roles.
-                Elegís según tu necesidad: simplicidad o visibility.
+                Dos caminos válidos para sincronizar: uno para uso individual,
+                otro para equipo. Git sync usa tu repo existente, sin infra
+                extra, async (commit-based). Engram Cloud es un servidor
+                self-hosted con dashboard web, autosync real-time, multi-user
+                con roles. Elegís según tu necesidad: simplicidad o
+                visibilidad.
               </p>
             </div>
             <figure class="slide-figure">
@@ -12407,11 +12426,11 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">37 · Engram</p>
-              <h2>Engram vs alternativas: por que lightweight gana</h2>
+              <h2>Engram vs alternativas: por qué lightweight gana</h2>
               <p>
-                Sin servidor, sin embeddings, sin infra cloud. Un binario local
-                que funciona offline. Para equipos que arrancan, la simplicidad
-                es la feature mas importante.
+                Sin servidor, sin embeddings, sin infra cloud. Un binario
+                local que funciona offline. Para equipos que arrancan, la
+                simplicidad es la feature más importante.
               </p>
             </div>
             <figure class="slide-figure">
@@ -12812,8 +12831,8 @@
               <h2>El problema del prompt gigante</h2>
               <p>
                 Si metes todas las reglas en el system prompt, saturas la
-                ventana antes de empezar. El agente ignora reglas y genera
-                codigo generico. Ya vimos por que en el modulo de evolucion.
+                ventana antes de empezar: el agente ignora reglas y genera
+                código genérico. Ya vimos por qué en el módulo de evolución.
               </p>
             </div>
             <figure class="slide-figure">
@@ -13199,11 +13218,11 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">39 · Skills Registry</p>
-              <h2>AGENTS.md router + SKILL.md modulo</h2>
+              <h2>AGENTS.md router + SKILL.md módulo</h2>
               <p>
-                AGENTS.md como indice liviano que mapea intenciones a skills.
-                Cada SKILL.md tiene patrones, anti-patrones y templates. Solo se
-                carga lo que necesitas.
+                AGENTS.md como índice liviano que mapea intenciones a skills.
+                Cada SKILL.md tiene patrones, anti-patrones y templates. Solo
+                se carga lo que necesitas.
               </p>
             </div>
             <figure class="slide-figure">
@@ -14165,7 +14184,7 @@
               <p>
                 Engram da continuidad, SDD da estructura, Skills da
                 consistencia. Juntas resuelven los tres problemas del LLM:
-                amnesia, degradacion y genericidad.
+                amnesia, degradación y genericidad.
               </p>
             </div>
             <figure class="slide-figure">
@@ -14611,7 +14630,7 @@
               <h2>Model router: un motor por fase</h2>
               <p>
                 No existe el "mejor modelo". Gemini para arquitectura, Opus
-                para implementacion, Codex para testing. La selección de
+                para implementación, Codex para testing. La selección de
                 modelo configurable por fase SDD ya está soportada por tres
                 plataformas: OpenCode, Kilo Code y Kiro IDE (con subagents
                 nativos vía model: frontmatter). Vos elegís qué motor maneja
@@ -14903,9 +14922,9 @@
               <p class="slide-kicker">44 · Stack y Bibliotecas</p>
               <h2>Resultado: velocidad + consistencia + calidad</h2>
               <p>
-                Velocidad por automatizacion. Consistencia por skills. Calidad
-                por verificacion contra specs. El developer pasa de escribir
-                codigo a dirigir y validar codigo.
+                Velocidad por automatización. Consistencia por skills.
+                Calidad por verificación contra specs. El developer pasa de
+                escribir código a dirigir y validar código.
               </p>
             </div>
             <figure class="slide-figure">
@@ -15881,9 +15900,10 @@
               <p class="slide-kicker">47 · Cierre</p>
               <h2>La diferencia: arquitectura alrededor del modelo</h2>
               <p>
-                El modelo es el motor. Pero un motor sin chasis, sin direccion y
-                sin frenos no es un auto: es un peligro. La arquitectura
-                alrededor del LLM define si tenes un juguete o una herramienta.
+                El modelo es el motor. Pero un motor sin chasis, sin
+                dirección y sin frenos no es un auto: es un peligro. La
+                arquitectura alrededor del LLM define si tenés un juguete o
+                una herramienta.
               </p>
             </div>
             <figure class="slide-figure">
@@ -16683,7 +16703,11 @@
       </div>
 
       <footer class="deck-controls">
+        <p class="running-title">
+          Principios de IA agéntica para el desarrollo de software. AM Alvarez
+        </p>
         <button type="button" id="prev" class="ghost">Anterior</button>
+        <span id="counter">01 / 48</span>
         <button type="button" id="next" class="solid">Siguiente</button>
       </footer>
     </div>

@@ -2,7 +2,6 @@ const slides = Array.from(document.querySelectorAll(".slide"));
 const railModules = Array.from(document.querySelectorAll(".rail-module"));
 const railTitles = Array.from(document.querySelectorAll(".rail-title"));
 const counter = document.getElementById("counter");
-const progress = document.getElementById("progress");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 const deckApp = document.querySelector(".deck-app");
@@ -69,11 +68,13 @@ function updateChrome() {
 
   const currentModule = slides[current]?.dataset.module;
   railModules.forEach((mod) => {
-    mod.classList.toggle("is-active-module", mod.dataset.module === currentModule);
+    const isActive = mod.dataset.module === currentModule;
+    mod.classList.toggle("is-active-module", isActive);
+    if (isActive) {
+      mod.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
+    }
   });
 
-  const ratio = ((current + 1) / slides.length) * 100;
-  progress.style.width = `${ratio}%`;
   counter.textContent = `${pad(current + 1)} / ${pad(slides.length)}`;
 
   prevBtn.disabled = current === 0;
@@ -146,6 +147,7 @@ function render(index, options = {}) {
 railTitles.forEach((title) => {
   title.addEventListener("click", () => {
     const firstSlide = Number(title.dataset.first);
+    if (!Number.isFinite(firstSlide)) return;
     render(firstSlide);
   });
 });
