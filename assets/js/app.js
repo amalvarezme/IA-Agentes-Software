@@ -111,7 +111,7 @@ function render(index, options = {}) {
 
   const previous = current;
   current = next;
-  try { localStorage.setItem("deck-slide", current); } catch (_) {}
+  try { localStorage.setItem("deck-slide-v2", current); } catch (_) {}
   const direction = next > previous ? "next" : "prev";
   const currentSlide = slides[current];
   const previousSlide = slides[previous];
@@ -184,5 +184,5 @@ window.addEventListener("touchend", (event) => {
 });
 
 buildDots();
-const saved = Number(localStorage.getItem("deck-slide")) || 0;
+const saved = Number(localStorage.getItem("deck-slide-v2")) || 0;
 render(Math.min(saved, slides.length - 1), { animate: false });
