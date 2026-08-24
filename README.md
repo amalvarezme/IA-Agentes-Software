@@ -8,14 +8,14 @@ Autor: A.M Álvarez-Meza, PhD — Seminario de Investigación, UNAL Manizales.
 
 ## Qué es
 
-Una presentación estática (HTML + CSS + JS, sin build ni dependencias) de 52 slides organizados en 13 módulos, más una serie de guías de demo en vivo.
+Una presentación estática (HTML + CSS + JS, sin build ni dependencias) de 55 slides organizados en 13 módulos, más una serie de guías de demo en vivo.
 
 ## Contenido
 
 | # | Módulo | Tema |
 |---|--------|------|
 | 1 | IA → Software | Ciclo de vida tradicional, reconstruido por IA, y reparto IA/humano |
-| 2 | Forward Deployed Engineer | Rol y práctica |
+| 2 | Forward Deployed Engineer | Perfiles clásicos, roles de IA y el cruce que define al FDE |
 | 3 | SetUp | Preparación del entorno |
 | 4 | IA Generativa | Qué es y qué no es un LLM |
 | 5 | Context Window | Attention decay y compactación |

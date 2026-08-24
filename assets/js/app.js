@@ -23,7 +23,8 @@ const modeMap = {
   7: "command",
   8: "insert",
   9: "visual",
-  10: "terminal"
+  10: "terminal",
+  11: "command"
 };
 
 function buildDots() {

@@ -23,10 +23,11 @@
           <button class="rail-title" data-first="1">1. IA-&gt;Software</button>
           <div class="rail-dots" id="dots-10"></div>
         </div>
-        <div class="rail-module is-pending">
-          <button class="rail-title" type="button" disabled aria-disabled="true">
+        <div class="rail-module" data-module="11">
+          <button class="rail-title" data-first="4">
             2. Forward Deployed Engineer
           </button>
+          <div class="rail-dots" id="dots-11"></div>
         </div>
         <div class="rail-module is-pending">
           <button class="rail-title" type="button" disabled aria-disabled="true">
@@ -34,51 +35,51 @@
           </button>
         </div>
         <div class="rail-module" data-module="0">
-          <button class="rail-title" data-first="4">4. IA Generativa</button>
+          <button class="rail-title" data-first="7">4. IA Generativa</button>
           <div class="rail-dots" id="dots-0"></div>
         </div>
         <div class="rail-module" data-module="1">
-          <button class="rail-title" data-first="8">5. Context Window</button>
+          <button class="rail-title" data-first="11">5. Context Window</button>
           <div class="rail-dots" id="dots-1"></div>
         </div>
         <div class="rail-module" data-module="2">
-          <button class="rail-title" data-first="13">6. Chat vs Agente</button>
+          <button class="rail-title" data-first="16">6. Chat vs Agente</button>
           <div class="rail-dots" id="dots-2"></div>
         </div>
         <div class="rail-module" data-module="3">
-          <button class="rail-title" data-first="15">
+          <button class="rail-title" data-first="18">
             7. Evolución del Contexto
           </button>
           <div class="rail-dots" id="dots-3"></div>
         </div>
         <div class="rail-module" data-module="4">
-          <button class="rail-title" data-first="20">8. God Agent</button>
+          <button class="rail-title" data-first="23">8. God Agent</button>
           <div class="rail-dots" id="dots-4"></div>
         </div>
         <div class="rail-module" data-module="5">
-          <button class="rail-title" data-first="23">
+          <button class="rail-title" data-first="26">
             9. SDD Orchestrator
           </button>
           <div class="rail-dots" id="dots-5"></div>
         </div>
         <div class="rail-module" data-module="6">
-          <button class="rail-title" data-first="29">10. Engram</button>
+          <button class="rail-title" data-first="32">10. Engram</button>
           <div class="rail-dots" id="dots-6"></div>
         </div>
         <div class="rail-module" data-module="7">
-          <button class="rail-title" data-first="41">
+          <button class="rail-title" data-first="44">
             11. Skills Registry
           </button>
           <div class="rail-dots" id="dots-7"></div>
         </div>
         <div class="rail-module" data-module="8">
-          <button class="rail-title" data-first="45">
+          <button class="rail-title" data-first="48">
             12. Stack y Bibliotecas
           </button>
           <div class="rail-dots" id="dots-8"></div>
         </div>
         <div class="rail-module" data-module="9">
-          <button class="rail-title" data-first="50">13. Cierre</button>
+          <button class="rail-title" data-first="53">13. Cierre</button>
           <div class="rail-dots" id="dots-9"></div>
         </div>
       </nav>
@@ -481,16 +482,301 @@
             </figure>
           </article>
 
-          <!-- M1: IA GENERATIVA (3) -->
+          <!-- M-FDE (3) -->
 
           <article
             class="slide"
             data-index="4"
+            data-module="11"
+            data-tone="purple"
+          >
+            <div class="slide-content">
+              <p class="slide-kicker">05 · Forward Deployed Engineer</p>
+              <h2>Perfiles tradicionales: back-end, front-end, full stack</h2>
+              <ul class="slide-list">
+                <li>
+                  <strong>Back-end:</strong> APIs, modelo de datos, escalabilidad
+                  e infraestructura. Manda en el servidor.
+                </li>
+                <li>
+                  <strong>Front-end:</strong> interfaz, manejo de estado,
+                  accesibilidad y rendimiento en el navegador.
+                </li>
+                <li>
+                  <strong>Full stack:</strong> cruza las dos puntas, pero rara
+                  vez con la misma profundidad en ambas.
+                </li>
+                <li>
+                  <strong>El límite de la vieja escuela:</strong> el perfil se
+                  optimizó para producir código rápido, y esa es justo la capa
+                  que la IA ya cubre.
+                </li>
+                <li>
+                  <strong>Lo que no se automatiza:</strong> decidir la
+                  arquitectura, poner los límites del sistema y saber qué NO
+                  construir.
+                </li>
+              </ul>
+            </div>
+            <figure class="slide-figure">
+              <svg
+                viewBox="0 0 520 360"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Diagrama de los perfiles tradicionales de software: front-end, back-end y full stack, con la capa de produccion de codigo ya cubierta por la IA y la capa de criterio que sigue siendo humana"
+              >
+                <defs>
+                  <marker
+                    id="fde1-up"
+                    viewBox="0 0 10 10"
+                    refX="9"
+                    refY="5"
+                    markerWidth="6"
+                    markerHeight="6"
+                    orient="auto-start-reverse"
+                  >
+                    <path d="M0 0 L10 5 L0 10 z" fill="#B86F24" />
+                  </marker>
+                </defs>
+
+                <text x="260" y="16" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="11" letter-spacing="2">PERFILES TRADICIONALES</text>
+
+                <!-- Front-end -->
+                <rect x="22" y="30" width="150" height="28" rx="8" fill="#EDF1F7" stroke="#4E93B0" stroke-width="1.5" />
+                <text x="97" y="49" text-anchor="middle" fill="#2C6B87" font-family="Space Grotesk,sans-serif" font-size="12" font-weight="600">Front-end</text>
+                <rect x="22" y="66" width="150" height="22" rx="6" fill="#F4F7FA" stroke="#B8C2D0" stroke-width="1" />
+                <text x="97" y="81" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">Interfaz</text>
+                <rect x="22" y="92" width="150" height="22" rx="6" fill="#F4F7FA" stroke="#B8C2D0" stroke-width="1" />
+                <text x="97" y="107" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">Estado</text>
+                <rect x="22" y="118" width="150" height="22" rx="6" fill="#F4F7FA" stroke="#B8C2D0" stroke-width="1" />
+                <text x="97" y="133" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">Accesibilidad</text>
+
+                <!-- Back-end -->
+                <rect x="185" y="30" width="150" height="28" rx="8" fill="#EDF1F7" stroke="#66862E" stroke-width="1.5" />
+                <text x="260" y="49" text-anchor="middle" fill="#4F6B23" font-family="Space Grotesk,sans-serif" font-size="12" font-weight="600">Back-end</text>
+                <rect x="185" y="66" width="150" height="22" rx="6" fill="#F4F7FA" stroke="#B8C2D0" stroke-width="1" />
+                <text x="260" y="81" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">APIs</text>
+                <rect x="185" y="92" width="150" height="22" rx="6" fill="#F4F7FA" stroke="#B8C2D0" stroke-width="1" />
+                <text x="260" y="107" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">Datos</text>
+                <rect x="185" y="118" width="150" height="22" rx="6" fill="#F4F7FA" stroke="#B8C2D0" stroke-width="1" />
+                <text x="260" y="133" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">Infraestructura</text>
+
+                <!-- Full stack -->
+                <rect x="348" y="30" width="150" height="28" rx="8" fill="#EDF1F7" stroke="#7189B8" stroke-width="1.5" />
+                <text x="423" y="49" text-anchor="middle" fill="#4A5F8C" font-family="Space Grotesk,sans-serif" font-size="12" font-weight="600">Full stack</text>
+                <rect x="348" y="66" width="150" height="74" rx="6" fill="#F4F7FA" stroke="#B8C2D0" stroke-width="1" stroke-dasharray="4 4" />
+                <text x="423" y="94" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">Cruza las dos puntas</text>
+                <text x="423" y="112" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9">amplitud, no siempre</text>
+                <text x="423" y="125" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9">profundidad</text>
+
+                <!-- Flechas hacia la capa cubierta por la IA -->
+                <path d="M97 168 V148" stroke="#B86F24" stroke-width="1.4" marker-end="url(#fde1-up)" />
+                <path d="M260 168 V148" stroke="#B86F24" stroke-width="1.4" marker-end="url(#fde1-up)" />
+                <path d="M423 168 V148" stroke="#B86F24" stroke-width="1.4" marker-end="url(#fde1-up)" />
+
+                <rect x="22" y="172" width="476" height="42" rx="10" fill="#F7E9CC" stroke="#B86F24" stroke-width="1.5" />
+                <text x="260" y="190" text-anchor="middle" fill="#9A5B12" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="600">LA IA YA CUBRE ESTA CAPA</text>
+                <text x="260" y="205" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9.5">CRUD · boilerplate · glue code · tests base · migraciones</text>
+
+                <line x1="22" y1="234" x2="498" y2="234" stroke="#B8C2D0" stroke-width="1" />
+
+                <rect x="22" y="248" width="476" height="58" rx="10" fill="#E4EFD3" stroke="#66862E" stroke-width="1.5" />
+                <text x="260" y="268" text-anchor="middle" fill="#4F6B23" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="600">LO QUE SIGUE SIENDO TUYO</text>
+                <text x="260" y="284" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="9.5">arquitectura · límites del sistema · criterio técnico</text>
+                <text x="260" y="298" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="9.5">saber qué NO construir</text>
+
+                <text x="260" y="332" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="10">Especializarse solo en una punta ya no alcanza</text>
+              </svg>
+            </figure>
+          </article>
+
+          <article
+            class="slide"
+            data-index="5"
+            data-module="11"
+            data-tone="cyan"
+          >
+            <div class="slide-content">
+              <p class="slide-kicker">06 · Forward Deployed Engineer</p>
+              <h2>Los roles de la IA: datos, modelos y producción</h2>
+              <ul class="slide-list">
+                <li>
+                  <strong>Data engineer:</strong> ingesta, pipelines, calidad y
+                  gobierno del dato. Sin datos confiables no hay modelo.
+                </li>
+                <li>
+                  <strong>Data scientist:</strong> hipótesis, features, métricas
+                  y validación. Convierte datos en evidencia.
+                </li>
+                <li>
+                  <strong>AI engineer:</strong> modelos en producción, prompts,
+                  evals, latencia y costo. Convierte evidencia en producto.
+                </li>
+                <li>
+                  <strong>Ninguno alcanza solo:</strong> solo datos no llega a
+                  producto, solo modelos no toca el dato real, y solo
+                  herramientas no sabe si el resultado sirve.
+                </li>
+                <li>
+                  <strong>El valor está en el cruce:</strong> el problema del
+                  negocio no respeta las fronteras del organigrama.
+                </li>
+              </ul>
+            </div>
+            <figure class="slide-figure">
+              <svg
+                viewBox="0 0 520 360"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Diagrama de los tres roles de IA (data engineer, data scientist y AI engineer), la cadena de datos a producto, y por que cada silo por separado falla"
+              >
+                <defs>
+                  <marker
+                    id="fde2-ar"
+                    viewBox="0 0 10 10"
+                    refX="9"
+                    refY="5"
+                    markerWidth="6"
+                    markerHeight="6"
+                    orient="auto-start-reverse"
+                  >
+                    <path d="M0 0 L10 5 L0 10 z" fill="#6C7A8C" />
+                  </marker>
+                </defs>
+
+                <text x="260" y="16" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="11" letter-spacing="2">ROLES DE IA</text>
+
+                <rect x="22" y="30" width="150" height="52" rx="9" fill="#EDF1F7" stroke="#4E8F82" stroke-width="1.5" />
+                <text x="97" y="49" text-anchor="middle" fill="#2E6B60" font-family="Space Grotesk,sans-serif" font-size="11.5" font-weight="600">Data engineer</text>
+                <text x="97" y="64" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9">pipelines · calidad</text>
+                <text x="97" y="76" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9">gobierno del dato</text>
+
+                <rect x="185" y="30" width="150" height="52" rx="9" fill="#EDF1F7" stroke="#7189B8" stroke-width="1.5" />
+                <text x="260" y="49" text-anchor="middle" fill="#4A5F8C" font-family="Space Grotesk,sans-serif" font-size="11.5" font-weight="600">Data scientist</text>
+                <text x="260" y="64" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9">hipótesis · features</text>
+                <text x="260" y="76" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9">métricas · validación</text>
+
+                <rect x="348" y="30" width="150" height="52" rx="9" fill="#EDF1F7" stroke="#4E93B0" stroke-width="1.5" />
+                <text x="423" y="49" text-anchor="middle" fill="#2C6B87" font-family="Space Grotesk,sans-serif" font-size="11.5" font-weight="600">AI engineer</text>
+                <text x="423" y="64" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9">modelos en prod</text>
+                <text x="423" y="76" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9">evals · latencia · costo</text>
+
+                <!-- Cadena -->
+                <rect x="22" y="104" width="150" height="26" rx="6" fill="#F4F7FA" stroke="#B8C2D0" stroke-width="1" />
+                <text x="97" y="121" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">Dato confiable</text>
+                <rect x="185" y="104" width="150" height="26" rx="6" fill="#F4F7FA" stroke="#B8C2D0" stroke-width="1" />
+                <text x="260" y="121" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">Evidencia</text>
+                <rect x="348" y="104" width="150" height="26" rx="6" fill="#F4F7FA" stroke="#B8C2D0" stroke-width="1" />
+                <text x="423" y="121" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">Producto</text>
+                <path d="M174 117 H182" stroke="#6C7A8C" stroke-width="1.4" marker-end="url(#fde2-ar)" />
+                <path d="M337 117 H345" stroke="#6C7A8C" stroke-width="1.4" marker-end="url(#fde2-ar)" />
+
+                <line x1="22" y1="150" x2="498" y2="150" stroke="#B8C2D0" stroke-width="1" />
+                <text x="22" y="170" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9" letter-spacing="2">POR QUÉ CADA SILO FALLA</text>
+
+                <rect x="22" y="180" width="476" height="34" rx="8" fill="#FFFFFF" stroke="#C55A7B" stroke-width="1.2" />
+                <text x="38" y="201" fill="#A83A59" font-family="Space Grotesk,sans-serif" font-size="10.5" font-weight="600">Solo datos</text>
+                <text x="150" y="201" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">pipelines impecables que nadie usa en producto</text>
+
+                <rect x="22" y="220" width="476" height="34" rx="8" fill="#FFFFFF" stroke="#C55A7B" stroke-width="1.2" />
+                <text x="38" y="241" fill="#A83A59" font-family="Space Grotesk,sans-serif" font-size="10.5" font-weight="600">Solo modelos</text>
+                <text x="150" y="241" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">métricas de notebook que no sobreviven al dato real</text>
+
+                <rect x="22" y="260" width="476" height="34" rx="8" fill="#FFFFFF" stroke="#C55A7B" stroke-width="1.2" />
+                <text x="38" y="281" fill="#A83A59" font-family="Space Grotesk,sans-serif" font-size="10.5" font-weight="600">Solo herramientas</text>
+                <text x="150" y="281" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">integra el API pero no sabe si el resultado sirve</text>
+
+                <rect x="22" y="306" width="476" height="34" rx="10" fill="#E4EFD3" stroke="#66862E" stroke-width="1.5" />
+                <text x="260" y="327" text-anchor="middle" fill="#4F6B23" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="600">El valor aparece cuando los tres se cruzan</text>
+              </svg>
+            </figure>
+          </article>
+
+          <article
+            class="slide"
+            data-index="6"
+            data-module="11"
+            data-tone="blue"
+          >
+            <div class="slide-content">
+              <p class="slide-kicker">07 · Forward Deployed Engineer</p>
+              <h2>Forward Deployed Engineer: dónde se cruza todo</h2>
+              <ul class="slide-list">
+                <li>
+                  <strong>Qué es:</strong> un ingeniero que trabaja dentro del
+                  problema del cliente, no detrás de un ticket. Despliega,
+                  observa y corrige en el terreno.
+                </li>
+                <li>
+                  <strong>Base de software engineering:</strong> arquitectura,
+                  pruebas, sistemas distribuidos. Sin fundamentos no hay criterio
+                  para revisar lo que la IA produce.
+                </li>
+                <li>
+                  <strong>Base de AI engineering:</strong> modelos, evals,
+                  costos, límites reales de la herramienta.
+                </li>
+                <li>
+                  <strong>Programar con IA:</strong> dirigir agentes, especificar
+                  con precisión y verificar. La IA ejecuta; tú respondes.
+                </li>
+                <li>
+                  <strong>Habilidades blandas, no opcionales:</strong> inglés,
+                  comunicación asertiva, trato con clientes y entender el negocio
+                  que estás resolviendo.
+                </li>
+              </ul>
+            </div>
+            <figure class="slide-figure">
+              <svg
+                viewBox="0 0 520 360"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Diagrama del Forward Deployed Engineer como cruce entre software engineering, AI engineering y el negocio del cliente, sobre una base de fundamentos y habilidades blandas"
+              >
+                <text x="260" y="16" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="11" letter-spacing="2">FORWARD DEPLOYED ENGINEER</text>
+
+                <circle cx="210" cy="118" r="58" fill="#4E93B0" fill-opacity="0.16" stroke="#2C6B87" stroke-width="1.5" />
+                <circle cx="310" cy="118" r="58" fill="#66862E" fill-opacity="0.16" stroke="#4F6B23" stroke-width="1.5" />
+                <circle cx="260" cy="178" r="58" fill="#A8781A" fill-opacity="0.16" stroke="#8A5A00" stroke-width="1.5" />
+
+                <text x="20" y="44" fill="#2C6B87" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="600">Software engineering</text>
+                <text x="20" y="58" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9">arquitectura · tests · sistemas</text>
+
+                <text x="500" y="44" text-anchor="end" fill="#4F6B23" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="600">AI engineering</text>
+                <text x="500" y="58" text-anchor="end" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9">modelos · evals · costo</text>
+
+                <text x="260" y="258" text-anchor="middle" fill="#8A5A00" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="600">Negocio y cliente</text>
+                <text x="260" y="271" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9">entender el problema real</text>
+
+                <rect x="206" y="126" width="108" height="40" rx="11" fill="#FFFFFF" stroke="#6C7A8C" stroke-width="1.3" />
+                <text x="260" y="146" text-anchor="middle" fill="#1B2029" font-family="Space Grotesk,sans-serif" font-size="16" font-weight="700">FDE</text>
+                <text x="260" y="159" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="8.5">despliega en el terreno</text>
+
+                <rect x="22" y="292" width="476" height="28" rx="8" fill="#EDF1F7" stroke="#4E93B0" stroke-width="1.3" />
+                <text x="36" y="310" fill="#2C6B87" font-family="Space Grotesk,sans-serif" font-size="10" font-weight="600">BASES</text>
+                <text x="96" y="310" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="9.5">fundamentos sólidos · programar con IA · dirigir agentes · verificar</text>
+
+                <rect x="22" y="324" width="476" height="28" rx="8" fill="#F7E9CC" stroke="#B86F24" stroke-width="1.3" />
+                <text x="36" y="342" fill="#9A5B12" font-family="Space Grotesk,sans-serif" font-size="10" font-weight="600">BLANDAS</text>
+                <text x="96" y="342" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="9.5">inglés · comunicación asertiva · trato con clientes · visión de negocio</text>
+              </svg>
+            </figure>
+          </article>
+
+          <!-- M1: IA GENERATIVA (3) -->
+
+          <article
+            class="slide"
+            data-index="7"
             data-module="0"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">05 · IA Generativa</p>
+              <p class="slide-kicker">08 · IA Generativa</p>
               <h2>Qué es un LLM: predicción, no pensamiento</h2>
               <p>
                 Un Large Language Model es una red neuronal con billones de
@@ -867,12 +1153,12 @@
 
           <article
             class="slide"
-            data-index="5"
+            data-index="8"
             data-module="0"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">06 · IA Generativa</p>
+              <p class="slide-kicker">09 · IA Generativa</p>
               <h2>Modelos que existen hoy</h2>
               <p>
                 Gemini para razonamiento profundo, Opus para código limpio,
@@ -1142,12 +1428,12 @@
 
           <article
             class="slide"
-            data-index="6"
+            data-index="9"
             data-module="0"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">07 · IA Generativa</p>
+              <p class="slide-kicker">10 · IA Generativa</p>
               <h2>Open source chinos: frontier por centavos</h2>
               <p>
                 Kimi K2.6, MiniMax M2.7 y GLM-5 dan ~90% de la capacidad de
@@ -1556,12 +1842,12 @@
 
           <article
             class="slide"
-            data-index="7"
+            data-index="10"
             data-module="0"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">08 · IA Generativa</p>
+              <p class="slide-kicker">11 · IA Generativa</p>
               <h2>Qué NO es un LLM</h2>
               <p>
                 No es una base de datos, no aprende de tus conversaciones, no
@@ -1807,12 +2093,12 @@
 
           <article
             class="slide"
-            data-index="8"
+            data-index="11"
             data-module="1"
             data-tone="yellow"
           >
             <div class="slide-content">
-              <p class="slide-kicker">09 · Context Window</p>
+              <p class="slide-kicker">12 · Context Window</p>
               <h2>La pizarra de tamaño fijo</h2>
               <p>
                 El contexto es todo lo que el modelo "ve": system prompt,
@@ -2192,12 +2478,12 @@
 
           <article
             class="slide"
-            data-index="9"
+            data-index="12"
             data-module="1"
             data-tone="yellow"
           >
             <div class="slide-content">
-              <p class="slide-kicker">10 · Context Window</p>
+              <p class="slide-kicker">13 · Context Window</p>
               <h2>Attention decay: más no es mejor</h2>
               <p>
                 A medida que llenas la ventana, el modelo no falla: degrada.
@@ -2605,12 +2891,12 @@
 
           <article
             class="slide"
-            data-index="10"
+            data-index="13"
             data-module="1"
             data-tone="yellow"
           >
             <div class="slide-content">
-              <p class="slide-kicker">11 · Context Window</p>
+              <p class="slide-kicker">14 · Context Window</p>
               <h2>Compactación: la amnesia forzada</h2>
               <p>
                 Cuando la pizarra se llena, el sistema genera un resumen
@@ -2988,12 +3274,12 @@
 
           <article
             class="slide"
-            data-index="11"
+            data-index="14"
             data-module="1"
             data-tone="yellow"
           >
             <div class="slide-content">
-              <p class="slide-kicker">12 · Context Window</p>
+              <p class="slide-kicker">15 · Context Window</p>
               <h2>Cómo lo ataca la industria</h2>
               <p>
                 Long context (1M+ tokens), RAG, fine-tuning, memory layers,
@@ -3238,12 +3524,12 @@
 
           <article
             class="slide"
-            data-index="12"
+            data-index="15"
             data-module="1"
             data-tone="yellow"
           >
             <div class="slide-content">
-              <p class="slide-kicker">13 · Context Window</p>
+              <p class="slide-kicker">16 · Context Window</p>
               <h2>Por qué ninguna solución es completa</h2>
               <p>
                 Long context degrada calidad. RAG depende de embeddings.
@@ -3575,12 +3861,12 @@
 
           <article
             class="slide"
-            data-index="13"
+            data-index="16"
             data-module="2"
             data-tone="green"
           >
             <div class="slide-content">
-              <p class="slide-kicker">14 · Chat vs Agente</p>
+              <p class="slide-kicker">17 · Chat vs Agente</p>
               <h2>Chat responde texto. Agente actúa.</h2>
               <p>
                 Un chat genera texto. Un agente lee tu código, edita archivos,
@@ -3886,12 +4172,12 @@
 
           <article
             class="slide"
-            data-index="14"
+            data-index="17"
             data-module="2"
             data-tone="green"
           >
             <div class="slide-content">
-              <p class="slide-kicker">15 · Chat vs Agente</p>
+              <p class="slide-kicker">18 · Chat vs Agente</p>
               <h2>Tools: las capacidades del agente</h2>
               <p>
                 Terminal, editor de archivos, buscador, memoria. Cada tool es
@@ -4162,12 +4448,12 @@
 
           <article
             class="slide"
-            data-index="15"
+            data-index="18"
             data-module="3"
             data-tone="purple"
           >
             <div class="slide-content">
-              <p class="slide-kicker">16 · Evolución del Contexto</p>
+              <p class="slide-kicker">19 · Evolución del Contexto</p>
               <h2>Todo empezó con AGENTS.md</h2>
               <p>
                 La primera idea: un archivo markdown gigante con TODAS las
@@ -4459,12 +4745,12 @@
 
           <article
             class="slide"
-            data-index="16"
+            data-index="19"
             data-module="3"
             data-tone="purple"
           >
             <div class="slide-content">
-              <p class="slide-kicker">17 · Evolución del Contexto</p>
+              <p class="slide-kicker">20 · Evolución del Contexto</p>
               <h2>AGENTS.md crece infinito</h2>
               <p>
                 Cada nueva convención engordaba el archivo. En proyectos reales
@@ -4705,12 +4991,12 @@
 
           <article
             class="slide"
-            data-index="17"
+            data-index="20"
             data-module="3"
             data-tone="purple"
           >
             <div class="slide-content">
-              <p class="slide-kicker">18 · Evolución del Contexto</p>
+              <p class="slide-kicker">21 · Evolución del Contexto</p>
               <h2>Primera evolución: Skills</h2>
               <p>
                 En vez de un archivo gigante, un router (AGENTS.md liviano)
@@ -5021,12 +5307,12 @@
 
           <article
             class="slide"
-            data-index="18"
+            data-index="21"
             data-module="3"
             data-tone="purple"
           >
             <div class="slide-content">
-              <p class="slide-kicker">19 · Evolución del Contexto</p>
+              <p class="slide-kicker">22 · Evolución del Contexto</p>
               <h2>Segunda evolución: sub-agentes</h2>
               <p>
                 Skills resuelve QUÉ contexto cargar, pero un solo agente sigue
@@ -5428,12 +5714,12 @@
 
           <article
             class="slide"
-            data-index="19"
+            data-index="22"
             data-module="3"
             data-tone="purple"
           >
             <div class="slide-content">
-              <p class="slide-kicker">20 · Evolución del Contexto</p>
+              <p class="slide-kicker">23 · Evolución del Contexto</p>
               <h2>El patrón actual: todo junto</h2>
               <p>
                 Orquestador (coordina) + Skills (contexto preciso) +
@@ -6022,12 +6308,12 @@
 
           <article
             class="slide"
-            data-index="20"
+            data-index="23"
             data-module="4"
             data-tone="red"
           >
             <div class="slide-content">
-              <p class="slide-kicker">21 · God Agent</p>
+              <p class="slide-kicker">24 · God Agent</p>
               <h2>Un agente que hace todo: por qué degrada</h2>
               <p>
                 "Analiza, diseña, testea e implementa." Un solo agente llena
@@ -6509,12 +6795,12 @@
 
           <article
             class="slide"
-            data-index="21"
+            data-index="24"
             data-module="4"
             data-tone="red"
           >
             <div class="slide-content">
-              <p class="slide-kicker">22 · God Agent</p>
+              <p class="slide-kicker">25 · God Agent</p>
               <h2>Divide y vencerás: orquestador + sub-agentes</h2>
               <p>
                 El orquestador no trabaja: coordina. Delega cada tarea a un
@@ -7032,12 +7318,12 @@
 
           <article
             class="slide"
-            data-index="22"
+            data-index="25"
             data-module="4"
             data-tone="red"
           >
             <div class="slide-content">
-              <p class="slide-kicker">23 · God Agent</p>
+              <p class="slide-kicker">26 · God Agent</p>
               <h2>Fresh context: arrancar limpio</h2>
               <p>
                 Cada sub-agente nace con la pizarra vacía. Solo recibe las
@@ -7540,12 +7826,12 @@
 
           <article
             class="slide"
-            data-index="23"
+            data-index="26"
             data-module="5"
             data-tone="cyan"
           >
             <div class="slide-content">
-              <p class="slide-kicker">24 · SDD Orchestrator</p>
+              <p class="slide-kicker">27 · SDD Orchestrator</p>
               <h2>La filosofía: ingeniería aplicada a IA</h2>
               <p>
                 En vez de "pedir y rezar", estructuramos el trabajo en una
@@ -7979,12 +8265,12 @@
 
           <article
             class="slide"
-            data-index="24"
+            data-index="27"
             data-module="5"
             data-tone="cyan"
           >
             <div class="slide-content">
-              <p class="slide-kicker">25 · SDD Orchestrator</p>
+              <p class="slide-kicker">28 · SDD Orchestrator</p>
               <h2>Los roles especializados</h2>
               <p>
                 Explorer (lee código), Proposer (define qué), Spec Writer
@@ -8517,12 +8803,12 @@
 
           <article
             class="slide"
-            data-index="25"
+            data-index="28"
             data-module="5"
             data-tone="cyan"
           >
             <div class="slide-content">
-              <p class="slide-kicker">26 · SDD Orchestrator</p>
+              <p class="slide-kicker">29 · SDD Orchestrator</p>
               <h2>El DAG: flujo de dependencias</h2>
               <p>
                 Proposal → [Specs || Design] → Tasks → Apply → Verify → Archive.
@@ -8897,12 +9183,12 @@
 
           <article
             class="slide"
-            data-index="26"
+            data-index="29"
             data-module="5"
             data-tone="cyan"
           >
             <div class="slide-content">
-              <p class="slide-kicker">27 · SDD Orchestrator</p>
+              <p class="slide-kicker">30 · SDD Orchestrator</p>
               <h2>Ejemplo real: crear endpoint de usuarios</h2>
               <p>
                 /sdd:new → Explorer detecta stack → Proposer define alcance →
@@ -9334,12 +9620,12 @@
 
           <article
             class="slide"
-            data-index="27"
+            data-index="30"
             data-module="5"
             data-tone="cyan"
           >
             <div class="slide-content">
-              <p class="slide-kicker">28 · SDD Orchestrator</p>
+              <p class="slide-kicker">31 · SDD Orchestrator</p>
               <h2>Por qué escala</h2>
               <p>
                 Aislamiento de contexto, checkpoints de calidad, memoria
@@ -9681,12 +9967,12 @@
 
           <article
             class="slide"
-            data-index="28"
+            data-index="31"
             data-module="5"
             data-tone="cyan"
           >
             <div class="slide-content">
-              <p class="slide-kicker">29 · SDD Orchestrator</p>
+              <p class="slide-kicker">32 · SDD Orchestrator</p>
               <h2>SDD Agent Team: la biblioteca</h2>
               <p>
                 Open source. Orquestador delegate-only, sub-agentes con
@@ -10054,12 +10340,12 @@
 
           <article
             class="slide"
-            data-index="29"
+            data-index="32"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">30 · Engram</p>
+              <p class="slide-kicker">33 · Engram</p>
               <h2>El problema: compactación mata decisiones</h2>
               <p>
                 Trabajas 2 horas definiendo arquitectura y el sistema
@@ -10499,12 +10785,12 @@
 
           <article
             class="slide"
-            data-index="30"
+            data-index="33"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">31 · Engram</p>
+              <p class="slide-kicker">34 · Engram</p>
               <h2>Cómo lo ataca la industria</h2>
               <p>
                 RAG con vector stores, fine-tuning periódico, memory layers
@@ -10856,12 +11142,12 @@
 
           <article
             class="slide"
-            data-index="31"
+            data-index="34"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">32 · Engram</p>
+              <p class="slide-kicker">35 · Engram</p>
               <h2>Mi enfoque: memoria señal, no total</h2>
               <p>
                 No guardamos todo, eso es ruido. Guardamos señales:
@@ -11342,12 +11628,12 @@
 
           <article
             class="slide"
-            data-index="32"
+            data-index="35"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">33 · Engram</p>
+              <p class="slide-kicker">36 · Engram</p>
               <h2>Progressive disclosure: 3 capas de eficiencia</h2>
               <p>
                 En vez de volcar todo en el contexto, Engram revela
@@ -11627,12 +11913,12 @@
 
           <article
             class="slide"
-            data-index="33"
+            data-index="36"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">34 · Engram</p>
+              <p class="slide-kicker">37 · Engram</p>
               <h2>Arquitectura: Go + SQLite + FTS5</h2>
               <p>
                 Un binario. Sin dependencias externas. SQLite con Full-Text
@@ -12014,12 +12300,12 @@
 
           <article
             class="slide"
-            data-index="34"
+            data-index="37"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">35 · Engram</p>
+              <p class="slide-kicker">38 · Engram</p>
               <h2>Las herramientas de memoria</h2>
               <p>
                 Las 5 herramientas críticas. mem_current_project (nueva)
@@ -12080,12 +12366,12 @@
 
           <article
             class="slide"
-            data-index="35"
+            data-index="38"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">36 · Engram</p>
+              <p class="slide-kicker">39 · Engram</p>
               <h2>El Engram Loop: dos sesiones</h2>
               <p>
                 Sesión 1: diseñar → mem_save. Sesión 2: implementar →
@@ -12423,12 +12709,12 @@
 
           <article
             class="slide"
-            data-index="36"
+            data-index="39"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">37 · Engram</p>
+              <p class="slide-kicker">40 · Engram</p>
               <h2>Dos formas de sincronizar: git o Cloud</h2>
               <p>
                 Dos caminos válidos para sincronizar: uno para uso individual,
@@ -12514,12 +12800,12 @@
 
           <article
             class="slide"
-            data-index="37"
+            data-index="40"
             data-module="6"
             data-tone="green"
           >
             <div class="slide-content">
-              <p class="slide-kicker">38 · Engram</p>
+              <p class="slide-kicker">41 · Engram</p>
               <h2>Cloud mode: el mismo binario engram, multi-máquina y real-time</h2>
               <p>
                 Cloud no es un producto aparte — es un MODO del mismo binario
@@ -12615,12 +12901,12 @@
 
           <article
             class="slide"
-            data-index="38"
+            data-index="41"
             data-module="6"
             data-tone="cyan"
           >
             <div class="slide-content">
-              <p class="slide-kicker">39 · Engram</p>
+              <p class="slide-kicker">42 · Engram</p>
               <h2>Auto-detect: el proyecto lo decide tu cwd, no el LLM</h2>
               <p>
                 Antes los agentes inventaban nombres distintos para el mismo
@@ -12704,12 +12990,12 @@
 
           <article
             class="slide"
-            data-index="39"
+            data-index="42"
             data-module="6"
             data-tone="yellow"
           >
             <div class="slide-content">
-              <p class="slide-kicker">40 · Engram</p>
+              <p class="slide-kicker">43 · Engram</p>
               <h2>Prompt capture automático: contexto que se guarda solo</h2>
               <p>
                 mem_save ahora captura el prompt del usuario asociado, sin que
@@ -12791,12 +13077,12 @@
 
           <article
             class="slide"
-            data-index="40"
+            data-index="43"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">41 · Engram</p>
+              <p class="slide-kicker">44 · Engram</p>
               <h2>Engram vs alternativas: por qué lightweight gana</h2>
               <p>
                 Sin servidor, sin embeddings, sin infra cloud. Un binario
@@ -13193,12 +13479,12 @@
 
           <article
             class="slide"
-            data-index="41"
+            data-index="44"
             data-module="7"
             data-tone="orange"
           >
             <div class="slide-content">
-              <p class="slide-kicker">42 · Skills Registry</p>
+              <p class="slide-kicker">45 · Skills Registry</p>
               <h2>El problema del prompt gigante</h2>
               <p>
                 Si metes todas las reglas en el system prompt, saturas la
@@ -13582,12 +13868,12 @@
 
           <article
             class="slide"
-            data-index="42"
+            data-index="45"
             data-module="7"
             data-tone="orange"
           >
             <div class="slide-content">
-              <p class="slide-kicker">43 · Skills Registry</p>
+              <p class="slide-kicker">46 · Skills Registry</p>
               <h2>AGENTS.md router + SKILL.md módulo</h2>
               <p>
                 AGENTS.md como índice liviano que mapea intenciones a skills.
@@ -13993,12 +14279,12 @@
 
           <article
             class="slide"
-            data-index="43"
+            data-index="46"
             data-module="7"
             data-tone="orange"
           >
             <div class="slide-content">
-              <p class="slide-kicker">44 · Skills Registry</p>
+              <p class="slide-kicker">47 · Skills Registry</p>
               <h2>skill-creator: el equipo enseña al agente</h2>
               <p>
                 El conocimiento institucional lo tiene el equipo. Con
@@ -14448,12 +14734,12 @@
 
           <article
             class="slide"
-            data-index="44"
+            data-index="47"
             data-module="7"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">45 · Skills Registry</p>
+              <p class="slide-kicker">48 · Skills Registry</p>
               <h2>Contextual skill loading: orchestrator resuelve, sub-agents consumen</h2>
               <p>
                 El orchestrator lee el skill-registry UNA vez al inicio de
@@ -14541,12 +14827,12 @@
 
           <article
             class="slide"
-            data-index="45"
+            data-index="48"
             data-module="8"
             data-tone="green"
           >
             <div class="slide-content">
-              <p class="slide-kicker">46 · Stack y Bibliotecas</p>
+              <p class="slide-kicker">49 · Stack y Bibliotecas</p>
               <h2>Ecosistema: Engram + SDD + Skills</h2>
               <p>
                 Engram da continuidad, SDD da estructura, Skills da
@@ -14988,12 +15274,12 @@
 
           <article
             class="slide"
-            data-index="46"
+            data-index="49"
             data-module="8"
             data-tone="green"
           >
             <div class="slide-content">
-              <p class="slide-kicker">47 · Stack y Bibliotecas</p>
+              <p class="slide-kicker">50 · Stack y Bibliotecas</p>
               <h2>Model router: un motor por fase</h2>
               <p>
                 No existe el "mejor modelo". Gemini para arquitectura, Opus
@@ -15281,12 +15567,12 @@
 
           <article
             class="slide"
-            data-index="47"
+            data-index="50"
             data-module="8"
             data-tone="green"
           >
             <div class="slide-content">
-              <p class="slide-kicker">48 · Stack y Bibliotecas</p>
+              <p class="slide-kicker">51 · Stack y Bibliotecas</p>
               <h2>Resultado: velocidad + consistencia + calidad</h2>
               <p>
                 Velocidad por automatización. Consistencia por skills.
@@ -15799,12 +16085,12 @@
 
           <article
             class="slide"
-            data-index="48"
+            data-index="51"
             data-module="8"
             data-tone="green"
           >
             <div class="slide-content">
-              <p class="slide-kicker">49 · Stack y Bibliotecas</p>
+              <p class="slide-kicker">52 · Stack y Bibliotecas</p>
               <h2>gentle-ai: un comando, cualquier agente, cualquier OS</h2>
               <p>
                 Un comando instala todo el stack cognitivo. 12 agentes
@@ -16136,12 +16422,12 @@
 
           <article
             class="slide"
-            data-index="49"
+            data-index="52"
             data-module="8"
             data-tone="orange"
           >
             <div class="slide-content">
-              <p class="slide-kicker">50 · Stack y Bibliotecas</p>
+              <p class="slide-kicker">53 · Stack y Bibliotecas</p>
               <h2>Solo-agent vs Full delegation: dos formas de hacer SDD</h2>
               <p>
                 Full delegation: cada fase SDD corre en un sub-agent con
@@ -16259,12 +16545,12 @@
 
           <article
             class="slide"
-            data-index="50"
+            data-index="53"
             data-module="9"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">51 · Cierre</p>
+              <p class="slide-kicker">54 · Cierre</p>
               <h2>La diferencia: arquitectura alrededor del modelo</h2>
               <p>
                 El modelo es el motor. Pero un motor sin chasis, sin
@@ -16957,12 +17243,12 @@
 
           <article
             class="slide"
-            data-index="51"
+            data-index="54"
             data-module="9"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">52 · Cierre</p>
+              <p class="slide-kicker">55 · Cierre</p>
               <h2>Links, repos y próximos pasos</h2>
               <p>Todo open source. Links y repos en pantalla.</p>
             </div>
@@ -17085,7 +17371,7 @@
           alt="Laboratorio de Inteligencia Artificial UNAL"
         />
         <button type="button" id="prev" class="ghost">Anterior</button>
-        <span id="counter">01 / 52</span>
+        <span id="counter">01 / 55</span>
         <button type="button" id="next" class="solid">Siguiente</button>
       </footer>
     </div>
