@@ -8,7 +8,7 @@ Autor: A.M Álvarez-Meza, PhD — Seminario de Investigación, UNAL Manizales.
 
 ## Qué es
 
-Una presentación estática (HTML + CSS + JS, sin build ni dependencias) de 55 slides organizados en 13 módulos, más una serie de guías de demo en vivo.
+Una presentación estática (HTML + CSS + JS, sin build ni dependencias) de 58 slides organizados en 12 módulos, más una serie de guías de demo en vivo.
 
 ## Contenido
 
@@ -16,17 +16,16 @@ Una presentación estática (HTML + CSS + JS, sin build ni dependencias) de 55 s
 |---|--------|------|
 | 1 | IA → Software | Ciclo de vida tradicional, reconstruido por IA, y reparto IA/humano |
 | 2 | Forward Deployed Engineer | Perfiles clásicos, roles de IA y el cruce que define al FDE |
-| 3 | SetUp | Preparación del entorno |
-| 4 | IA Generativa | Qué es y qué no es un LLM |
-| 5 | Context Window | Attention decay y compactación |
-| 6 | Chat vs Agente | Tools y capacidad de acción |
-| 7 | Evolución del Contexto | AGENTS.md → Skills → sub-agentes |
-| 8 | God Agent | Por qué degrada un agente monolítico |
-| 9 | SDD Orchestrator | Spec-Driven Development y el DAG de fases |
-| 10 | Engram | Memoria persistente entre sesiones |
-| 11 | Skills Registry | Progressive disclosure de instrucciones |
-| 12 | Stack y Bibliotecas | gentle-ai y ecosistema |
-| 13 | Cierre | Links, repos y próximos pasos |
+| 3 | IA Generativa | Qué es y qué no es un LLM |
+| 4 | Context Window | Attention decay y compactación |
+| 5 | Chat vs Agente | Tools y capacidad de acción |
+| 6 | Evolución del Contexto | AGENTS.md → Skills → sub-agentes |
+| 7 | God Agent | Por qué degrada un agente monolítico |
+| 8 | SDD Orchestrator | Spec-Driven Development y el DAG de fases |
+| 9 | Engram | Memoria persistente entre sesiones |
+| 10 | Skills Registry | Progressive disclosure de instrucciones |
+| 11 | Stack y Bibliotecas | gentle-ai y ecosistema |
+| 12 | SetUp y cierre | El stack, por qué CLI, GentlemanDots y links finales |
 
 ## Demos en vivo
 
@@ -45,7 +44,7 @@ Guías paso a paso en [`demos/`](demos/):
 | Slide anterior | `←`, `PageUp` |
 | Primer / último slide | `Home` / `End` |
 
-También hay botones de anterior/siguiente y contador en la esquina inferior derecha, y una barra superior con los módulos.
+También hay botones de flecha atrás/adelante y contador en la esquina inferior derecha, y una barra superior con los módulos.
 
 En móvil y tablet: desliza el dedo a izquierda o derecha para cambiar de slide.
 

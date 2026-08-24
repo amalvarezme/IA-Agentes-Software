@@ -504,12 +504,25 @@ p {
 .deck-controls button {
   border-radius: 7px;
   border: 1px solid var(--line-strong);
-  padding: 5px 8px;
+  padding: 5px 9px;
   font-family: inherit;
-  font-size: 0.68rem;
-  line-height: 1.2;
+  line-height: 0;
   color: var(--fg);
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deck-controls button svg {
+  width: 17px;
+  height: 17px;
+  display: block;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .ghost {
@@ -694,23 +707,13 @@ body.focus-mode .rail {
     height: 26px;
   }
 
-  /* Los botones pasan a ser flechas para que quepan */
   .deck-controls button {
-    font-size: 0;
-    padding: 7px 13px;
+    padding: 7px 11px;
   }
 
-  .deck-controls button::after {
-    font-size: 1rem;
-    line-height: 1;
-  }
-
-  #prev::after {
-    content: "\2039";
-  }
-
-  #next::after {
-    content: "\203A";
+  .deck-controls button svg {
+    width: 16px;
+    height: 16px;
   }
 
   #counter {
@@ -787,7 +790,12 @@ body.focus-mode .rail {
   }
 
   .deck-controls button {
-    padding: 4px 7px;
+    padding: 4px 8px;
+  }
+
+  .deck-controls button svg {
+    width: 15px;
+    height: 15px;
   }
 
   .cover-logo {

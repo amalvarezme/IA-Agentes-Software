@@ -29,57 +29,52 @@
           </button>
           <div class="rail-dots" id="dots-11"></div>
         </div>
-        <div class="rail-module is-pending">
-          <button class="rail-title" type="button" disabled aria-disabled="true">
-            3. SetUp
-          </button>
-        </div>
         <div class="rail-module" data-module="0">
-          <button class="rail-title" data-first="7">4. IA Generativa</button>
+          <button class="rail-title" data-first="7">3. IA Generativa</button>
           <div class="rail-dots" id="dots-0"></div>
         </div>
         <div class="rail-module" data-module="1">
-          <button class="rail-title" data-first="11">5. Context Window</button>
+          <button class="rail-title" data-first="11">4. Context Window</button>
           <div class="rail-dots" id="dots-1"></div>
         </div>
         <div class="rail-module" data-module="2">
-          <button class="rail-title" data-first="16">6. Chat vs Agente</button>
+          <button class="rail-title" data-first="16">5. Chat vs Agente</button>
           <div class="rail-dots" id="dots-2"></div>
         </div>
         <div class="rail-module" data-module="3">
           <button class="rail-title" data-first="18">
-            7. Evolución del Contexto
+            6. Evolución del Contexto
           </button>
           <div class="rail-dots" id="dots-3"></div>
         </div>
         <div class="rail-module" data-module="4">
-          <button class="rail-title" data-first="23">8. God Agent</button>
+          <button class="rail-title" data-first="23">7. God Agent</button>
           <div class="rail-dots" id="dots-4"></div>
         </div>
         <div class="rail-module" data-module="5">
           <button class="rail-title" data-first="26">
-            9. SDD Orchestrator
+            8. SDD Orchestrator
           </button>
           <div class="rail-dots" id="dots-5"></div>
         </div>
         <div class="rail-module" data-module="6">
-          <button class="rail-title" data-first="32">10. Engram</button>
+          <button class="rail-title" data-first="32">9. Engram</button>
           <div class="rail-dots" id="dots-6"></div>
         </div>
         <div class="rail-module" data-module="7">
           <button class="rail-title" data-first="44">
-            11. Skills Registry
+            10. Skills Registry
           </button>
           <div class="rail-dots" id="dots-7"></div>
         </div>
         <div class="rail-module" data-module="8">
           <button class="rail-title" data-first="48">
-            12. Stack y Bibliotecas
+            11. Stack y Bibliotecas
           </button>
           <div class="rail-dots" id="dots-8"></div>
         </div>
         <div class="rail-module" data-module="9">
-          <button class="rail-title" data-first="53">13. Cierre</button>
+          <button class="rail-title" data-first="53">12. SetUp y cierre</button>
           <div class="rail-dots" id="dots-9"></div>
         </div>
       </nav>
@@ -16541,16 +16536,294 @@
             </figure>
           </article>
 
-          <!-- M10: CIERRE (2) -->
+          <!-- M-SETUP (3) -->
 
           <article
             class="slide"
             data-index="53"
             data-module="9"
+            data-tone="magenta"
+          >
+            <div class="slide-content">
+              <p class="slide-kicker">54 · SetUp</p>
+              <h2>El setup: el stack y los agentes que lo hablan</h2>
+              <ul class="slide-list">
+                <li>
+                  <strong>gentle-ai:</strong> el instalador del stack. Un
+                  comando, cualquier agente, cualquier sistema operativo.
+                </li>
+                <li>
+                  <strong>Engram:</strong> la memoria persistente que sobrevive
+                  a la compactación y a la sesión.
+                </li>
+                <li>
+                  <strong>Cuatro agentes CLI compatibles:</strong> Claude Code,
+                  Codex, OpenCode y Pi. El mismo protocolo en los cuatro.
+                </li>
+                <li>
+                  <strong>El stack no es el agente:</strong> skills, SDD,
+                  memoria y reglas de orquestación viven fuera del modelo, así
+                  que cambiar de agente no te cuesta el setup.
+                </li>
+              </ul>
+            </div>
+            <figure class="slide-figure">
+              <svg
+                viewBox="0 0 520 360"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Rejilla del setup: gentle-ai y Engram como stack, y los agentes CLI compatibles Claude Code, Codex, OpenCode y Pi"
+              >
+                <text x="260" y="16" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="11" letter-spacing="2">EL SETUP</text>
+
+                <text x="22" y="38" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9" letter-spacing="2">EL STACK</text>
+
+                <rect x="22" y="46" width="228" height="118" rx="12" fill="#000000" stroke="#D45FAE" stroke-width="1.5" />
+                <image href="assets/images/logo-gentle-ai.png" x="98" y="56" width="76" height="76" />
+                <text x="136" y="150" text-anchor="middle" fill="#FFFFFF" font-family="Space Grotesk,sans-serif" font-size="13" font-weight="600">gentle-ai</text>
+
+                <rect x="270" y="46" width="228" height="118" rx="12" fill="#000000" stroke="#D45FAE" stroke-width="1.5" />
+                <image href="assets/images/logo-engram.png" x="346" y="56" width="76" height="76" />
+                <text x="384" y="150" text-anchor="middle" fill="#FFFFFF" font-family="Space Grotesk,sans-serif" font-size="13" font-weight="600">Engram</text>
+
+                <text x="22" y="192" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9" letter-spacing="2">AGENTES CLI COMPATIBLES</text>
+
+                <rect x="22" y="200" width="112" height="66" rx="10" fill="#0F1117" stroke="#4E93B0" stroke-width="1.4" />
+                <text x="36" y="224" fill="#7FB4CA" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">$</text>
+                <text x="50" y="224" fill="#FFFFFF" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">claude</text>
+                <text x="78" y="248" text-anchor="middle" fill="#A6B1C0" font-family="Space Grotesk,sans-serif" font-size="9">Claude Code</text>
+
+                <rect x="146" y="200" width="112" height="66" rx="10" fill="#0F1117" stroke="#66862E" stroke-width="1.4" />
+                <text x="160" y="224" fill="#B7CC85" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">$</text>
+                <text x="174" y="224" fill="#FFFFFF" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">codex</text>
+                <text x="202" y="248" text-anchor="middle" fill="#A6B1C0" font-family="Space Grotesk,sans-serif" font-size="9">Codex</text>
+
+                <rect x="270" y="200" width="112" height="66" rx="10" fill="#0F1117" stroke="#A8781A" stroke-width="1.4" />
+                <text x="284" y="224" fill="#DFBD76" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">$</text>
+                <text x="298" y="224" fill="#FFFFFF" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">opencode</text>
+                <text x="326" y="248" text-anchor="middle" fill="#A6B1C0" font-family="Space Grotesk,sans-serif" font-size="9">OpenCode</text>
+
+                <rect x="394" y="200" width="104" height="66" rx="10" fill="#0F1117" stroke="#7189B8" stroke-width="1.4" />
+                <text x="408" y="224" fill="#A3B5D6" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11">$</text>
+                <text x="422" y="224" fill="#FFFFFF" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">pi</text>
+                <text x="446" y="248" text-anchor="middle" fill="#A6B1C0" font-family="Space Grotesk,sans-serif" font-size="9">Pi</text>
+
+                <rect x="22" y="288" width="476" height="46" rx="10" fill="#E4EFD3" stroke="#66862E" stroke-width="1.5" />
+                <text x="260" y="308" text-anchor="middle" fill="#4F6B23" font-family="Space Grotesk,sans-serif" font-size="11.5" font-weight="600">Un comando instala el stack en los cuatro</text>
+                <text x="260" y="324" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="9.5">skills · SDD · memoria · reglas de orquestación</text>
+              </svg>
+            </figure>
+          </article>
+
+          <article
+            class="slide"
+            data-index="54"
+            data-module="9"
+            data-tone="orange"
+          >
+            <div class="slide-content">
+              <p class="slide-kicker">55 · SetUp</p>
+              <h2>Por qué CLI y no el chat web o la app de escritorio</h2>
+              <ul class="slide-list">
+                <li>
+                  <strong>El agente vive donde vive el código:</strong> lee,
+                  escribe y ejecuta en tu repositorio real, no sobre un
+                  fragmento que pegaste.
+                </li>
+                <li>
+                  <strong>Su verdad son las herramientas:</strong> git, tests,
+                  linters y build. No tu descripción del problema.
+                </li>
+                <li>
+                  <strong>Cierra el ciclo solo:</strong> propone, ejecuta, ve el
+                  error y corrige. En el chat el cable entre la ventana y el
+                  editor eres tú.
+                </li>
+                <li>
+                  <strong>El setup se versiona:</strong> reglas, skills y
+                  memoria viven en el repo y viajan con el equipo.
+                </li>
+                <li>
+                  <strong>Se automatiza:</strong> corre en hooks, scripts y CI.
+                  Una ventana de chat no entra en un pipeline.
+                </li>
+              </ul>
+            </div>
+            <figure class="slide-figure">
+              <svg
+                viewBox="0 0 520 360"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Comparacion entre el ciclo manual del chat web, donde la persona copia y pega, y el ciclo cerrado del agente CLI que ejecuta sobre el repositorio"
+              >
+                <defs>
+                  <marker
+                    id="setup2-ar"
+                    viewBox="0 0 10 10"
+                    refX="9"
+                    refY="5"
+                    markerWidth="6"
+                    markerHeight="6"
+                    orient="auto-start-reverse"
+                  >
+                    <path d="M0 0 L10 5 L0 10 z" fill="#6C7A8C" />
+                  </marker>
+                  <marker
+                    id="setup2-arg"
+                    viewBox="0 0 10 10"
+                    refX="9"
+                    refY="5"
+                    markerWidth="6"
+                    markerHeight="6"
+                    orient="auto-start-reverse"
+                  >
+                    <path d="M0 0 L10 5 L0 10 z" fill="#4F6B23" />
+                  </marker>
+                </defs>
+
+                <!-- Columna chat -->
+                <text x="130" y="18" text-anchor="middle" fill="#A83A59" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="600" letter-spacing="1">CHAT WEB / APP</text>
+                <rect x="18" y="28" width="224" height="278" rx="12" fill="#FFFFFF" stroke="#C55A7B" stroke-width="1.4" stroke-dasharray="5 4" />
+
+                <rect x="40" y="46" width="180" height="34" rx="8" fill="#EDF1F7" stroke="#B8C2D0" stroke-width="1" />
+                <text x="130" y="67" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">Describes el problema</text>
+                <path d="M130 84 V100" stroke="#6C7A8C" stroke-width="1.3" marker-end="url(#setup2-ar)" />
+                <rect x="40" y="104" width="180" height="34" rx="8" fill="#EDF1F7" stroke="#B8C2D0" stroke-width="1" />
+                <text x="130" y="125" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">El modelo responde texto</text>
+                <path d="M130 142 V158" stroke="#6C7A8C" stroke-width="1.3" marker-end="url(#setup2-ar)" />
+
+                <rect x="40" y="162" width="180" height="42" rx="8" fill="#F9E3E9" stroke="#C55A7B" stroke-width="1.4" />
+                <text x="130" y="180" text-anchor="middle" fill="#A83A59" font-family="Space Grotesk,sans-serif" font-size="10.5" font-weight="600">COPIAS Y PEGAS</text>
+                <text x="130" y="195" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9">tú eres el transporte</text>
+
+                <path d="M130 208 V224" stroke="#6C7A8C" stroke-width="1.3" marker-end="url(#setup2-ar)" />
+                <rect x="40" y="228" width="180" height="34" rx="8" fill="#EDF1F7" stroke="#B8C2D0" stroke-width="1" />
+                <text x="130" y="249" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">Falla y vuelves a contarlo</text>
+
+                <text x="130" y="286" text-anchor="middle" fill="#A83A59" font-family="Space Grotesk,sans-serif" font-size="9.5">No ve el repo · no ejecuta · no verifica</text>
+
+                <!-- Columna CLI -->
+                <text x="390" y="18" text-anchor="middle" fill="#4F6B23" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="600" letter-spacing="1">AGENTE CLI</text>
+                <rect x="278" y="28" width="224" height="278" rx="12" fill="#FFFFFF" stroke="#66862E" stroke-width="1.4" />
+
+                <rect x="300" y="46" width="180" height="34" rx="8" fill="#EDF1F7" stroke="#B8C2D0" stroke-width="1" />
+                <text x="390" y="67" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">Le das la intención</text>
+                <path d="M390 84 V100" stroke="#4F6B23" stroke-width="1.3" marker-end="url(#setup2-arg)" />
+
+                <rect x="300" y="104" width="180" height="98" rx="10" fill="#E4EFD3" stroke="#66862E" stroke-width="1.4" />
+                <text x="390" y="124" text-anchor="middle" fill="#4F6B23" font-family="Space Grotesk,sans-serif" font-size="10.5" font-weight="600">CICLO CERRADO</text>
+                <text x="390" y="142" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="9.5">lee el repo · escribe</text>
+                <text x="390" y="157" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="9.5">corre tests · lee el error</text>
+                <text x="390" y="172" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="9.5">corrige y repite</text>
+                <text x="390" y="191" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9">sin intervención manual</text>
+
+                <path d="M390 206 V224" stroke="#4F6B23" stroke-width="1.3" marker-end="url(#setup2-arg)" />
+                <rect x="300" y="228" width="180" height="34" rx="8" fill="#EDF1F7" stroke="#B8C2D0" stroke-width="1" />
+                <text x="390" y="249" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="10">Revisas el diff</text>
+
+                <text x="390" y="286" text-anchor="middle" fill="#4F6B23" font-family="Space Grotesk,sans-serif" font-size="9.5">Versionable · scriptable · va en CI</text>
+
+                <text x="260" y="332" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="10.5">El copy-paste no es una molestia: es el cuello de botella</text>
+              </svg>
+            </figure>
+          </article>
+
+          <article
+            class="slide"
+            data-index="55"
+            data-module="9"
+            data-tone="magenta"
+          >
+            <div class="slide-content">
+              <p class="slide-kicker">56 · SetUp</p>
+              <h2>Empieza aquí: GentlemanDots y gentle-ai</h2>
+              <ul class="slide-list">
+                <li>
+                  <strong>GentlemanDots:</strong> el entorno completo listo para
+                  trabajar con agentes — terminal, multiplexor y editor ya
+                  configurados.
+                </li>
+                <li>
+                  <strong>gentle-ai:</strong> encima del entorno, instala el
+                  stack: skills, protocolo SDD, Engram y las reglas de
+                  orquestación.
+                </li>
+                <li>
+                  <strong>Un comando, cualquier agente:</strong> el mismo stack
+                  queda disponible en Claude Code, Codex, OpenCode y Pi.
+                </li>
+                <li>
+                  <strong>Por qué importa:</strong> el setup deja de ser
+                  artesanal. Se instala, se versiona y se repite en cualquier
+                  máquina del equipo.
+                </li>
+              </ul>
+            </div>
+            <figure class="slide-figure">
+              <svg
+                viewBox="0 0 520 360"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="GentlemanDots como entorno base y gentle-ai como instalador del stack de agentes, con sus codigos QR"
+              >
+                <defs>
+                  <marker
+                    id="setup3-ar"
+                    viewBox="0 0 10 10"
+                    refX="9"
+                    refY="5"
+                    markerWidth="7"
+                    markerHeight="7"
+                    orient="auto-start-reverse"
+                  >
+                    <path d="M0 0 L10 5 L0 10 z" fill="#D45FAE" />
+                  </marker>
+                </defs>
+
+                <text x="260" y="16" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="11" letter-spacing="2">EMPIEZA AQUÍ</text>
+
+                <rect x="22" y="32" width="204" height="196" rx="12" fill="#EDF1F7" stroke="#7189B8" stroke-width="1.5" />
+                <rect x="79" y="46" width="90" height="90" rx="8" fill="#FFFFFF" stroke="#B8C2D0" stroke-width="1" />
+                <image href="assets/images/qr-gga.png" x="83" y="50" width="82" height="82" />
+                <text x="124" y="160" text-anchor="middle" fill="#4A5F8C" font-family="Space Grotesk,sans-serif" font-size="13" font-weight="600">GentlemanDots</text>
+                <text x="124" y="180" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="9.5">terminal · multiplexor · editor</text>
+                <text x="124" y="196" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9">el entorno donde trabajas</text>
+                <text x="124" y="216" text-anchor="middle" fill="#5B6472" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">github.com/Gentleman-Programming</text>
+
+                <path d="M232 130 H288" stroke="#D45FAE" stroke-width="1.8" marker-end="url(#setup3-ar)" />
+                <text x="260" y="122" text-anchor="middle" fill="#A83D89" font-family="Space Grotesk,sans-serif" font-size="9">encima</text>
+
+                <rect x="294" y="32" width="204" height="196" rx="12" fill="#EDF1F7" stroke="#D45FAE" stroke-width="1.5" />
+                <rect x="351" y="46" width="90" height="90" rx="8" fill="#FFFFFF" stroke="#B8C2D0" stroke-width="1" />
+                <image href="assets/images/qr-gentle-ai-stack.png" x="355" y="50" width="82" height="82" />
+                <text x="396" y="160" text-anchor="middle" fill="#A83D89" font-family="Space Grotesk,sans-serif" font-size="13" font-weight="600">gentle-ai</text>
+                <text x="396" y="180" text-anchor="middle" fill="#454F61" font-family="Space Grotesk,sans-serif" font-size="9.5">skills · SDD · Engram · reglas</text>
+                <text x="396" y="196" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9">el stack sobre el entorno</text>
+                <text x="396" y="216" text-anchor="middle" fill="#5B6472" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9">gentle-ai install</text>
+
+                <line x1="22" y1="248" x2="498" y2="248" stroke="#B8C2D0" stroke-width="1" />
+
+                <rect x="22" y="262" width="476" height="40" rx="10" fill="#E4EFD3" stroke="#66862E" stroke-width="1.5" />
+                <text x="260" y="287" text-anchor="middle" fill="#4F6B23" font-family="Space Grotesk,sans-serif" font-size="11.5" font-weight="600">Un comando, cualquier agente, cualquier sistema</text>
+
+                <text x="260" y="330" text-anchor="middle" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="10">El setup deja de ser artesanal: se instala, se versiona y se repite</text>
+              </svg>
+            </figure>
+          </article>
+
+          <!-- M10: CIERRE (2) -->
+
+          <article
+            class="slide"
+            data-index="56"
+            data-module="9"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">54 · Cierre</p>
+              <p class="slide-kicker">57 · Cierre</p>
               <h2>La diferencia: arquitectura alrededor del modelo</h2>
               <p>
                 El modelo es el motor. Pero un motor sin chasis, sin
@@ -17243,12 +17516,12 @@
 
           <article
             class="slide"
-            data-index="54"
+            data-index="57"
             data-module="9"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">55 · Cierre</p>
+              <p class="slide-kicker">58 · Cierre</p>
               <h2>Links, repos y próximos pasos</h2>
               <p>Todo open source. Links y repos en pantalla.</p>
             </div>
@@ -17370,9 +17643,17 @@
           src="assets/images/logo_labIA.png"
           alt="Laboratorio de Inteligencia Artificial UNAL"
         />
-        <button type="button" id="prev" class="ghost">Anterior</button>
-        <span id="counter">01 / 55</span>
-        <button type="button" id="next" class="solid">Siguiente</button>
+        <button type="button" id="prev" class="ghost" aria-label="Slide anterior" title="Anterior">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M15 5 L8 12 L15 19" />
+          </svg>
+        </button>
+        <span id="counter">01 / 58</span>
+        <button type="button" id="next" class="solid" aria-label="Slide siguiente" title="Siguiente">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M9 5 L16 12 L9 19" />
+          </svg>
+        </button>
       </footer>
     </div>
     <script src="assets/js/app.js"></script>
