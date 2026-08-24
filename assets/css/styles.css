@@ -70,8 +70,13 @@ body {
   height: 100dvh;
   max-height: 100dvh;
   padding: clamp(8px, 1vw, 14px);
+  padding-left: max(clamp(8px, 1vw, 14px), env(safe-area-inset-left));
+  padding-right: max(clamp(8px, 1vw, 14px), env(safe-area-inset-right));
+  padding-bottom: max(clamp(8px, 1vw, 14px), env(safe-area-inset-bottom));
   display: grid;
   grid-template-rows: auto 1fr auto;
+  grid-template-columns: minmax(0, 1fr);
+  overflow: hidden;
   gap: 8px;
 }
 
@@ -106,14 +111,16 @@ body {
 
 .stage-layout {
   min-height: 0;
+  min-width: 0;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 8px;
   overflow: hidden;
 }
 
 .rail {
   width: 100%;
+  min-width: 0;
   max-height: 10dvh;
   border: 1px solid var(--line-strong);
   border-radius: 14px;
@@ -214,6 +221,7 @@ body {
 .viewport {
   position: relative;
   min-height: 0;
+  min-width: 0;
   border: 1px solid var(--line-strong);
   border-radius: 18px;
   background: var(--gray0);
@@ -238,9 +246,10 @@ body {
   position: absolute;
   inset: 0;
   min-height: 0;
+  min-width: 0;
   padding: clamp(10px, 1.6vw, 18px);
   display: grid;
-  grid-template-columns: minmax(280px, 36%) 1fr;
+  grid-template-columns: minmax(280px, 36%) minmax(0, 1fr);
   gap: clamp(10px, 1.4vw, 16px);
   align-items: stretch;
   opacity: 0;
@@ -387,6 +396,10 @@ body {
     0 16px 34px rgba(30, 41, 59, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.6);
   min-height: 0;
+  min-width: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
 }
 
 .slide-kicker {
@@ -464,6 +477,7 @@ p {
 
 .deck-controls {
   display: flex;
+  min-width: 0;
   justify-content: flex-end;
   align-items: center;
   gap: 6px;
@@ -531,16 +545,17 @@ body.focus-mode .rail {
   display: none;
 }
 
+/* ---------- Portátiles y tablets en horizontal ---------- */
 @media (max-width: 1040px) {
   .deck-app {
     height: 100dvh;
     max-height: 100dvh;
-    padding: 12px;
-    gap: 10px;
+    padding: 10px;
+    gap: 8px;
   }
 
   .stage-layout {
-    gap: 10px;
+    gap: 8px;
   }
 
   .rail {
@@ -558,7 +573,7 @@ body.focus-mode .rail {
 
   .slide {
     padding: 14px;
-    grid-template-columns: minmax(180px, 38%) 1fr;
+    grid-template-columns: minmax(220px, 40%) minmax(0, 1fr);
     gap: 12px;
   }
 
@@ -566,9 +581,234 @@ body.focus-mode .rail {
     font-size: 1.35rem;
   }
 
-  p {
-    font-size: 1.02rem;
+  p,
+  .slide-list {
+    font-size: 0.98rem;
     line-height: 1.5;
+  }
+}
+
+/* ---------- Pantalla alta o angosta: una sola columna ---------- */
+@media (max-aspect-ratio: 1 / 1) and (max-width: 1000px), (max-width: 560px) {
+  .slide {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    align-items: start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+
+  .slide.is-cover {
+    grid-template-rows: 1fr;
+    align-items: center;
+    overflow-y: hidden;
+  }
+
+  /* En columna manda el scroll del slide completo, no el de la tarjeta */
+  .slide-content {
+    min-height: auto;
+    overflow-y: visible;
+  }
+
+  .slide-figure {
+    min-height: auto;
+  }
+
+  .slide-figure img,
+  .slide-figure svg {
+    height: auto;
+    max-height: none;
+    aspect-ratio: 520 / 360;
+  }
+}
+
+/* ---------- Sin espacio para el running title ---------- */
+@media (max-width: 760px) {
+  .running-title {
+    display: none;
+  }
+
+  .deck-controls {
+    gap: 5px;
+  }
+}
+
+/* ---------- Móvil ---------- */
+@media (max-width: 560px) {
+  .deck-app {
+    padding: 8px;
+    gap: 6px;
+  }
+
+  .rail {
+    max-height: clamp(38px, 11dvh, 58px);
+    padding: 4px 6px;
+    gap: 4px;
+  }
+
+  .rail-title {
+    font-size: 0.72rem;
+    padding: 3px 5px;
+  }
+
+  .slide {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .slide-content {
+    padding: 14px;
+  }
+
+  h2 {
+    font-size: 1.18rem;
+    margin-bottom: 10px;
+  }
+
+  p,
+  .slide-list {
+    font-size: 0.94rem;
+    line-height: 1.45;
+  }
+
+  .slide-kicker {
+    font-size: 0.7rem;
+    margin-bottom: 8px;
+  }
+
+  .controls-logo {
+    height: 24px;
+    margin-right: 2px;
+  }
+
+  .controls-logo-unal {
+    height: 26px;
+  }
+
+  /* Los botones pasan a ser flechas para que quepan */
+  .deck-controls button {
+    font-size: 0;
+    padding: 7px 13px;
+  }
+
+  .deck-controls button::after {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  #prev::after {
+    content: "\2039";
+  }
+
+  #next::after {
+    content: "\203A";
+  }
+
+  #counter {
+    font-size: 0.66rem;
+    min-width: 40px;
+  }
+
+  .cover-project {
+    font-size: clamp(1.3rem, 6vw, 1.9rem);
+  }
+
+  .cover-logo {
+    height: clamp(90px, 22vh, 170px);
+  }
+
+  .cover-meta {
+    font-size: 0.86rem;
+  }
+}
+
+/* ---------- Móvil en horizontal: muy poca altura ---------- */
+@media (max-height: 560px) and (orientation: landscape) {
+  .running-title {
+    display: none;
+  }
+}
+
+@media (max-height: 520px) and (orientation: landscape) {
+  .deck-app {
+    padding: 6px;
+    gap: 6px;
+  }
+
+  .rail {
+    max-height: 26dvh;
+    padding: 3px 6px;
+  }
+
+  .rail-title {
+    font-size: 0.7rem;
+    padding: 2px 5px;
+  }
+
+  .slide {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .slide-content {
+    padding: 10px 12px;
+  }
+
+  h2 {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+  }
+
+  p,
+  .slide-list {
+    font-size: 0.82rem;
+    line-height: 1.35;
+  }
+
+  .slide-list li {
+    margin-bottom: 0.35em;
+  }
+
+  .controls-logo {
+    height: 20px;
+  }
+
+  .controls-logo-unal {
+    height: 22px;
+  }
+
+  .deck-controls button {
+    padding: 4px 7px;
+  }
+
+  .cover-logo {
+    height: clamp(70px, 26vh, 130px);
+  }
+}
+
+/* ---------- Pantallas muy grandes ---------- */
+@media (min-width: 1900px) {
+  .slide {
+    padding: clamp(18px, 1.4vw, 30px);
+  }
+
+  h2 {
+    font-size: clamp(2.15rem, 1.6vw, 2.8rem);
+  }
+
+  .slide-kicker {
+    font-size: 0.92rem;
+  }
+
+  p,
+  .slide-list {
+    font-size: 1.22rem;
+  }
+
+  .slide-list {
+    line-height: 1.6;
   }
 }
 

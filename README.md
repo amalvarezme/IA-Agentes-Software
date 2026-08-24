@@ -45,7 +45,20 @@ Guías paso a paso en [`demos/`](demos/):
 | Slide anterior | `←`, `PageUp` |
 | Primer / último slide | `Home` / `End` |
 
-También hay botones de anterior/siguiente y contador en la esquina inferior derecha, y una barra lateral con los módulos.
+También hay botones de anterior/siguiente y contador en la esquina inferior derecha, y una barra superior con los módulos.
+
+En móvil y tablet: desliza el dedo a izquierda o derecha para cambiar de slide.
+
+## Responsive
+
+El deck se adapta a la resolución sin configuración extra:
+
+- **Escritorio (≥1040px):** texto a la izquierda, diagrama a la derecha.
+- **Portátil / tablet horizontal:** mismo layout con tipografía reducida.
+- **Tablet vertical y móvil:** una sola columna (texto arriba, diagrama abajo) con scroll dentro del slide.
+- **Móvil (≤560px):** los botones pasan a flechas, se oculta el running title y los logos se reducen.
+- **Móvil horizontal (alto ≤520px):** modo compacto para no perder el cuerpo del slide.
+- **Pantallas ≥1900px:** tipografía ampliada para proyección en sala.
 
 ## Ejecutar localmente
 
