@@ -8,7 +8,9 @@ const deckApp = document.querySelector(".deck-app");
 const modeBadge = document.getElementById("mode-badge");
 
 let current = 0;
-let isAnimating = false;
+let cleanupTimer = null;
+let lastModule = null;
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 const modeMap = {
   0: "normal",
@@ -68,13 +70,15 @@ function updateChrome() {
   });
 
   const currentModule = slides[current]?.dataset.module;
+  const moduleChanged = currentModule !== lastModule;
   railModules.forEach((mod) => {
     const isActive = mod.dataset.module === currentModule;
     mod.classList.toggle("is-active-module", isActive);
-    if (isActive) {
+    if (isActive && moduleChanged) {
       mod.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
     }
   });
+  lastModule = currentModule;
 
   counter.textContent = `${pad(current + 1)} / ${pad(slides.length)}`;
 
@@ -103,45 +107,57 @@ function render(index, options = {}) {
   const { animate = true } = options;
   const next = Math.max(0, Math.min(index, slides.length - 1));
 
-  if (next === current && animate) {
+  if (next === current) {
     updateChrome();
     return;
   }
-
-  if (isAnimating) return;
 
   const previous = current;
   current = next;
   try { localStorage.setItem("deck-slide-v2", current); } catch (_) {}
-  const direction = next > previous ? "next" : "prev";
+
+  // Una pulsacion nueva cancela la transicion en curso en vez de descartarse.
+  if (cleanupTimer) {
+    window.clearTimeout(cleanupTimer);
+    cleanupTimer = null;
+  }
+
   const currentSlide = slides[current];
   const previousSlide = slides[previous];
 
-  if (!animate) {
-    slides.forEach((slide, idx) => {
+  // Cualquier slide ajeno a la transicion vuelve a su estado de reposo.
+  slides.forEach((slide, idx) => {
+    if (idx !== current && idx !== previous) {
       cleanupTransitionClasses(slide);
-      slide.classList.toggle("is-active", idx === current);
-    });
+      slide.classList.remove("is-active");
+    }
+  });
+
+  cleanupTransitionClasses(previousSlide);
+  cleanupTransitionClasses(currentSlide);
+
+  if (!animate || reduceMotion.matches) {
+    previousSlide.classList.remove("is-active");
+    currentSlide.classList.add("is-active");
     updateChrome();
     return;
   }
 
-  isAnimating = true;
-  cleanupTransitionClasses(previousSlide);
-  cleanupTransitionClasses(currentSlide);
+  const direction = next > previous ? "next" : "prev";
 
   previousSlide.classList.remove("is-active");
   previousSlide.classList.add("is-leaving", direction === "next" ? "to-next" : "to-prev");
 
   currentSlide.classList.add("is-active", "is-entering", direction === "next" ? "from-next" : "from-prev");
 
-  const finish = () => {
-    cleanupTransitionClasses(previousSlide);
-    cleanupTransitionClasses(currentSlide);
-    isAnimating = false;
-  };
+  cleanupTimer = window.setTimeout(() => {
+    slides.forEach((slide) => {
+      cleanupTransitionClasses(slide);
+      if (slide !== slides[current]) slide.classList.remove("is-active");
+    });
+    cleanupTimer = null;
+  }, 440);
 
-  window.setTimeout(finish, 440);
   updateChrome();
 }
 
@@ -157,13 +173,14 @@ prevBtn.addEventListener("click", () => render(current - 1));
 nextBtn.addEventListener("click", () => render(current + 1));
 
 window.addEventListener("keydown", (event) => {
+  const opts = { animate: !event.repeat };
   if (event.key === "ArrowRight" || event.key === "PageDown" || event.key === " ") {
     event.preventDefault();
-    render(current + 1);
+    render(current + 1, opts);
   }
   if (event.key === "ArrowLeft" || event.key === "PageUp") {
     event.preventDefault();
-    render(current - 1);
+    render(current - 1, opts);
   }
   if (event.key === "Home") render(0);
   if (event.key === "End") render(slides.length - 1);

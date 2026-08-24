@@ -137,7 +137,6 @@ body {
   box-shadow:
     0 20px 40px rgba(30, 41, 59, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(8px);
 }
 
 .rail-module {
@@ -230,7 +229,6 @@ body {
     0 26px 56px rgba(30, 41, 59, 0.14),
     inset 0 1px 0 rgba(255, 255, 255, 0.6),
     0 0 38px var(--tone-glow);
-  backdrop-filter: blur(9px);
 }
 
 .viewport::after {
@@ -255,15 +253,24 @@ body {
   opacity: 0;
   transform: translateX(0);
   pointer-events: none;
+  visibility: hidden;
+  contain: layout paint style;
   z-index: 1;
-  will-change: transform, opacity;
 }
 
 .slide.is-active {
   opacity: 1;
   transform: translateX(0);
   pointer-events: auto;
+  visibility: visible;
   z-index: 3;
+}
+
+/* Solo los dos slides en transicion piden capa propia. */
+.slide.is-entering,
+.slide.is-leaving {
+  visibility: visible;
+  will-change: transform, opacity;
 }
 
 .slide.is-entering,
