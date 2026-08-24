@@ -8,7 +8,7 @@ Autor: A.M Álvarez-Meza, PhD — Seminario de Investigación, UNAL Manizales.
 
 ## Qué es
 
-Una presentación estática (HTML + CSS + JS, sin build ni dependencias) de 58 slides organizados en 12 módulos, más una serie de guías de demo en vivo.
+Una presentación estática (HTML + CSS + JS, sin build ni dependencias) de 57 slides organizados en 12 módulos, más una serie de guías de demo en vivo.
 
 ## Contenido
 
@@ -25,7 +25,7 @@ Una presentación estática (HTML + CSS + JS, sin build ni dependencias) de 58 s
 | 9 | Engram | Memoria persistente entre sesiones |
 | 10 | Skills Registry | Progressive disclosure de instrucciones |
 | 11 | Stack y Bibliotecas | gentle-ai y ecosistema |
-| 12 | SetUp y cierre | El stack, por qué CLI, GentlemanDots y links finales |
+| 12 | SetUp y cierre | El stack, por qué CLI, GentlemanDots y cierre |
 
 ## Demos en vivo
 
