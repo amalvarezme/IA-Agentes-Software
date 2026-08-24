@@ -8,26 +8,25 @@ Autor: A.M Álvarez-Meza, PhD — Seminario de Investigación, UNAL Manizales.
 
 ## Qué es
 
-Una presentación estática (HTML + CSS + JS, sin build ni dependencias) de 49 slides organizados en 14 módulos, más una serie de guías de demo en vivo.
+Una presentación estática (HTML + CSS + JS, sin build ni dependencias) de 49 slides organizados en 13 módulos, más una serie de guías de demo en vivo.
 
 ## Contenido
 
 | # | Módulo | Tema |
 |---|--------|------|
-| 1 | IA Agéntica | Marco general |
-| 2 | IA → Software | Del chat al sistema |
-| 3 | Forward Deployed Engineer | Rol y práctica |
-| 4 | SetUp | Preparación del entorno |
-| 5 | IA Generativa | Qué es y qué no es un LLM |
-| 6 | Context Window | Attention decay y compactación |
-| 7 | Chat vs Agente | Tools y capacidad de acción |
-| 8 | Evolución del Contexto | AGENTS.md → Skills → sub-agentes |
-| 9 | God Agent | Por qué degrada un agente monolítico |
-| 10 | SDD Orchestrator | Spec-Driven Development y el DAG de fases |
-| 11 | Engram | Memoria persistente entre sesiones |
-| 12 | Skills Registry | Progressive disclosure de instrucciones |
-| 13 | Stack y Bibliotecas | gentle-ai y ecosistema |
-| 14 | Cierre | Links, repos y próximos pasos |
+| 1 | IA → Software | Del chat al sistema |
+| 2 | Forward Deployed Engineer | Rol y práctica |
+| 3 | SetUp | Preparación del entorno |
+| 4 | IA Generativa | Qué es y qué no es un LLM |
+| 5 | Context Window | Attention decay y compactación |
+| 6 | Chat vs Agente | Tools y capacidad de acción |
+| 7 | Evolución del Contexto | AGENTS.md → Skills → sub-agentes |
+| 8 | God Agent | Por qué degrada un agente monolítico |
+| 9 | SDD Orchestrator | Spec-Driven Development y el DAG de fases |
+| 10 | Engram | Memoria persistente entre sesiones |
+| 11 | Skills Registry | Progressive disclosure de instrucciones |
+| 12 | Stack y Bibliotecas | gentle-ai y ecosistema |
+| 13 | Cierre | Links, repos y próximos pasos |
 
 ## Demos en vivo
 
