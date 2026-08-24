@@ -412,6 +412,31 @@ p {
   line-height: 1.65;
 }
 
+.slide-list {
+  margin: 0;
+  padding-left: 1.15em;
+  color: var(--subtext1);
+  font-size: 1.02rem;
+  line-height: 1.5;
+}
+
+.slide-list li {
+  margin-bottom: 0.55em;
+}
+
+.slide-list li:last-child {
+  margin-bottom: 0;
+}
+
+.slide-list li::marker {
+  color: var(--accent);
+}
+
+.slide-list strong {
+  color: var(--fg);
+  font-weight: 600;
+}
+
 .slide-figure {
   margin: 0;
   border: 1px solid var(--line);

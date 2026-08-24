@@ -16,10 +16,9 @@
     <div class="ambient"></div>
     <div class="deck-app">
       <nav class="rail" aria-label="Modulos">
-        <div class="rail-module is-pending">
-          <button class="rail-title" type="button" disabled aria-disabled="true">
-            1. IA-&gt;Software
-          </button>
+        <div class="rail-module" data-module="10">
+          <button class="rail-title" data-first="1">1. IA-&gt;Software</button>
+          <div class="rail-dots" id="dots-10"></div>
         </div>
         <div class="rail-module is-pending">
           <button class="rail-title" type="button" disabled aria-disabled="true">
@@ -32,51 +31,51 @@
           </button>
         </div>
         <div class="rail-module" data-module="0">
-          <button class="rail-title" data-first="1">4. IA Generativa</button>
+          <button class="rail-title" data-first="4">4. IA Generativa</button>
           <div class="rail-dots" id="dots-0"></div>
         </div>
         <div class="rail-module" data-module="1">
-          <button class="rail-title" data-first="5">5. Context Window</button>
+          <button class="rail-title" data-first="8">5. Context Window</button>
           <div class="rail-dots" id="dots-1"></div>
         </div>
         <div class="rail-module" data-module="2">
-          <button class="rail-title" data-first="10">6. Chat vs Agente</button>
+          <button class="rail-title" data-first="13">6. Chat vs Agente</button>
           <div class="rail-dots" id="dots-2"></div>
         </div>
         <div class="rail-module" data-module="3">
-          <button class="rail-title" data-first="12">
+          <button class="rail-title" data-first="15">
             7. Evolución del Contexto
           </button>
           <div class="rail-dots" id="dots-3"></div>
         </div>
         <div class="rail-module" data-module="4">
-          <button class="rail-title" data-first="17">8. God Agent</button>
+          <button class="rail-title" data-first="20">8. God Agent</button>
           <div class="rail-dots" id="dots-4"></div>
         </div>
         <div class="rail-module" data-module="5">
-          <button class="rail-title" data-first="20">
+          <button class="rail-title" data-first="23">
             9. SDD Orchestrator
           </button>
           <div class="rail-dots" id="dots-5"></div>
         </div>
         <div class="rail-module" data-module="6">
-          <button class="rail-title" data-first="26">10. Engram</button>
+          <button class="rail-title" data-first="29">10. Engram</button>
           <div class="rail-dots" id="dots-6"></div>
         </div>
         <div class="rail-module" data-module="7">
-          <button class="rail-title" data-first="38">
+          <button class="rail-title" data-first="41">
             11. Skills Registry
           </button>
           <div class="rail-dots" id="dots-7"></div>
         </div>
         <div class="rail-module" data-module="8">
-          <button class="rail-title" data-first="42">
+          <button class="rail-title" data-first="45">
             12. Stack y Bibliotecas
           </button>
           <div class="rail-dots" id="dots-8"></div>
         </div>
         <div class="rail-module" data-module="9">
-          <button class="rail-title" data-first="47">13. Cierre</button>
+          <button class="rail-title" data-first="50">13. Cierre</button>
           <div class="rail-dots" id="dots-9"></div>
         </div>
       </nav>
@@ -109,16 +108,386 @@
             </div>
           </article>
 
-          <!-- M1: IA GENERATIVA (3) -->
+          <!-- M-IA->SOFTWARE (3) -->
 
           <article
             class="slide"
             data-index="1"
+            data-module="10"
+            data-tone="blue"
+          >
+            <div class="slide-content">
+              <p class="slide-kicker">02 · IA-&gt;Software</p>
+              <h2>El ciclo de vida tradicional: fases y handoffs</h2>
+              <ul class="slide-list">
+                <li>
+                  <strong>Fases secuenciales:</strong> requisitos, diseño,
+                  implementación, pruebas, despliegue y mantenimiento. Cada una
+                  con su rol y su entregable.
+                </li>
+                <li>
+                  <strong>Tres estrategias dominantes:</strong> cascada (fases
+                  cerradas), iterativo/ágil (sprints cortos) y DevOps/CI-CD
+                  (integración y entrega continuas).
+                </li>
+                <li>
+                  <strong>Cada frontera es un handoff humano:</strong> un
+                  documento, una reunión y una espera entre fase y fase.
+                </li>
+                <li>
+                  <strong>El costo de corregir crece con la fase:</strong> un
+                  error de requisitos detectado en pruebas cuesta órdenes de
+                  magnitud más que en el análisis.
+                </li>
+                <li>
+                  <strong>Feedback lento:</strong> el ciclo de aprendizaje se
+                  mide en semanas o meses, no en minutos.
+                </li>
+              </ul>
+            </div>
+            <figure class="slide-figure">
+              <svg
+                viewBox="0 0 520 360"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Diagrama del ciclo de vida tradicional del software: seis fases secuenciales con retroalimentacion de semanas a meses"
+              >
+                <defs>
+                  <marker
+                    id="ar-blue"
+                    viewBox="0 0 10 10"
+                    refX="9"
+                    refY="5"
+                    markerWidth="6"
+                    markerHeight="6"
+                    orient="auto-start-reverse"
+                  >
+                    <path d="M0 0 L10 5 L0 10 z" fill="#7FB4CA" />
+                  </marker>
+                  <marker
+                    id="ar-yellow"
+                    viewBox="0 0 10 10"
+                    refX="9"
+                    refY="5"
+                    markerWidth="6"
+                    markerHeight="6"
+                    orient="auto-start-reverse"
+                  >
+                    <path d="M0 0 L10 5 L0 10 z" fill="#DFBD76" />
+                  </marker>
+                  <marker
+                    id="ar-red"
+                    viewBox="0 0 10 10"
+                    refX="9"
+                    refY="5"
+                    markerWidth="6"
+                    markerHeight="6"
+                    orient="auto-start-reverse"
+                  >
+                    <path d="M0 0 L10 5 L0 10 z" fill="#CB7C94" />
+                  </marker>
+                </defs>
+
+                <text
+                  x="260"
+                  y="20"
+                  text-anchor="middle"
+                  fill="#A1AABB"
+                  font-family="Space Grotesk,sans-serif"
+                  font-size="11"
+                  letter-spacing="2"
+                >
+                  CICLO DE VIDA TRADICIONAL
+                </text>
+
+                <!-- Fila 1 -->
+                <rect x="40" y="46" width="130" height="46" rx="10" fill="#232A36" stroke="#7FB4CA" stroke-width="1.5" />
+                <text x="105" y="68" text-anchor="middle" fill="#7FB4CA" font-family="Space Grotesk,sans-serif" font-size="12" font-weight="500">Requisitos</text>
+                <text x="105" y="82" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9">negocio + analista</text>
+
+                <rect x="200" y="46" width="130" height="46" rx="10" fill="#232A36" stroke="#7FB4CA" stroke-width="1.5" />
+                <text x="265" y="68" text-anchor="middle" fill="#7FB4CA" font-family="Space Grotesk,sans-serif" font-size="12" font-weight="500">Diseño</text>
+                <text x="265" y="82" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9">arquitectura</text>
+
+                <rect x="360" y="46" width="130" height="46" rx="10" fill="#232A36" stroke="#7FB4CA" stroke-width="1.5" />
+                <text x="425" y="68" text-anchor="middle" fill="#7FB4CA" font-family="Space Grotesk,sans-serif" font-size="12" font-weight="500">Implementación</text>
+                <text x="425" y="82" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9">desarrollo</text>
+
+                <path d="M172 69 H196" stroke="#7FB4CA" stroke-width="1.5" marker-end="url(#ar-blue)" />
+                <path d="M332 69 H356" stroke="#7FB4CA" stroke-width="1.5" marker-end="url(#ar-blue)" />
+
+                <!-- Conector fila 1 -> fila 2 -->
+                <path d="M425 94 V116 H105 V136" stroke="#7FB4CA" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#ar-blue)" />
+
+                <!-- Fila 2 -->
+                <rect x="40" y="140" width="130" height="46" rx="10" fill="#232A36" stroke="#DFBD76" stroke-width="1.5" />
+                <text x="105" y="162" text-anchor="middle" fill="#DFBD76" font-family="Space Grotesk,sans-serif" font-size="12" font-weight="500">Pruebas / QA</text>
+                <text x="105" y="176" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9">verificación</text>
+
+                <rect x="200" y="140" width="130" height="46" rx="10" fill="#232A36" stroke="#DFBD76" stroke-width="1.5" />
+                <text x="265" y="162" text-anchor="middle" fill="#DFBD76" font-family="Space Grotesk,sans-serif" font-size="12" font-weight="500">Despliegue</text>
+                <text x="265" y="176" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9">release</text>
+
+                <rect x="360" y="140" width="130" height="46" rx="10" fill="#232A36" stroke="#DFBD76" stroke-width="1.5" />
+                <text x="425" y="162" text-anchor="middle" fill="#DFBD76" font-family="Space Grotesk,sans-serif" font-size="12" font-weight="500">Mantenimiento</text>
+                <text x="425" y="176" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9">operación</text>
+
+                <path d="M172 163 H196" stroke="#DFBD76" stroke-width="1.5" marker-end="url(#ar-yellow)" />
+                <path d="M332 163 H356" stroke="#DFBD76" stroke-width="1.5" marker-end="url(#ar-yellow)" />
+
+                <!-- Retroalimentacion -->
+                <path d="M425 188 V222 H16 V69 H34" stroke="#CB7C94" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ar-red)" />
+                <text x="270" y="240" text-anchor="middle" fill="#CB7C94" font-family="Space Grotesk,sans-serif" font-size="10" letter-spacing="1">RETROALIMENTACIÓN: SEMANAS A MESES</text>
+
+                <line x1="16" y1="262" x2="504" y2="262" stroke="#39414F" stroke-width="1" />
+
+                <!-- Estrategias -->
+                <text x="16" y="284" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9" letter-spacing="2">ESTRATEGIAS</text>
+                <rect x="16" y="294" width="150" height="30" rx="8" fill="#232A36" stroke="#A3B5D6" stroke-width="1.2" />
+                <text x="91" y="313" text-anchor="middle" fill="#A3B5D6" font-family="Space Grotesk,sans-serif" font-size="11">Cascada</text>
+                <rect x="182" y="294" width="150" height="30" rx="8" fill="#232A36" stroke="#A3B5D6" stroke-width="1.2" />
+                <text x="257" y="313" text-anchor="middle" fill="#A3B5D6" font-family="Space Grotesk,sans-serif" font-size="11">Iterativo / Ágil</text>
+                <rect x="348" y="294" width="156" height="30" rx="8" fill="#232A36" stroke="#A3B5D6" stroke-width="1.2" />
+                <text x="426" y="313" text-anchor="middle" fill="#A3B5D6" font-family="Space Grotesk,sans-serif" font-size="11">DevOps · CI-CD</text>
+
+                <text x="260" y="344" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="10">Cada frontera = handoff humano · corregir tarde cuesta más</text>
+              </svg>
+            </figure>
+          </article>
+
+          <article
+            class="slide"
+            data-index="2"
+            data-module="10"
+            data-tone="green"
+          >
+            <div class="slide-content">
+              <p class="slide-kicker">03 · IA-&gt;Software</p>
+              <h2>La IA reconstruye el ciclo: de fases a bucles</h2>
+              <ul class="slide-list">
+                <li>
+                  <strong>Los artefactos se generan, no se redactan:</strong>
+                  specs, diseño, código, pruebas y documentación salen en
+                  minutos, no en sprints.
+                </li>
+                <li>
+                  <strong>El cuello de botella se mueve:</strong> deja de estar
+                  en <em>escribir</em> y pasa a estar en
+                  <em>especificar y verificar</em>.
+                </li>
+                <li>
+                  <strong>Las fases se solapan:</strong> un mismo agente cruza
+                  diseño, código y pruebas dentro de un solo bucle, sin handoff
+                  intermedio.
+                </li>
+                <li>
+                  <strong>El feedback pasa de semanas a minutos:</strong> el
+                  ciclo se recorre varias veces al día.
+                </li>
+                <li>
+                  <strong>Aparece una fase nueva:</strong> curar el contexto
+                  —specs, memoria y skills— es ahora trabajo de ingeniería.
+                </li>
+              </ul>
+            </div>
+            <figure class="slide-figure">
+              <svg
+                viewBox="0 0 520 360"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Diagrama del ciclo de vida reconstruido con IA: bucle de seis etapas alrededor del contexto, con etapas ejecutadas por IA, decididas por el humano y revisadas en conjunto"
+              >
+                <defs>
+                  <marker
+                    id="ar-loop"
+                    viewBox="0 0 10 10"
+                    refX="9"
+                    refY="5"
+                    markerWidth="6"
+                    markerHeight="6"
+                    orient="auto-start-reverse"
+                  >
+                    <path d="M0 0 L10 5 L0 10 z" fill="#8394A3" />
+                  </marker>
+                </defs>
+
+                <!-- Leyenda -->
+                <rect x="16" y="8" width="10" height="10" rx="3" fill="#B7CC85" />
+                <text x="32" y="17" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="10">IA ejecuta</text>
+                <rect x="118" y="8" width="10" height="10" rx="3" fill="#DFBD76" />
+                <text x="134" y="17" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="10">Humano decide</text>
+                <rect x="252" y="8" width="10" height="10" rx="3" fill="#7FB4CA" />
+                <text x="268" y="17" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="10">Revisión conjunta</text>
+
+                <!-- Nucleo -->
+                <circle cx="260" cy="186" r="58" fill="#232A36" stroke="#7AA89F" stroke-width="1.5" />
+                <text x="260" y="180" text-anchor="middle" fill="#7AA89F" font-family="Space Grotesk,sans-serif" font-size="12" font-weight="500">CONTEXTO</text>
+                <text x="260" y="196" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9">specs · memoria</text>
+                <text x="260" y="208" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9">skills · agentes</text>
+
+                <!-- Nodo 1: Intencion (humano) -->
+                <rect x="200" y="32" width="120" height="36" rx="9" fill="#232A36" stroke="#DFBD76" stroke-width="1.5" />
+                <text x="260" y="48" text-anchor="middle" fill="#DFBD76" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="500">Intención</text>
+                <text x="260" y="61" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9">qué y para quién</text>
+
+                <!-- Nodo 2: Diseno (conjunto) -->
+                <rect x="344" y="96" width="120" height="36" rx="9" fill="#232A36" stroke="#7FB4CA" stroke-width="1.5" />
+                <text x="404" y="112" text-anchor="middle" fill="#7FB4CA" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="500">Diseño</text>
+                <text x="404" y="125" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9">IA propone, tú eliges</text>
+
+                <!-- Nodo 3: Construccion (IA) -->
+                <rect x="344" y="236" width="120" height="36" rx="9" fill="#232A36" stroke="#B7CC85" stroke-width="1.5" />
+                <text x="404" y="252" text-anchor="middle" fill="#B7CC85" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="500">Construcción</text>
+                <text x="404" y="265" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9">código · tests · docs</text>
+
+                <!-- Nodo 4: Verificacion (conjunto) -->
+                <rect x="200" y="302" width="120" height="36" rx="9" fill="#232A36" stroke="#7FB4CA" stroke-width="1.5" />
+                <text x="260" y="318" text-anchor="middle" fill="#7FB4CA" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="500">Verificación</text>
+                <text x="260" y="331" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9">review del diff</text>
+
+                <!-- Nodo 5: Entrega (humano) -->
+                <rect x="56" y="236" width="120" height="36" rx="9" fill="#232A36" stroke="#DFBD76" stroke-width="1.5" />
+                <text x="116" y="252" text-anchor="middle" fill="#DFBD76" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="500">Entrega</text>
+                <text x="116" y="265" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9">merge · deploy</text>
+
+                <!-- Nodo 6: Exploracion (IA) -->
+                <rect x="56" y="96" width="120" height="36" rx="9" fill="#232A36" stroke="#B7CC85" stroke-width="1.5" />
+                <text x="116" y="112" text-anchor="middle" fill="#B7CC85" font-family="Space Grotesk,sans-serif" font-size="11" font-weight="500">Exploración</text>
+                <text x="116" y="125" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9">lee y mapea el repo</text>
+
+                <!-- Flechas del bucle -->
+                <path d="M326 58 L390 92" stroke="#8394A3" stroke-width="1.4" marker-end="url(#ar-loop)" />
+                <path d="M404 138 L404 230" stroke="#8394A3" stroke-width="1.4" marker-end="url(#ar-loop)" />
+                <path d="M392 278 L326 300" stroke="#8394A3" stroke-width="1.4" marker-end="url(#ar-loop)" />
+                <path d="M194 312 L132 278" stroke="#8394A3" stroke-width="1.4" marker-end="url(#ar-loop)" />
+                <path d="M116 230 L116 138" stroke="#8394A3" stroke-width="1.4" marker-end="url(#ar-loop)" />
+                <path d="M132 92 L194 58" stroke="#8394A3" stroke-width="1.4" marker-end="url(#ar-loop)" />
+
+                <!-- Alimentacion del contexto -->
+                <path d="M260 74 V124" stroke="#7AA89F" stroke-width="1.2" stroke-dasharray="3 4" />
+                <path d="M260 296 V248" stroke="#7AA89F" stroke-width="1.2" stroke-dasharray="3 4" />
+
+                <text x="500" y="188" text-anchor="end" fill="#B7CC85" font-family="Space Grotesk,sans-serif" font-size="10">minutos</text>
+                <text x="500" y="202" text-anchor="end" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="9">por vuelta</text>
+              </svg>
+            </figure>
+          </article>
+
+          <article
+            class="slide"
+            data-index="3"
+            data-module="10"
+            data-tone="yellow"
+          >
+            <div class="slide-content">
+              <p class="slide-kicker">04 · IA-&gt;Software</p>
+              <h2>Dónde ejecuta la IA y dónde decide el humano</h2>
+              <ul class="slide-list">
+                <li>
+                  <strong>La IA ejecuta:</strong> explorar el repo, generar
+                  código y pruebas, refactorizar, documentar y dar la primera
+                  pasada de revisión.
+                </li>
+                <li>
+                  <strong>El humano decide:</strong> la intención, los
+                  requisitos, la arquitectura y los criterios de aceptación.
+                  Nada de eso se delega.
+                </li>
+                <li>
+                  <strong>El humano verifica:</strong> lee el diff, corre las
+                  pruebas que importan y responde por seguridad y datos
+                  sensibles.
+                </li>
+                <li>
+                  <strong>Puertas irrenunciables:</strong> merge, despliegue a
+                  producción y cualquier operación destructiva o irreversible.
+                </li>
+                <li>
+                  <strong>La regla:</strong> la IA propone, el humano dispone.
+                  Sin verificación, la velocidad solo acumula deuda técnica.
+                </li>
+              </ul>
+            </div>
+            <figure class="slide-figure">
+              <svg
+                viewBox="0 0 520 360"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Diagrama de reparto de responsabilidades por etapa entre la IA y el humano, con puertas humanas obligatorias en verificacion y entrega"
+              >
+                <text
+                  x="260"
+                  y="18"
+                  text-anchor="middle"
+                  fill="#A1AABB"
+                  font-family="Space Grotesk,sans-serif"
+                  font-size="11"
+                  letter-spacing="2"
+                >
+                  REPARTO POR ETAPA
+                </text>
+
+                <!-- Leyenda -->
+                <rect x="160" y="32" width="10" height="10" rx="3" fill="#B7CC85" />
+                <text x="176" y="41" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="10">IA ejecuta</text>
+                <rect x="266" y="32" width="10" height="10" rx="3" fill="#DFBD76" />
+                <text x="282" y="41" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="10">Humano decide y verifica</text>
+
+                <!-- Explorar -->
+                <text x="150" y="76" text-anchor="end" fill="#E7EBF2" font-family="Space Grotesk,sans-serif" font-size="11">Explorar</text>
+                <rect x="160" y="58" width="272" height="26" rx="6" fill="#3E5230" stroke="#B7CC85" stroke-width="1.2" />
+                <text x="172" y="76" fill="#B7CC85" font-family="Space Grotesk,sans-serif" font-size="9">mapea el repo, resume, encuentra</text>
+                <rect x="434" y="58" width="70" height="26" rx="6" fill="#4A3D22" stroke="#DFBD76" stroke-width="1.2" />
+
+                <!-- Disenar -->
+                <text x="150" y="118" text-anchor="end" fill="#E7EBF2" font-family="Space Grotesk,sans-serif" font-size="11">Diseñar</text>
+                <rect x="160" y="100" width="136" height="26" rx="6" fill="#3E5230" stroke="#B7CC85" stroke-width="1.2" />
+                <text x="172" y="118" fill="#B7CC85" font-family="Space Grotesk,sans-serif" font-size="9">propone opciones</text>
+                <rect x="298" y="100" width="206" height="26" rx="6" fill="#4A3D22" stroke="#DFBD76" stroke-width="1.2" />
+                <text x="310" y="118" fill="#DFBD76" font-family="Space Grotesk,sans-serif" font-size="9">arquitectura y tradeoffs</text>
+
+                <!-- Construir -->
+                <text x="150" y="160" text-anchor="end" fill="#E7EBF2" font-family="Space Grotesk,sans-serif" font-size="11">Construir</text>
+                <rect x="160" y="142" width="289" height="26" rx="6" fill="#3E5230" stroke="#B7CC85" stroke-width="1.2" />
+                <text x="172" y="160" fill="#B7CC85" font-family="Space Grotesk,sans-serif" font-size="9">código · tests · docs · refactor</text>
+                <rect x="451" y="142" width="53" height="26" rx="6" fill="#4A3D22" stroke="#DFBD76" stroke-width="1.2" />
+
+                <!-- Verificar -->
+                <text x="150" y="202" text-anchor="end" fill="#E7EBF2" font-family="Space Grotesk,sans-serif" font-size="11">Verificar</text>
+                <rect x="160" y="184" width="119" height="26" rx="6" fill="#3E5230" stroke="#B7CC85" stroke-width="1.2" />
+                <text x="172" y="202" fill="#B7CC85" font-family="Space Grotesk,sans-serif" font-size="9">1ª pasada</text>
+                <rect x="281" y="184" width="223" height="26" rx="6" fill="#4A3D22" stroke="#DFBD76" stroke-width="1.6" />
+                <text x="293" y="202" fill="#DFBD76" font-family="Space Grotesk,sans-serif" font-size="9">lee el diff · criterios de aceptación</text>
+
+                <!-- Entregar -->
+                <text x="150" y="244" text-anchor="end" fill="#E7EBF2" font-family="Space Grotesk,sans-serif" font-size="11">Entregar</text>
+                <rect x="160" y="226" width="51" height="26" rx="6" fill="#3E5230" stroke="#B7CC85" stroke-width="1.2" />
+                <rect x="213" y="226" width="291" height="26" rx="6" fill="#4A3D22" stroke="#DFBD76" stroke-width="1.6" />
+                <text x="225" y="244" fill="#DFBD76" font-family="Space Grotesk,sans-serif" font-size="9">merge · deploy · rollback</text>
+
+                <!-- Puertas humanas -->
+                <line x1="16" y1="272" x2="504" y2="272" stroke="#39414F" stroke-width="1" />
+                <rect x="16" y="286" width="488" height="30" rx="8" fill="#232A36" stroke="#CB7C94" stroke-width="1.4" />
+                <text x="260" y="305" text-anchor="middle" fill="#CB7C94" font-family="Space Grotesk,sans-serif" font-size="11">PUERTAS HUMANAS: verificar · merge · deploy · borrar</text>
+
+                <text x="260" y="340" text-anchor="middle" fill="#8394A3" font-family="Space Grotesk,sans-serif" font-size="10">La IA propone, el humano dispone</text>
+              </svg>
+            </figure>
+          </article>
+
+          <!-- M1: IA GENERATIVA (3) -->
+
+          <article
+            class="slide"
+            data-index="4"
             data-module="0"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">02 · IA Generativa</p>
+              <p class="slide-kicker">05 · IA Generativa</p>
               <h2>Qué es un LLM: predicción, no pensamiento</h2>
               <p>
                 Un Large Language Model es una red neuronal con billones de
@@ -495,12 +864,12 @@
 
           <article
             class="slide"
-            data-index="2"
+            data-index="5"
             data-module="0"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">03 · IA Generativa</p>
+              <p class="slide-kicker">06 · IA Generativa</p>
               <h2>Modelos que existen hoy</h2>
               <p>
                 Gemini para razonamiento profundo, Opus para código limpio,
@@ -770,12 +1139,12 @@
 
           <article
             class="slide"
-            data-index="3"
+            data-index="6"
             data-module="0"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">04 · IA Generativa</p>
+              <p class="slide-kicker">07 · IA Generativa</p>
               <h2>Open source chinos: frontier por centavos</h2>
               <p>
                 Kimi K2.6, MiniMax M2.7 y GLM-5 dan ~90% de la capacidad de
@@ -1185,12 +1554,12 @@
 
           <article
             class="slide"
-            data-index="4"
+            data-index="7"
             data-module="0"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">05 · IA Generativa</p>
+              <p class="slide-kicker">08 · IA Generativa</p>
               <h2>Qué NO es un LLM</h2>
               <p>
                 No es una base de datos, no aprende de tus conversaciones, no
@@ -1436,12 +1805,12 @@
 
           <article
             class="slide"
-            data-index="5"
+            data-index="8"
             data-module="1"
             data-tone="yellow"
           >
             <div class="slide-content">
-              <p class="slide-kicker">06 · Context Window</p>
+              <p class="slide-kicker">09 · Context Window</p>
               <h2>La pizarra de tamaño fijo</h2>
               <p>
                 El contexto es todo lo que el modelo "ve": system prompt,
@@ -1822,12 +2191,12 @@
 
           <article
             class="slide"
-            data-index="6"
+            data-index="9"
             data-module="1"
             data-tone="yellow"
           >
             <div class="slide-content">
-              <p class="slide-kicker">07 · Context Window</p>
+              <p class="slide-kicker">10 · Context Window</p>
               <h2>Attention decay: más no es mejor</h2>
               <p>
                 A medida que llenas la ventana, el modelo no falla: degrada.
@@ -2235,12 +2604,12 @@
 
           <article
             class="slide"
-            data-index="7"
+            data-index="10"
             data-module="1"
             data-tone="yellow"
           >
             <div class="slide-content">
-              <p class="slide-kicker">08 · Context Window</p>
+              <p class="slide-kicker">11 · Context Window</p>
               <h2>Compactación: la amnesia forzada</h2>
               <p>
                 Cuando la pizarra se llena, el sistema genera un resumen
@@ -2618,12 +2987,12 @@
 
           <article
             class="slide"
-            data-index="8"
+            data-index="11"
             data-module="1"
             data-tone="yellow"
           >
             <div class="slide-content">
-              <p class="slide-kicker">09 · Context Window</p>
+              <p class="slide-kicker">12 · Context Window</p>
               <h2>Cómo lo ataca la industria</h2>
               <p>
                 Long context (1M+ tokens), RAG, fine-tuning, memory layers,
@@ -2868,12 +3237,12 @@
 
           <article
             class="slide"
-            data-index="9"
+            data-index="12"
             data-module="1"
             data-tone="yellow"
           >
             <div class="slide-content">
-              <p class="slide-kicker">10 · Context Window</p>
+              <p class="slide-kicker">13 · Context Window</p>
               <h2>Por qué ninguna solución es completa</h2>
               <p>
                 Long context degrada calidad. RAG depende de embeddings.
@@ -3205,12 +3574,12 @@
 
           <article
             class="slide"
-            data-index="10"
+            data-index="13"
             data-module="2"
             data-tone="green"
           >
             <div class="slide-content">
-              <p class="slide-kicker">11 · Chat vs Agente</p>
+              <p class="slide-kicker">14 · Chat vs Agente</p>
               <h2>Chat responde texto. Agente actúa.</h2>
               <p>
                 Un chat genera texto. Un agente lee tu código, edita archivos,
@@ -3516,12 +3885,12 @@
 
           <article
             class="slide"
-            data-index="11"
+            data-index="14"
             data-module="2"
             data-tone="green"
           >
             <div class="slide-content">
-              <p class="slide-kicker">12 · Chat vs Agente</p>
+              <p class="slide-kicker">15 · Chat vs Agente</p>
               <h2>Tools: las capacidades del agente</h2>
               <p>
                 Terminal, editor de archivos, buscador, memoria. Cada tool es
@@ -3793,12 +4162,12 @@
 
           <article
             class="slide"
-            data-index="12"
+            data-index="15"
             data-module="3"
             data-tone="purple"
           >
             <div class="slide-content">
-              <p class="slide-kicker">13 · Evolución del Contexto</p>
+              <p class="slide-kicker">16 · Evolución del Contexto</p>
               <h2>Todo empezó con AGENTS.md</h2>
               <p>
                 La primera idea: un archivo markdown gigante con TODAS las
@@ -4090,12 +4459,12 @@
 
           <article
             class="slide"
-            data-index="13"
+            data-index="16"
             data-module="3"
             data-tone="purple"
           >
             <div class="slide-content">
-              <p class="slide-kicker">14 · Evolución del Contexto</p>
+              <p class="slide-kicker">17 · Evolución del Contexto</p>
               <h2>AGENTS.md crece infinito</h2>
               <p>
                 Cada nueva convención engordaba el archivo. En proyectos reales
@@ -4336,12 +4705,12 @@
 
           <article
             class="slide"
-            data-index="14"
+            data-index="17"
             data-module="3"
             data-tone="purple"
           >
             <div class="slide-content">
-              <p class="slide-kicker">15 · Evolución del Contexto</p>
+              <p class="slide-kicker">18 · Evolución del Contexto</p>
               <h2>Primera evolución: Skills</h2>
               <p>
                 En vez de un archivo gigante, un router (AGENTS.md liviano)
@@ -4652,12 +5021,12 @@
 
           <article
             class="slide"
-            data-index="15"
+            data-index="18"
             data-module="3"
             data-tone="purple"
           >
             <div class="slide-content">
-              <p class="slide-kicker">16 · Evolución del Contexto</p>
+              <p class="slide-kicker">19 · Evolución del Contexto</p>
               <h2>Segunda evolución: sub-agentes</h2>
               <p>
                 Skills resuelve QUÉ contexto cargar, pero un solo agente sigue
@@ -5059,12 +5428,12 @@
 
           <article
             class="slide"
-            data-index="16"
+            data-index="19"
             data-module="3"
             data-tone="purple"
           >
             <div class="slide-content">
-              <p class="slide-kicker">17 · Evolución del Contexto</p>
+              <p class="slide-kicker">20 · Evolución del Contexto</p>
               <h2>El patrón actual: todo junto</h2>
               <p>
                 Orquestador (coordina) + Skills (contexto preciso) +
@@ -5653,12 +6022,12 @@
 
           <article
             class="slide"
-            data-index="17"
+            data-index="20"
             data-module="4"
             data-tone="red"
           >
             <div class="slide-content">
-              <p class="slide-kicker">18 · God Agent</p>
+              <p class="slide-kicker">21 · God Agent</p>
               <h2>Un agente que hace todo: por qué degrada</h2>
               <p>
                 "Analiza, diseña, testea e implementa." Un solo agente llena
@@ -6140,12 +6509,12 @@
 
           <article
             class="slide"
-            data-index="18"
+            data-index="21"
             data-module="4"
             data-tone="red"
           >
             <div class="slide-content">
-              <p class="slide-kicker">19 · God Agent</p>
+              <p class="slide-kicker">22 · God Agent</p>
               <h2>Divide y vencerás: orquestador + sub-agentes</h2>
               <p>
                 El orquestador no trabaja: coordina. Delega cada tarea a un
@@ -6663,12 +7032,12 @@
 
           <article
             class="slide"
-            data-index="19"
+            data-index="22"
             data-module="4"
             data-tone="red"
           >
             <div class="slide-content">
-              <p class="slide-kicker">20 · God Agent</p>
+              <p class="slide-kicker">23 · God Agent</p>
               <h2>Fresh context: arrancar limpio</h2>
               <p>
                 Cada sub-agente nace con la pizarra vacía. Solo recibe las
@@ -7174,12 +7543,12 @@
 
           <article
             class="slide"
-            data-index="20"
+            data-index="23"
             data-module="5"
             data-tone="cyan"
           >
             <div class="slide-content">
-              <p class="slide-kicker">21 · SDD Orchestrator</p>
+              <p class="slide-kicker">24 · SDD Orchestrator</p>
               <h2>La filosofía: ingeniería aplicada a IA</h2>
               <p>
                 En vez de "pedir y rezar", estructuramos el trabajo en una
@@ -7614,12 +7983,12 @@
 
           <article
             class="slide"
-            data-index="21"
+            data-index="24"
             data-module="5"
             data-tone="cyan"
           >
             <div class="slide-content">
-              <p class="slide-kicker">22 · SDD Orchestrator</p>
+              <p class="slide-kicker">25 · SDD Orchestrator</p>
               <h2>Los roles especializados</h2>
               <p>
                 Explorer (lee código), Proposer (define qué), Spec Writer
@@ -8152,12 +8521,12 @@
 
           <article
             class="slide"
-            data-index="22"
+            data-index="25"
             data-module="5"
             data-tone="cyan"
           >
             <div class="slide-content">
-              <p class="slide-kicker">23 · SDD Orchestrator</p>
+              <p class="slide-kicker">26 · SDD Orchestrator</p>
               <h2>El DAG: flujo de dependencias</h2>
               <p>
                 Proposal → [Specs || Design] → Tasks → Apply → Verify → Archive.
@@ -8532,12 +8901,12 @@
 
           <article
             class="slide"
-            data-index="23"
+            data-index="26"
             data-module="5"
             data-tone="cyan"
           >
             <div class="slide-content">
-              <p class="slide-kicker">24 · SDD Orchestrator</p>
+              <p class="slide-kicker">27 · SDD Orchestrator</p>
               <h2>Ejemplo real: crear endpoint de usuarios</h2>
               <p>
                 /sdd:new → Explorer detecta stack → Proposer define alcance →
@@ -8971,12 +9340,12 @@
 
           <article
             class="slide"
-            data-index="24"
+            data-index="27"
             data-module="5"
             data-tone="cyan"
           >
             <div class="slide-content">
-              <p class="slide-kicker">25 · SDD Orchestrator</p>
+              <p class="slide-kicker">28 · SDD Orchestrator</p>
               <h2>Por qué escala</h2>
               <p>
                 Aislamiento de contexto, checkpoints de calidad, memoria
@@ -9318,12 +9687,12 @@
 
           <article
             class="slide"
-            data-index="25"
+            data-index="28"
             data-module="5"
             data-tone="cyan"
           >
             <div class="slide-content">
-              <p class="slide-kicker">26 · SDD Orchestrator</p>
+              <p class="slide-kicker">29 · SDD Orchestrator</p>
               <h2>SDD Agent Team: la biblioteca</h2>
               <p>
                 Open source. Orquestador delegate-only, sub-agentes con
@@ -9692,12 +10061,12 @@
 
           <article
             class="slide"
-            data-index="26"
+            data-index="29"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">27 · Engram</p>
+              <p class="slide-kicker">30 · Engram</p>
               <h2>El problema: compactación mata decisiones</h2>
               <p>
                 Trabajas 2 horas definiendo arquitectura y el sistema
@@ -10137,12 +10506,12 @@
 
           <article
             class="slide"
-            data-index="27"
+            data-index="30"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">28 · Engram</p>
+              <p class="slide-kicker">31 · Engram</p>
               <h2>Cómo lo ataca la industria</h2>
               <p>
                 RAG con vector stores, fine-tuning periódico, memory layers
@@ -10494,12 +10863,12 @@
 
           <article
             class="slide"
-            data-index="28"
+            data-index="31"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">29 · Engram</p>
+              <p class="slide-kicker">32 · Engram</p>
               <h2>Mi enfoque: memoria señal, no total</h2>
               <p>
                 No guardamos todo, eso es ruido. Guardamos señales:
@@ -10980,12 +11349,12 @@
 
           <article
             class="slide"
-            data-index="29"
+            data-index="32"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">30 · Engram</p>
+              <p class="slide-kicker">33 · Engram</p>
               <h2>Progressive disclosure: 3 capas de eficiencia</h2>
               <p>
                 En vez de volcar todo en el contexto, Engram revela
@@ -11265,12 +11634,12 @@
 
           <article
             class="slide"
-            data-index="30"
+            data-index="33"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">31 · Engram</p>
+              <p class="slide-kicker">34 · Engram</p>
               <h2>Arquitectura: Go + SQLite + FTS5</h2>
               <p>
                 Un binario. Sin dependencias externas. SQLite con Full-Text
@@ -11653,12 +12022,12 @@
 
           <article
             class="slide"
-            data-index="31"
+            data-index="34"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">32 · Engram</p>
+              <p class="slide-kicker">35 · Engram</p>
               <h2>Las herramientas de memoria</h2>
               <p>
                 Las 5 herramientas críticas. mem_current_project (nueva)
@@ -11719,12 +12088,12 @@
 
           <article
             class="slide"
-            data-index="32"
+            data-index="35"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">33 · Engram</p>
+              <p class="slide-kicker">36 · Engram</p>
               <h2>El Engram Loop: dos sesiones</h2>
               <p>
                 Sesión 1: diseñar → mem_save. Sesión 2: implementar →
@@ -12062,12 +12431,12 @@
 
           <article
             class="slide"
-            data-index="33"
+            data-index="36"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">34 · Engram</p>
+              <p class="slide-kicker">37 · Engram</p>
               <h2>Dos formas de sincronizar: git o Cloud</h2>
               <p>
                 Dos caminos válidos para sincronizar: uno para uso individual,
@@ -12153,12 +12522,12 @@
 
           <article
             class="slide"
-            data-index="34"
+            data-index="37"
             data-module="6"
             data-tone="green"
           >
             <div class="slide-content">
-              <p class="slide-kicker">35 · Engram</p>
+              <p class="slide-kicker">38 · Engram</p>
               <h2>Cloud mode: el mismo binario engram, multi-máquina y real-time</h2>
               <p>
                 Cloud no es un producto aparte — es un MODO del mismo binario
@@ -12254,12 +12623,12 @@
 
           <article
             class="slide"
-            data-index="35"
+            data-index="38"
             data-module="6"
             data-tone="cyan"
           >
             <div class="slide-content">
-              <p class="slide-kicker">36 · Engram</p>
+              <p class="slide-kicker">39 · Engram</p>
               <h2>Auto-detect: el proyecto lo decide tu cwd, no el LLM</h2>
               <p>
                 Antes los agentes inventaban nombres distintos para el mismo
@@ -12343,12 +12712,12 @@
 
           <article
             class="slide"
-            data-index="36"
+            data-index="39"
             data-module="6"
             data-tone="yellow"
           >
             <div class="slide-content">
-              <p class="slide-kicker">37 · Engram</p>
+              <p class="slide-kicker">40 · Engram</p>
               <h2>Prompt capture automático: contexto que se guarda solo</h2>
               <p>
                 mem_save ahora captura el prompt del usuario asociado, sin que
@@ -12430,12 +12799,12 @@
 
           <article
             class="slide"
-            data-index="37"
+            data-index="40"
             data-module="6"
             data-tone="magenta"
           >
             <div class="slide-content">
-              <p class="slide-kicker">38 · Engram</p>
+              <p class="slide-kicker">41 · Engram</p>
               <h2>Engram vs alternativas: por qué lightweight gana</h2>
               <p>
                 Sin servidor, sin embeddings, sin infra cloud. Un binario
@@ -12832,12 +13201,12 @@
 
           <article
             class="slide"
-            data-index="38"
+            data-index="41"
             data-module="7"
             data-tone="orange"
           >
             <div class="slide-content">
-              <p class="slide-kicker">39 · Skills Registry</p>
+              <p class="slide-kicker">42 · Skills Registry</p>
               <h2>El problema del prompt gigante</h2>
               <p>
                 Si metes todas las reglas en el system prompt, saturas la
@@ -13222,12 +13591,12 @@
 
           <article
             class="slide"
-            data-index="39"
+            data-index="42"
             data-module="7"
             data-tone="orange"
           >
             <div class="slide-content">
-              <p class="slide-kicker">40 · Skills Registry</p>
+              <p class="slide-kicker">43 · Skills Registry</p>
               <h2>AGENTS.md router + SKILL.md módulo</h2>
               <p>
                 AGENTS.md como índice liviano que mapea intenciones a skills.
@@ -13634,12 +14003,12 @@
 
           <article
             class="slide"
-            data-index="40"
+            data-index="43"
             data-module="7"
             data-tone="orange"
           >
             <div class="slide-content">
-              <p class="slide-kicker">41 · Skills Registry</p>
+              <p class="slide-kicker">44 · Skills Registry</p>
               <h2>skill-creator: el equipo enseña al agente</h2>
               <p>
                 El conocimiento institucional lo tiene el equipo. Con
@@ -14091,12 +14460,12 @@
 
           <article
             class="slide"
-            data-index="41"
+            data-index="44"
             data-module="7"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">42 · Skills Registry</p>
+              <p class="slide-kicker">45 · Skills Registry</p>
               <h2>Contextual skill loading: orchestrator resuelve, sub-agents consumen</h2>
               <p>
                 El orchestrator lee el skill-registry UNA vez al inicio de
@@ -14184,12 +14553,12 @@
 
           <article
             class="slide"
-            data-index="42"
+            data-index="45"
             data-module="8"
             data-tone="green"
           >
             <div class="slide-content">
-              <p class="slide-kicker">43 · Stack y Bibliotecas</p>
+              <p class="slide-kicker">46 · Stack y Bibliotecas</p>
               <h2>Ecosistema: Engram + SDD + Skills</h2>
               <p>
                 Engram da continuidad, SDD da estructura, Skills da
@@ -14631,12 +15000,12 @@
 
           <article
             class="slide"
-            data-index="43"
+            data-index="46"
             data-module="8"
             data-tone="green"
           >
             <div class="slide-content">
-              <p class="slide-kicker">44 · Stack y Bibliotecas</p>
+              <p class="slide-kicker">47 · Stack y Bibliotecas</p>
               <h2>Model router: un motor por fase</h2>
               <p>
                 No existe el "mejor modelo". Gemini para arquitectura, Opus
@@ -14924,12 +15293,12 @@
 
           <article
             class="slide"
-            data-index="44"
+            data-index="47"
             data-module="8"
             data-tone="green"
           >
             <div class="slide-content">
-              <p class="slide-kicker">45 · Stack y Bibliotecas</p>
+              <p class="slide-kicker">48 · Stack y Bibliotecas</p>
               <h2>Resultado: velocidad + consistencia + calidad</h2>
               <p>
                 Velocidad por automatización. Consistencia por skills.
@@ -15442,12 +15811,12 @@
 
           <article
             class="slide"
-            data-index="45"
+            data-index="48"
             data-module="8"
             data-tone="green"
           >
             <div class="slide-content">
-              <p class="slide-kicker">46 · Stack y Bibliotecas</p>
+              <p class="slide-kicker">49 · Stack y Bibliotecas</p>
               <h2>gentle-ai: un comando, cualquier agente, cualquier OS</h2>
               <p>
                 Un comando instala todo el stack cognitivo. 12 agentes
@@ -15779,12 +16148,12 @@
 
           <article
             class="slide"
-            data-index="46"
+            data-index="49"
             data-module="8"
             data-tone="orange"
           >
             <div class="slide-content">
-              <p class="slide-kicker">47 · Stack y Bibliotecas</p>
+              <p class="slide-kicker">50 · Stack y Bibliotecas</p>
               <h2>Solo-agent vs Full delegation: dos formas de hacer SDD</h2>
               <p>
                 Full delegation: cada fase SDD corre en un sub-agent con
@@ -15902,12 +16271,12 @@
 
           <article
             class="slide"
-            data-index="47"
+            data-index="50"
             data-module="9"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">48 · Cierre</p>
+              <p class="slide-kicker">51 · Cierre</p>
               <h2>La diferencia: arquitectura alrededor del modelo</h2>
               <p>
                 El modelo es el motor. Pero un motor sin chasis, sin
@@ -16600,12 +16969,12 @@
 
           <article
             class="slide"
-            data-index="48"
+            data-index="51"
             data-module="9"
             data-tone="blue"
           >
             <div class="slide-content">
-              <p class="slide-kicker">49 · Cierre</p>
+              <p class="slide-kicker">52 · Cierre</p>
               <h2>Links, repos y próximos pasos</h2>
               <p>Todo open source. Links y repos en pantalla.</p>
             </div>
@@ -16728,7 +17097,7 @@
           alt="Laboratorio de Inteligencia Artificial UNAL"
         />
         <button type="button" id="prev" class="ghost">Anterior</button>
-        <span id="counter">01 / 49</span>
+        <span id="counter">01 / 52</span>
         <button type="button" id="next" class="solid">Siguiente</button>
       </footer>
     </div>
