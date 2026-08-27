@@ -8,7 +8,7 @@ Autor: A.M Álvarez-Meza, PhD — Seminario de Investigación, UNAL Manizales.
 
 ## Qué es
 
-Una presentación estática (HTML + CSS + JS, sin build ni dependencias) de 57 slides organizados en 12 módulos, más una serie de guías de demo en vivo.
+Una presentación estática (HTML + CSS + JS, sin build ni dependencias) de 61 slides organizados en 12 módulos, más una serie de guías de demo en vivo.
 
 ## Contenido
 
