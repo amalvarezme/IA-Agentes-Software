@@ -834,3 +834,30 @@ body.focus-mode .rail {
     transition: none;
   }
 }
+
+/* --- Citas APA en slides --- */
+cite {
+  font-style: normal;
+  font-size: 0.82em;
+  color: var(--subtext);
+  white-space: nowrap;
+  opacity: 0.85;
+}
+
+.slide-references {
+  font-size: 0.78rem;
+  line-height: 1.45;
+  list-style: none;
+  padding-left: 0;
+}
+
+.slide-references li {
+  margin-bottom: 0.7em;
+  padding-left: 1.4em;
+  text-indent: -1.4em; /* sangría francesa APA */
+}
+
+.slide-references a {
+  color: var(--accent);
+  word-break: break-word;
+}

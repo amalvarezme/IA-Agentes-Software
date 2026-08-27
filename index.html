@@ -268,7 +268,7 @@
                 <li>
                   <strong>Los artefactos se generan, no se redactan:</strong>
                   specs, diseño, código, pruebas y documentación salen en
-                  minutos, no en sprints.
+                  minutos, no en sprints. <cite>(Hou et al., 2024)</cite>
                 </li>
                 <li>
                   <strong>El cuello de botella se mueve:</strong> deja de estar
@@ -397,11 +397,11 @@
                 <li>
                   <strong>El humano verifica:</strong> lee el diff, corre las
                   pruebas que importan y responde por seguridad y datos
-                  sensibles.
+                  sensibles. <cite>(NIST, 2023)</cite>
                 </li>
                 <li>
                   <strong>Puertas irrenunciables:</strong> merge, despliegue a
-                  producción y cualquier operación destructiva o irreversible.
+                  producción y cualquier operación destructiva o irreversible. <cite>(Unión Europea, 2024)</cite>
                 </li>
                 <li>
                   <strong>La regla:</strong> la IA propone, el humano dispone.
@@ -669,7 +669,7 @@
                 <path d="M337 117 H345" stroke="#6C7A8C" stroke-width="1.4" marker-end="url(#fde2-ar)" />
 
                 <line x1="22" y1="150" x2="498" y2="150" stroke="#B8C2D0" stroke-width="1" />
-                <text x="22" y="170" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9" letter-spacing="2">POR QUÉ CADA SILO FALLA</text>
+                <text x="22" y="170" fill="#5B6472" font-family="Space Grotesk,sans-serif" font-size="9" letter-spacing="2">¿POR QUÉ CADA SILO FALLA?</text>
 
                 <rect x="22" y="180" width="476" height="34" rx="8" fill="#FFFFFF" stroke="#C55A7B" stroke-width="1.2" />
                 <text x="38" y="201" fill="#A83A59" font-family="Space Grotesk,sans-serif" font-size="10.5" font-weight="600">Solo datos</text>
@@ -776,7 +776,7 @@
               <p>
                 Un Large Language Model es una red neuronal con billones de
                 parámetros entrenada para predecir el siguiente token. No
-                "piensa": completa patrones estadísticos. La calidad del
+                "piensa": completa patrones estadísticos. <cite>(Bender et al., 2021)</cite> La calidad del
                 resultado depende de la calidad del contexto que le das.
               </p>
             </div>
@@ -1846,7 +1846,7 @@
               <h2>Qué NO es un LLM</h2>
               <p>
                 No es una base de datos, no aprende de tus conversaciones, no
-                entiende como un humano, no es determinista. Si no sabes esto,
+                entiende como un humano, no es determinista. <cite>(Ji et al., 2023)</cite> Si no sabes esto,
                 tendrás expectativas equivocadas y frustración constante.
               </p>
             </div>
@@ -2098,7 +2098,7 @@
               <p>
                 El contexto es todo lo que el modelo "ve": system prompt,
                 historial, archivos leídos, tu instrucción. La ventana de
-                contexto es el tamaño físico de esa pizarra, medido en tokens.
+                contexto es el tamaño físico de esa pizarra, medido en tokens. <cite>(Liu et al., 2024)</cite>
               </p>
             </div>
             <figure class="slide-figure">
@@ -2481,7 +2481,7 @@
               <p class="slide-kicker">13 · Context Window</p>
               <h2>Attention decay: más no es mejor</h2>
               <p>
-                A medida que llenas la ventana, el modelo no falla: degrada.
+                A medida que llenas la ventana, el modelo no falla: degrada. <cite>(Liu et al., 2024)</cite>
                 Instruction drift, sesgo de recencia, código genérico. Es sutil
                 y peligroso porque el output "parece" correcto.
               </p>
@@ -2895,7 +2895,7 @@
               <h2>Compactación: la amnesia forzada</h2>
               <p>
                 Cuando la pizarra se llena, el sistema genera un resumen
-                comprimido y borra los mensajes originales. Pierdes nombres de
+                comprimido y borra los mensajes originales. <cite>(Wang et al., 2024)</cite> Pierdes nombres de
                 variables, decisiones de diseño, preferencias del usuario.
               </p>
             </div>
@@ -3865,7 +3865,7 @@
               <h2>Chat responde texto. Agente actúa.</h2>
               <p>
                 Un chat genera texto. Un agente lee tu código, edita archivos,
-                ejecuta tests y guarda aprendizaje: es la diferencia entre
+                ejecuta tests y guarda aprendizaje: <cite>(Wang et al., 2024)</cite> es la diferencia entre
                 pedirle consejo a alguien y tener un par-programmer con acceso
                 a tu proyecto.
               </p>
@@ -4176,7 +4176,7 @@
               <h2>Tools: las capacidades del agente</h2>
               <p>
                 Terminal, editor de archivos, buscador, memoria. Cada tool es
-                una capacidad externa. Sin tools es chat. Con tools es agente.
+                una capacidad externa. <cite>(Wang et al., 2024)</cite> Sin tools es chat. Con tools es agente.
                 Así de simple.
               </p>
             </div>
@@ -6312,7 +6312,7 @@
               <h2>Un agente que hace todo: por qué degrada</h2>
               <p>
                 "Analiza, diseña, testea e implementa." Un solo agente llena
-                su contexto al 80% antes de escribir la primera línea: compila
+                su contexto al 80% antes de escribir la primera línea: <cite>(Liu et al., 2024)</cite> compila
                 pero ignora las decisiones del paso 1.
               </p>
             </div>
@@ -6799,7 +6799,7 @@
               <h2>Divide y vencerás: orquestador + sub-agentes</h2>
               <p>
                 El orquestador no trabaja: coordina. Delega cada tarea a un
-                sub-agente especializado que recibe solo lo que necesita.
+                sub-agente especializado que recibe solo lo que necesita. <cite>(Wang et al., 2024)</cite>
                 Máxima precisión, cero ruido acumulado.
               </p>
             </div>
@@ -7831,7 +7831,7 @@
               <p>
                 En vez de "pedir y rezar", estructuramos el trabajo en una
                 línea de montaje de expertos. Spec-Driven Development aplica
-                principios de ingeniería de software al flujo con IA.
+                principios de ingeniería de software al flujo con IA. <cite>(Hou et al., 2024)</cite>
               </p>
             </div>
             <figure class="slide-figure">
@@ -17513,6 +17513,88 @@
               </svg>
             </figure>
           </article>
+          <!-- M-REFERENCIAS -->
+
+          <article
+            class="slide"
+            data-index="57"
+            data-module="9"
+            data-tone="blue"
+          >
+            <div class="slide-content">
+              <p class="slide-kicker">58 · Referencias</p>
+              <h2>Referencias</h2>
+              <ul class="slide-list slide-references">
+                <li>
+                  Bender, E. M., Gebru, T., McMillan-Major, A., &amp;
+                  Shmitchell, S. (2021). On the dangers of stochastic parrots.
+                  En <em>Proceedings of the 2021 ACM Conference on Fairness,
+                  Accountability, and Transparency</em> (pp. 610&ndash;623). ACM.
+                  <a href="https://doi.org/10.1145/3442188.3445922"
+                    >https://doi.org/10.1145/3442188.3445922</a
+                  >
+                </li>
+                <li>
+                  Hou, X., Zhao, Y., Liu, Y., Yang, Z., Wang, K., Li, L., Luo,
+                  X., Lo, D., Grundy, J., &amp; Wang, H. (2024). Large language
+                  models for software engineering: A systematic literature
+                  review. <em>ACM Transactions on Software Engineering and
+                  Methodology</em>, <em>33</em>(8), 1&ndash;79.
+                  <a href="https://doi.org/10.1145/3695988"
+                    >https://doi.org/10.1145/3695988</a
+                  >
+                </li>
+                <li>
+                  Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii,
+                  E., Bang, Y. J., Madotto, A., &amp; Fung, P. (2023). Survey of
+                  hallucination in natural language generation.
+                  <em>ACM Computing Surveys</em>, <em>55</em>(12), 1&ndash;38.
+                  <a href="https://doi.org/10.1145/3571730"
+                    >https://doi.org/10.1145/3571730</a
+                  >
+                </li>
+                <li>
+                  Liu, N. F., Lin, K., Hewitt, J., Paranjape, A., Bevilacqua,
+                  M., Petroni, F., &amp; Liang, P. (2024). Lost in the middle:
+                  How language models use long contexts.
+                  <em>Transactions of the Association for Computational
+                  Linguistics</em>, <em>12</em>, 157&ndash;173.
+                  <a href="https://doi.org/10.1162/tacl_a_00638"
+                    >https://doi.org/10.1162/tacl_a_00638</a
+                  >
+                </li>
+                <li>
+                  National Institute of Standards and Technology. (2023).
+                  <em>Artificial intelligence risk management framework (AI RMF
+                  1.0)</em> (NIST AI 100-1). U.S. Department of Commerce.
+                  <a href="https://doi.org/10.6028/NIST.AI.100-1"
+                    >https://doi.org/10.6028/NIST.AI.100-1</a
+                  >
+                </li>
+                <li>
+                  Uni&oacute;n Europea. (2024). <em>Reglamento (UE) 2024/1689
+                  del Parlamento Europeo y del Consejo, de 13 de junio de 2024,
+                  por el que se establecen normas armonizadas en materia de
+                  inteligencia artificial</em>. Diario Oficial de la Uni&oacute;n
+                  Europea.
+                  <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+                    >https://eur-lex.europa.eu/eli/reg/2024/1689/oj</a
+                  >
+                </li>
+                <li>
+                  Wang, L., Ma, C., Feng, X., Zhang, Z., Yang, H., Zhang, J.,
+                  Chen, Z., Tang, J., Chen, X., Lin, Y., Zhao, W. X., Wei, Z.,
+                  &amp; Wen, J. (2024). A survey on large language model based
+                  autonomous agents. <em>Frontiers of Computer Science</em>,
+                  <em>18</em>(6), Art&iacute;culo 186345.
+                  <a href="https://doi.org/10.1007/s11704-024-40231-1"
+                    >https://doi.org/10.1007/s11704-024-40231-1</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
 
         </main>
       </div>
