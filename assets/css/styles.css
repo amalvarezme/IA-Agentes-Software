@@ -861,3 +861,12 @@ cite {
   color: var(--accent);
   word-break: break-word;
 }
+
+/* Slides sin figura ocupan el ancho completo (p. ej. Referencias) */
+.slide.is-wide {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.slide.is-wide .slide-references {
+  columns: 1; /* nunca partir en columnas */
+}

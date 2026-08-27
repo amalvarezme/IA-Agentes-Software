@@ -99,8 +99,9 @@
                 alt="Laboratorio de Inteligencia Artificial UNAL"
               />
               <p class="cover-meta">
-                <span class="cover-author">A.M Alvarez-Meza, PhD</span>
-                <span>Seminario de Investigación</span>
+                <span class="cover-author"
+                  >J.I. Montes-Monsalve, A.M. &Aacute;lvarez-Meza, PhD</span
+                >
                 <span>Universidad Nacional de Colombia sede Manizales</span>
                 <span class="cover-year">2026</span>
               </p>
@@ -606,7 +607,7 @@
                 </li>
                 <li>
                   <strong>AI engineer:</strong> modelos en producción, prompts,
-                  evals, latencia y costo. Convierte evidencia en producto.
+                  evals, latencia y costo. Convierte evidencia en producto. <cite>(Kreuzberger et al., 2023)</cite>
                 </li>
                 <li>
                   <strong>Ninguno alcanza solo:</strong> solo datos no llega a
@@ -1433,7 +1434,7 @@
               <p>
                 Kimi K2.6, MiniMax M2.7 y GLM-5 dan ~90% de la capacidad de
                 Opus/GPT a 1/15 del precio: frontier ya no es exclusivo de las
-                grandes. El model router puede usar estos motores para tareas
+                grandes. <cite>(Guo et al., 2025)</cite> El model router puede usar estos motores para tareas
                 de alto volumen.
               </p>
             </div>
@@ -3279,7 +3280,7 @@
               <p>
                 Long context (1M+ tokens), RAG, fine-tuning, memory layers,
                 vector stores. Cada approach tiene tradeoffs: costo, latencia,
-                precisión, complejidad. Nadie lo resolvió del todo.
+                precisión, complejidad. Nadie lo resolvió <cite>(Fan et al., 2024)</cite> del todo.
               </p>
             </div>
             <figure class="slide-figure">
@@ -3527,7 +3528,7 @@
               <p class="slide-kicker">16 · Context Window</p>
               <h2>Por qué ninguna solución es completa</h2>
               <p>
-                Long context degrada calidad. RAG depende de embeddings.
+                Long context degrada calidad. <cite>(Liu et al., 2024)</cite> RAG depende de embeddings.
                 Fine-tuning es lento. Memory layers son experimentales.
                 Necesitas memoria que sobreviva sesiones, compactaciones y
                 cambios de modelo. Ahí entra Engram.
@@ -7322,7 +7323,7 @@
               <h2>Fresh context: arrancar limpio</h2>
               <p>
                 Cada sub-agente nace con la pizarra vacía. Solo recibe las
-                instrucciones de su fase, sin arrastrar ruido de fases
+                instrucciones de su fase <cite>(Wang et al., 2024)</cite>, sin arrastrar ruido de fases
                 anteriores. Esa es la ventaja arquitectónica clave.
               </p>
             </div>
@@ -11362,7 +11363,7 @@
               <p>
                 Trabajas 2 horas definiendo arquitectura y el sistema
                 compacta. El agente ya no recuerda qué decidiste usar: Clean
-                Architecture con DI se vuelve código genérico.
+                Architecture con DI se vuelve código genérico. <cite>(Wang et al., 2024)</cite>
               </p>
             </div>
             <figure class="slide-figure">
@@ -11806,7 +11807,7 @@
               <h2>Cómo lo ataca la industria</h2>
               <p>
                 RAG con vector stores, fine-tuning periódico, memory layers
-                experimentales, long context windows. Cada uno tiene costo,
+                experimentales, long context windows. <cite>(Fan et al., 2024)</cite> Cada uno tiene costo,
                 complejidad y tradeoffs diferentes.
               </p>
             </div>
@@ -19130,7 +19131,7 @@
           <!-- M-REFERENCIAS -->
 
           <article
-            class="slide"
+            class="slide is-wide"
             data-index="61"
             data-module="9"
             data-tone="blue"
@@ -19146,6 +19147,27 @@
                   Accountability, and Transparency</em> (pp. 610&ndash;623). ACM.
                   <a href="https://doi.org/10.1145/3442188.3445922"
                     >https://doi.org/10.1145/3442188.3445922</a
+                  >
+                </li>
+                <li>
+                  Fan, W., Ding, Y., Ning, L., Wang, S., Li, H., Yin, D., Chua,
+                  T., &amp; Li, Q. (2024). A survey on RAG meeting LLMs: Towards
+                  retrieval-augmented large language models. En
+                  <em>Proceedings of the 30th ACM SIGKDD Conference on Knowledge
+                  Discovery and Data Mining</em> (pp. 6491&ndash;6501). ACM.
+                  <a href="https://doi.org/10.1145/3637528.3671470"
+                    >https://doi.org/10.1145/3637528.3671470</a
+                  >
+                </li>
+                <li>
+                  Guo, D., Yang, D., Zhang, H., Song, J., Wang, P., Zhu, Q., Xu,
+                  R., Zhang, R., Ma, S., Bi, X., Zhang, X., Yu, X., Wu, Y., Wu,
+                  Z., Gou, Z., Shao, Z., Li, Z., Gao, Z., Liu, A., &hellip;
+                  Zhang, Z. (2025). DeepSeek-R1 incentivizes reasoning in LLMs
+                  through reinforcement learning. <em>Nature</em>,
+                  <em>645</em>(8081), 633&ndash;638.
+                  <a href="https://doi.org/10.1038/s41586-025-09422-z"
+                    >https://doi.org/10.1038/s41586-025-09422-z</a
                   >
                 </li>
                 <li>
@@ -19165,6 +19187,15 @@
                   <em>ACM Computing Surveys</em>, <em>55</em>(12), 1&ndash;38.
                   <a href="https://doi.org/10.1145/3571730"
                     >https://doi.org/10.1145/3571730</a
+                  >
+                </li>
+                <li>
+                  Kreuzberger, D., K&uuml;hl, N., &amp; Hirschl, S. (2023).
+                  Machine learning operations (MLOps): Overview, definition, and
+                  architecture. <em>IEEE Access</em>, <em>11</em>,
+                  31866&ndash;31879.
+                  <a href="https://doi.org/10.1109/access.2023.3262138"
+                    >https://doi.org/10.1109/access.2023.3262138</a
                   >
                 </li>
                 <li>
@@ -19215,7 +19246,7 @@
 
       <footer class="deck-controls">
         <p class="running-title">
-          Principios de IA agéntica para el desarrollo de software. AM Alvarez,
+          Principios de IA agéntica para el desarrollo de software.
           DIEEC-UNAL-Manizales.
         </p>
         <img
