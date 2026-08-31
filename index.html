@@ -118,9 +118,7 @@
                   con su rol y su entregable.
                 </li>
                 <li>
-                  <strong>Tres estrategias dominantes:</strong> cascada (fases
-                  cerradas), iterativo/ágil (sprints cortos) y DevOps/CI-CD
-                  (integración y entrega continuas).
+                  <strong>Tres estrategias dominantes:</strong> cascada, iterativo/ágil y DevOps con CI-CD.
                 </li>
                 <li>
                   <strong>Cada frontera es un handoff humano:</strong> un
@@ -260,8 +258,7 @@
               <ul class="slide-list">
                 <li>
                   <strong>Los artefactos se generan, no se redactan:</strong>
-                  specs, diseño, código, pruebas y documentación salen en
-                  minutos, no en sprints. <cite>(Hou et al., 2024)</cite>
+                  specs, código, pruebas y documentación salen en minutos <cite>(Hou et al., 2024)</cite>.
                 </li>
                 <li>
                   <strong>El cuello de botella se mueve:</strong> deja de estar
@@ -390,11 +387,11 @@
                 <li>
                   <strong>El humano verifica:</strong> lee el diff, corre las
                   pruebas que importan y responde por seguridad y datos
-                  sensibles. <cite>(NIST, 2023)</cite>
+                  sensibles <cite>(NIST, 2023)</cite>.
                 </li>
                 <li>
                   <strong>Puertas irrenunciables:</strong> merge, despliegue a
-                  producción y cualquier operación destructiva o irreversible. <cite>(Unión Europea, 2024)</cite>
+                  producción y cualquier operación destructiva o irreversible <cite>(Unión Europea, 2024)</cite>.
                 </li>
                 <li>
                   <strong>La regla:</strong> la IA propone, el humano dispone.
@@ -599,12 +596,11 @@
                 </li>
                 <li>
                   <strong>AI engineer:</strong> modelos en producción, prompts,
-                  evals, latencia y costo. Convierte evidencia en producto. <cite>(Kreuzberger et al., 2023)</cite>
+                  evals, latencia y costo. Convierte evidencia en producto <cite>(Kreuzberger et al., 2023)</cite>.
                 </li>
                 <li>
-                  <strong>Ninguno alcanza solo:</strong> solo datos no llega a
-                  producto, solo modelos no toca el dato real, y solo
-                  herramientas no sabe si el resultado sirve.
+                  <strong>Ninguno alcanza solo:</strong> los datos sin modelo no dan producto, y el modelo sin dato real no 
+                  sirve.
                 </li>
                 <li>
                   <strong>El valor está en el cruce:</strong> el problema del
@@ -693,14 +689,12 @@
               <h2>Forward Deployed Engineer: dónde se cruza todo</h2>
               <ul class="slide-list">
                 <li>
-                  <strong>¿Qué es?:</strong> un ingeniero que trabaja dentro del
-                  problema del cliente, no detrás de un ticket. Despliega,
-                  observa y corrige en el terreno.
+                  <strong>¿Qué es?:</strong> un ingeniero que trabaja dentro del problema del
+                  cliente, no detrás de un ticket.
                 </li>
                 <li>
-                  <strong>Base de software engineering:</strong> arquitectura,
-                  pruebas, sistemas distribuidos. Sin fundamentos no hay criterio
-                  para revisar lo que la IA produce.
+                  <strong>Base de software engineering:</strong> arquitectura, pruebas y sistemas distribuidos, para poder revisar 
+                  lo que la IA produce.
                 </li>
                 <li>
                   <strong>Base de AI engineering:</strong> modelos, evals,
@@ -766,12 +760,17 @@
             <div class="slide-content">
               <p class="slide-kicker">8 · IA Generativa</p>
               <h2>¿Qué es un LLM?: predicción, no pensamiento</h2>
-              <p>
-                Un Large Language Model es una red neuronal con billones de
-                parámetros entrenada para predecir el siguiente token. No
-                "piensa": completa patrones estadísticos. <cite>(Bender et al., 2021)</cite> La calidad del
-                resultado depende de la calidad del contexto que le das.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Qué es:</strong> una red neuronal con billones de parámetros, entrenada para predecir el siguiente token.
+                </li>
+                <li>
+                  <strong>No piensa:</strong> completa patrones estadísticos, no razona sobre el mundo <cite>(Bender et al., 2021)</cite>.
+                </li>
+                <li>
+                  <strong>Depende del contexto:</strong> la calidad del resultado sigue a la calidad de lo que le das.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -1148,11 +1147,17 @@
             <div class="slide-content">
               <p class="slide-kicker">9 · IA Generativa</p>
               <h2>Modelos que existen hoy</h2>
-              <p>
-                Gemini para razonamiento profundo, Opus para código limpio,
-                Codex para testing, Copilot para autocompletado. La clave no es
-                cuál es "mejor", sino cuál usar en cada tarea.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Cada modelo tiene su fuerte:</strong> Gemini para razonamiento profundo, Opus para código limpio.
+                </li>
+                <li>
+                  <strong>Especialización por tarea:</strong> Codex para testing, Copilot para autocompletado.
+                </li>
+                <li>
+                  <strong>La clave:</strong> no es cuál es «mejor», sino cuál usar en cada tarea.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -1423,11 +1428,14 @@
             <div class="slide-content">
               <p class="slide-kicker">10 · IA Generativa</p>
               <h2>Open source chinos: frontier por centavos</h2>
-              <p>
-                Kimi K2.6, MiniMax M2.7 y GLM-5 dan ~90% de la capacidad de
-                Opus/GPT a 1/15 del precio: frontier ya no es exclusivo de las
-                grandes. <cite>(Guo et al., 2025)</cite>.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Capacidad comparable:</strong> Kimi K2.6, MiniMax M2.7 y GLM-5 dan cerca del 90% de Opus o GPT.
+                </li>
+                <li>
+                  <strong>A 1/15 del precio:</strong> el frontier dejó de ser exclusivo de las grandes <cite>(Guo et al., 2025)</cite>.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -1836,11 +1844,17 @@
             <div class="slide-content">
               <p class="slide-kicker">11 · IA Generativa</p>
               <h2>¿Qué NO es un LLM?</h2>
-              <p>
-                No es una base de datos, no aprende de tus conversaciones, no
-                entiende como un humano, no es determinista. <cite>(Ji et al., 2023)</cite> Si no sabes esto,
-                tendrás expectativas equivocadas y frustración constante.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>No es una base de datos:</strong> no almacena tus datos ni aprende de tus conversaciones.
+                </li>
+                <li>
+                  <strong>No entiende como un humano:</strong> tampoco es determinista y puede alucinar <cite>(Ji et al., 2023)</cite>.
+                </li>
+                <li>
+                  <strong>Si no lo sabes:</strong> tendrás expectativas equivocadas y frustración constante.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -2087,12 +2101,17 @@
             <div class="slide-content">
               <p class="slide-kicker">12 · Chat vs Agente</p>
               <h2>Chat responde texto. Agente actúa.</h2>
-              <p>
-                Un chat genera texto. Un agente lee tu código, edita archivos,
-                ejecuta tests y guarda aprendizaje: <cite>(Wang et al., 2024)</cite> es la diferencia entre
-                pedirle consejo a alguien y tener un par-programmer con acceso
-                a tu proyecto.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Un chat genera texto:</strong> responde, y ahí termina su alcance.
+                </li>
+                <li>
+                  <strong>Un agente actúa:</strong> lee código, edita archivos, ejecuta tests y guarda aprendizaje <cite>(Wang et al., 2024)</cite>.
+                </li>
+                <li>
+                  <strong>La diferencia:</strong> pedir consejo frente a tener un par-programmer con acceso al proyecto.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -2398,10 +2417,14 @@
             <div class="slide-content">
               <p class="slide-kicker">13 · Chat vs Agente</p>
               <h2>Tools: las capacidades del agente</h2>
-              <p>
-                Terminal, editor de archivos, buscador, memoria. Cada tool es
-                una capacidad externa. Sin tools es chat. Con tools es agente <cite>(Wang et al., 2024)</cite>.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Las capacidades:</strong> terminal, editor de archivos, buscador y memoria.
+                </li>
+                <li>
+                  <strong>Cada tool es externa:</strong> sin tools es chat, con tools es agente <cite>(Wang et al., 2024)</cite>.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -2673,11 +2696,14 @@
             <div class="slide-content">
               <p class="slide-kicker">14 · Context Window</p>
               <h2>La pizarra de tamaño fijo</h2>
-              <p>
-                El contexto es todo lo que el modelo "ve": system prompt,
-                historial, archivos leídos, tu instrucción. La ventana de
-                contexto es el tamaño físico de esa pizarra, medido en tokens. <cite>(Liu et al., 2024)</cite>
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>El contexto:</strong> system prompt, historial, archivos leídos y tu instrucción.
+                </li>
+                <li>
+                  <strong>La ventana:</strong> el tamaño físico de esa pizarra, medido en tokens <cite>(Liu et al., 2024)</cite>.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -3058,11 +3084,17 @@
             <div class="slide-content">
               <p class="slide-kicker">15 · Context Window</p>
               <h2>Attention decay: más no es mejor</h2>
-              <p>
-                A medida que llenas la ventana, el modelo no falla: degrada. <cite>(Liu et al., 2024)</cite>
-                Instruction drift, sesgo de recencia, código genérico. Es sutil
-                y peligroso porque el output "parece" correcto.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>No falla, degrada:</strong> a medida que llenas la ventana la calidad baja <cite>(Liu et al., 2024)</cite>.
+                </li>
+                <li>
+                  <strong>Los síntomas:</strong> instruction drift, sesgo de recencia y código genérico.
+                </li>
+                <li>
+                  <strong>Por qué es peligroso:</strong> es sutil, porque el output «parece» correcto.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -3471,11 +3503,14 @@
             <div class="slide-content">
               <p class="slide-kicker">16 · Context Window</p>
               <h2>Compactación: la amnesia forzada</h2>
-              <p>
-                Cuando la pizarra se llena, el sistema genera un resumen
-                comprimido y borra los mensajes originales <cite>(Wang et al., 2024)</cite>. Pierdes nombres de
-                variables, decisiones de diseño, preferencias del usuario.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Qué pasa:</strong> el sistema resume y borra los mensajes originales <cite>(Wang et al., 2024)</cite>.
+                </li>
+                <li>
+                  <strong>Qué pierdes:</strong> nombres de variables, decisiones de diseño y preferencias del usuario.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -3854,11 +3889,14 @@
             <div class="slide-content">
               <p class="slide-kicker">17 · Context Window</p>
               <h2>¿Cómo lo ataca la industria?</h2>
-              <p>
-                Long context (1M+ tokens), RAG, fine-tuning, memory layers,
-                vector stores. Cada approach tiene tradeoffs: costo, latencia,
-                precisión, complejidad <cite>(Fan et al., 2024)</cite>.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Las opciones:</strong> long context, RAG, fine-tuning, memory layers y vector stores.
+                </li>
+                <li>
+                  <strong>Todas tienen tradeoffs:</strong> costo, latencia, precisión y complejidad <cite>(Fan et al., 2024)</cite>.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -4104,13 +4142,17 @@
             <div class="slide-content">
               <p class="slide-kicker">18 · Context Window</p>
               <h2>¿Por qué ninguna solución es completa?</h2>
-              <p>
-                Long context degrada calidad.  RAG depende de embeddings.
-                Fine-tuning es lento. Memory layers son experimentales. Lo que
-                falta no es más ventana: es memoria persistente, memoria que
-                sobreviva a las sesiones, a las compactaciones y a los cambios
-                de modelo <cite>(Liu et al., 2024)</cite>.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Cada una falla distinto:</strong> long context degrada y RAG depende de embeddings.
+                </li>
+                <li>
+                  <strong>Las otras dos:</strong> fine-tuning es lento y memory layers siguen siendo experimentales.
+                </li>
+                <li>
+                  <strong>Lo que falta no es ventana:</strong> es memoria que sobreviva sesiones y compactaciones <cite>(Liu et al., 2024)</cite>.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -4442,12 +4484,17 @@
             <div class="slide-content">
               <p class="slide-kicker">19 · Memoria persistente</p>
               <h2>¿Qué tiene que sobrevivir a la compactación?</h2>
-              <p>
-                La transcripción no: las decisiones. Definiste Clean Architecture
-                con DI durante dos horas; si eso no persiste, la próxima sesión
-                te devuelve código genérico 
-                Hay que guardar el porqué, no el qué <cite>(Wang et al., 2024)</cite>.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>No la transcripción:</strong> lo que tiene que sobrevivir son las decisiones.
+                </li>
+                <li>
+                  <strong>El caso típico:</strong> defines Clean Architecture con DI durante dos horas y no persiste.
+                </li>
+                <li>
+                  <strong>La regla:</strong> guarda el porqué, no el qué <cite>(Wang et al., 2024)</cite>.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -4888,11 +4935,17 @@
             <div class="slide-content">
               <p class="slide-kicker">20 · Memoria persistente</p>
               <h2>Memoria señal, no total</h2>
-              <p>
-                No se guarda todo, eso es ruido. Se guardan señales:
-                decisiones, errores resueltos, patrones. Observaciones
-                estructuradas con What/Why/Where/Learned.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>No se guarda todo:</strong> el volcado completo es ruido.
+                </li>
+                <li>
+                  <strong>Se guardan señales:</strong> decisiones, errores resueltos y patrones.
+                </li>
+                <li>
+                  <strong>El formato:</strong> observaciones estructuradas con What, Why, Where y Learned.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -5374,13 +5427,20 @@
             <div class="slide-content">
               <p class="slide-kicker">21 · Memoria persistente</p>
               <h2>Progressive disclosure: 3 capas de eficiencia</h2>
-              <p>
-                En vez de volcar todo en el contexto, la memoria se revela por
-                capas: el agente decide qué tan profundo ir según lo que
-                necesita. Primero un índice compacto —títulos y snippets—,
-                después el contexto de la sesión, y solo al final el contenido
-                completo sin truncar. Mínimo de tokens, máxima precisión.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Por capas, no de golpe:</strong> el agente decide qué tan profundo ir según lo que necesita.
+                </li>
+                <li>
+                  <strong>Primero el índice:</strong> títulos y snippets compactos.
+                </li>
+                <li>
+                  <strong>Después:</strong> el contexto de la sesión, y solo al final el contenido completo sin truncar.
+                </li>
+                <li>
+                  <strong>El resultado:</strong> mínimo de tokens y máxima precisión.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -5657,12 +5717,17 @@
             <div class="slide-content">
               <p class="slide-kicker">22 · Evolución del Contexto</p>
               <h2>Todo empezó con AGENTS.md</h2>
-              <p>
-                La primera idea: un archivo markdown gigante con TODAS las
-                reglas del proyecto. Estilo, patrones, anti-patrones,
-                convenciones, workflows. El agente lo leía al inicio y "sabía"
-                cómo trabajar.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>La primera idea:</strong> un archivo markdown gigante con todas las reglas del proyecto.
+                </li>
+                <li>
+                  <strong>Qué contenía:</strong> estilo, patrones, anti-patrones, convenciones y workflows.
+                </li>
+                <li>
+                  <strong>Cómo funcionaba:</strong> el agente lo leía al inicio y «sabía» cómo trabajar.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -5954,11 +6019,14 @@
             <div class="slide-content">
               <p class="slide-kicker">23 · Evolución del Contexto</p>
               <h2>AGENTS.md crece infinito</h2>
-              <p>
-                Cada nueva convención engordaba el archivo. En proyectos reales
-                puede llegar a miles de líneas: se come la ventana de contexto
-                antes de que escribas tu primer prompt.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Cada convención lo engorda:</strong> en proyectos reales llega a miles de líneas.
+                </li>
+                <li>
+                  <strong>El costo:</strong> se come la ventana antes de que escribas tu primer prompt.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -6200,12 +6268,17 @@
             <div class="slide-content">
               <p class="slide-kicker">24 · Evolución del Contexto</p>
               <h2>Primera evolución: Skills</h2>
-              <p>
-                En vez de un archivo gigante, un router (AGENTS.md liviano)
-                que apunta a SKILL.md específicos. Solo se carga el contexto
-                que necesitas para la tarea actual: contexto dinámico bajo
-                demanda.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Un router, no un monolito:</strong> un AGENTS.md liviano que apunta a SKILL.md específicos.
+                </li>
+                <li>
+                  <strong>Carga selectiva:</strong> solo entra el contexto que necesita la tarea actual.
+                </li>
+                <li>
+                  <strong>El resultado:</strong> contexto dinámico bajo demanda.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -6516,11 +6589,17 @@
             <div class="slide-content">
               <p class="slide-kicker">25 · Evolución del Contexto</p>
               <h2>Anatomía de un SKILL.md</h2>
-              <p>
-                El router ya decide cuál cargar. El módulo dice cómo hacerlo:
-                cada SKILL.md trae patrones, anti-patrones y templates de la
-                tarea que cubre. Contexto preciso, no contexto completo.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>El router decide cuál cargar:</strong> el módulo dice cómo hacerlo.
+                </li>
+                <li>
+                  <strong>Qué trae cada SKILL.md:</strong> patrones, anti-patrones y templates de su tarea.
+                </li>
+                <li>
+                  <strong>El criterio:</strong> contexto preciso, no contexto completo.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -6929,11 +7008,17 @@
             <div class="slide-content">
               <p class="slide-kicker">26 · God Agent y orquestación</p>
               <h2>Un agente que hace todo: por qué degrada</h2>
-              <p>
-                "Analiza, diseña, testea e implementa." Un solo agente llena
-                su contexto al 80% antes de escribir la primera línea: <cite>(Liu et al., 2024)</cite> compila
-                pero ignora las decisiones del paso 1.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>La promesa:</strong> «analiza, diseña, testea e implementa» en un solo agente.
+                </li>
+                <li>
+                  <strong>El problema:</strong> llena su contexto al 80% antes de la primera línea <cite>(Liu et al., 2024)</cite>.
+                </li>
+                <li>
+                  <strong>El resultado:</strong> compila, pero ignora las decisiones del paso 1.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -7416,12 +7501,17 @@
             <div class="slide-content">
               <p class="slide-kicker">27 · God Agent y orquestación</p>
               <h2>Segunda evolución: sub-agentes</h2>
-              <p>
-                Ese es el techo. Skills resuelve QUÉ contexto cargar, pero un
-                solo agente lo sigue acumulando igual. La salida es delegar
-                cada fase a un sub-agente efímero con contexto fresco: nace,
-                ejecuta, reporta y muere.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Skills no alcanza:</strong> resuelve qué cargar, pero un solo agente lo sigue acumulando.
+                </li>
+                <li>
+                  <strong>La salida:</strong> delegar cada fase a un sub-agente efímero con contexto fresco.
+                </li>
+                <li>
+                  <strong>Su ciclo de vida:</strong> nace, ejecuta, reporta y muere.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -7823,11 +7913,17 @@
             <div class="slide-content">
               <p class="slide-kicker">28 · God Agent y orquestación</p>
               <h2>Divide y vencerás: orquestador + sub-agentes</h2>
-              <p>
-                El orquestador no trabaja: coordina. Delega cada tarea a un
-                sub-agente especializado que recibe solo lo que necesita. <cite>(Wang et al., 2024)</cite>
-                Máxima precisión, cero ruido acumulado.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>El orquestador no trabaja:</strong> coordina.
+                </li>
+                <li>
+                  <strong>Delega por especialidad:</strong> cada sub-agente recibe solo lo que necesita <cite>(Wang et al., 2024)</cite>.
+                </li>
+                <li>
+                  <strong>El resultado:</strong> máxima precisión y cero ruido acumulado.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -8346,11 +8442,17 @@
             <div class="slide-content">
               <p class="slide-kicker">29 · God Agent y orquestación</p>
               <h2>Fresh context: arrancar limpio</h2>
-              <p>
-                Cada sub-agente nace con la pizarra vacía. Solo recibe las
-                instrucciones de su fase <cite>(Wang et al., 2024)</cite>, sin arrastrar ruido de fases
-                anteriores. Esa es la ventaja arquitectónica clave.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Pizarra vacía:</strong> cada sub-agente nace sin historial previo.
+                </li>
+                <li>
+                  <strong>Solo su fase:</strong> recibe las instrucciones que le tocan, sin ruido anterior <cite>(Wang et al., 2024)</cite>.
+                </li>
+                <li>
+                  <strong>Por qué importa:</strong> es la ventaja arquitectónica clave del patrón.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -8852,12 +8954,20 @@
             <div class="slide-content">
               <p class="slide-kicker">30 · God Agent y orquestación</p>
               <h2>El patrón actual: todo junto</h2>
-              <p>
-                Orquestador (coordina) + Skills (contexto preciso) +
-                Sub-agentes (ejecución limpia) + Memoria persistente
-                (continuidad). La arquitectura que resuelve las limitaciones
-                del LLM con ingeniería.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Orquestador:</strong> coordina el flujo sin ejecutar trabajo.
+                </li>
+                <li>
+                  <strong>Skills:</strong> aportan el contexto preciso de cada tarea.
+                </li>
+                <li>
+                  <strong>Sub-agentes:</strong> ejecutan limpio, con contexto fresco.
+                </li>
+                <li>
+                  <strong>Memoria persistente:</strong> da continuidad entre sesiones.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -9446,14 +9556,17 @@
             <div class="slide-content">
               <p class="slide-kicker">31 · Spec-Driven Development</p>
               <h2>La filosofía: ingeniería aplicada a IA</h2>
-              <p>
-                Lo dijimos al principio: el cuello de botella dejó de estar en
-                escribir y pasó a estar en especificar y verificar. Esta es la
-                respuesta. En vez de "pedir y rezar", estructuramos el trabajo
-                en una línea de montaje de expertos: Spec-Driven Development
-                aplica principios de ingeniería de software al flujo con IA.
-                <cite>(Hou et al., 2024)</cite>
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>El cuello de botella:</strong> dejó de estar en escribir y pasó a especificar y verificar.
+                </li>
+                <li>
+                  <strong>La respuesta:</strong> en vez de «pedir y rezar», una línea de montaje de expertos.
+                </li>
+                <li>
+                  <strong>Qué es SDD:</strong> principios de ingeniería de software aplicados al flujo con IA <cite>(Hou et al., 2024)</cite>.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -9888,13 +10001,17 @@
             <div class="slide-content">
               <p class="slide-kicker">32 · Spec-Driven Development</p>
               <h2>De la idea al código, con trazabilidad</h2>
-              <p>
-                El trabajo baja por fases y cada una produce un artefacto
-                verificable: entender, decidir, descomponer, traducir,
-                construir, cerrar. Ninguna empieza sin la anterior, y al final
-                cada línea de código se rastrea hasta el requisito que la
-                justifica.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Seis fases, un artefacto cada una:</strong> entender, decidir, descomponer, traducir, construir y cerrar.
+                </li>
+                <li>
+                  <strong>Orden estricto:</strong> ninguna fase empieza sin la anterior.
+                </li>
+                <li>
+                  <strong>Trazabilidad:</strong> cada línea de código se rastrea hasta el requisito que la justifica.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -10408,12 +10525,17 @@
             <div class="slide-content">
               <p class="slide-kicker">33 · Spec-Driven Development</p>
               <h2>Especificación por ejemplo</h2>
-              <p>
-                Un requisito en prosa se interpreta; un ejemplo se ejecuta.
-                Given/When/Then convierte "el sistema debe validar el email" en
-                casos concretos que o pasan o fallan. El criterio de aceptación
-                y el test dejan de ser dos documentos: son el mismo artefacto.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Prosa contra ejemplo:</strong> un requisito en prosa se interpreta, un ejemplo se ejecuta.
+                </li>
+                <li>
+                  <strong>Given/When/Then:</strong> convierte «debe validar el email» en casos que pasan o fallan.
+                </li>
+                <li>
+                  <strong>Un solo artefacto:</strong> el criterio de aceptación y el test dejan de ser dos documentos.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -10478,12 +10600,17 @@
             <div class="slide-content">
               <p class="slide-kicker">34 · Spec-Driven Development</p>
               <h2>La matriz de trazabilidad</h2>
-              <p>
-                Requisito, historia, contrato, tarea, código y test: cada
-                eslabón apunta al anterior. La cadena se lee en los dos
-                sentidos — hacia abajo verifica que nada se construyó de más;
-                hacia arriba dice qué se rompe cuando el requisito cambia.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>La cadena:</strong> requisito, historia, contrato, tarea, código y test, cada eslabón al anterior.
+                </li>
+                <li>
+                  <strong>Hacia abajo:</strong> verifica que nada se construyó de más.
+                </li>
+                <li>
+                  <strong>Hacia arriba:</strong> dice qué se rompe cuando el requisito cambia.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -10555,13 +10682,17 @@
             <div class="slide-content">
               <p class="slide-kicker">35 · Spec-Driven Development</p>
               <h2>Las tres reglas que lo sostienen</h2>
-              <p>
-                El contrato se regenera desde la historia, no se edita a mano:
-                si el contrato está mal, la historia está mal. Un requerimiento
-                nuevo pasa por control de alcance antes de tocar archivos; un
-                defecto no, porque lo acordado no cambió. Y cada dato tiene un
-                solo dueño.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>El contrato se regenera:</strong> nace de la historia y no se edita a mano.
+                </li>
+                <li>
+                  <strong>Control de alcance:</strong> lo pasa un requerimiento nuevo, no un defecto.
+                </li>
+                <li>
+                  <strong>Un solo dueño:</strong> cada dato se define en un único lugar.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -11049,14 +11180,21 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">36 · Spec-Driven Development</p>
-              <h2>Por qué esto no es cascada</h2>
-              <p>
-                La objeción es justa: fases ordenadas, ninguna empieza sin la
-                anterior. La diferencia está en las reglas que acabamos de ver.
-                En cascada el documento se congela y cualquier cambio renegocia
-                el plan; acá el contrato se regenera desde la historia y un
-                defecto no pide permiso. Las fases dan orden, no rigidez.
-              </p>
+              <h2>¿Por qué esto no es cascada?</h2>
+              <ul class="slide-list">
+                <li>
+                  <strong>La objeción es justa:</strong> hay fases ordenadas y ninguna empieza sin la anterior.
+                </li>
+                <li>
+                  <strong>En cascada:</strong> el documento se congela y cualquier cambio renegocia el plan.
+                </li>
+                <li>
+                  <strong>Aquí:</strong> el contrato se regenera desde la historia y un defecto no pide permiso.
+                </li>
+                <li>
+                  <strong>La diferencia:</strong> las fases dan orden, no rigidez.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -11105,12 +11243,20 @@
             <div class="slide-content">
               <p class="slide-kicker">37 · Spec-Driven Development</p>
               <h2>Los roles especializados</h2>
-              <p>
-                Explorer (lee código), Proposer (define qué), Spec Writer
-                (requisitos), Designer (arquitectura), Task Planner (divide
-                trabajo), Implementer (escribe código), Verifier (valida
-                calidad).
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Explorer y Proposer:</strong> leen el código y definen qué se hace.
+                </li>
+                <li>
+                  <strong>Spec Writer y Designer:</strong> escriben los requisitos y la arquitectura.
+                </li>
+                <li>
+                  <strong>Task Planner:</strong> divide el trabajo en tareas ordenadas.
+                </li>
+                <li>
+                  <strong>Implementer y Verifier:</strong> escriben el código y validan la calidad.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -11643,11 +11789,17 @@
             <div class="slide-content">
               <p class="slide-kicker">38 · Spec-Driven Development</p>
               <h2>El DAG: flujo de dependencias</h2>
-              <p>
-                Proposal → [Specs || Design] → Tasks → Apply → Verify → Archive.
-                Las fases se ejecutan en orden con checkpoints. Specs y Design
-                pueden ir en paralelo.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>El flujo:</strong> Proposal → [Specs || Design] → Tasks → Apply → Verify → Archive.
+                </li>
+                <li>
+                  <strong>Con checkpoints:</strong> las fases se ejecutan en orden y se validan al pasar.
+                </li>
+                <li>
+                  <strong>En paralelo:</strong> Specs y Design pueden avanzar a la vez.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -12023,11 +12175,17 @@
             <div class="slide-content">
               <p class="slide-kicker">39 · Spec-Driven Development</p>
               <h2>Ejemplo real: crear endpoint de usuarios</h2>
-              <p>
-                /sdd:new → Explorer detecta stack → Proposer define alcance →
-                Spec + Design en paralelo → Tasks divide en 4 → Implementer
-                genera código → Verifier valida contra specs.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Arranque:</strong> Explorer detecta el stack y Proposer define el alcance.
+                </li>
+                <li>
+                  <strong>Planeación:</strong> Spec y Design corren en paralelo, y Tasks divide en cuatro.
+                </li>
+                <li>
+                  <strong>Ejecución:</strong> Implementer genera el código y Verifier lo valida contra las specs.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -12459,12 +12617,18 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">40 · Spec-Driven Development</p>
-              <h2>Por qué escala</h2>
-              <p>
-                Aislamiento de contexto, checkpoints de calidad, memoria
-                institucional. El Implementer no se distrae con dudas del
-                Explorer. Si el Verifier rechaza, no llega al PR.
-              </p>
+              <h2>¿Por qué escala?</h2>
+              <ul class="slide-list">
+                <li>
+                  <strong>Aislamiento de contexto:</strong> el Implementer no se distrae con dudas del Explorer.
+                </li>
+                <li>
+                  <strong>Checkpoints de calidad:</strong> si el Verifier rechaza, no llega al PR.
+                </li>
+                <li>
+                  <strong>Memoria institucional:</strong> lo aprendido queda para la próxima vuelta.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -12809,12 +12973,17 @@
             <div class="slide-content">
               <p class="slide-kicker">41 · Engram</p>
               <h2>Ecosistema: Engram + SDD + Skills</h2>
-              <p>
-                Hasta acá, la teoría. Estas son las piezas que la implementan:
-                Engram da continuidad, Skills da consistencia, SDD da
-                estructura. Una pieza por cada límite que vimos: amnesia,
-                genericidad y degradación.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Hasta aquí, la teoría:</strong> estas son las piezas que la implementan.
+                </li>
+                <li>
+                  <strong>Una pieza por límite:</strong> Engram da continuidad, Skills consistencia y SDD estructura.
+                </li>
+                <li>
+                  <strong>Los límites que cubren:</strong> amnesia, genericidad y degradación.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -13257,13 +13426,20 @@
             <div class="slide-content">
               <p class="slide-kicker">42 · Engram</p>
               <h2>Arquitectura: Go + SQLite + FTS5</h2>
-              <p>
-                Un binario. Sin dependencias externas. SQLite con Full-Text
-                Search 5. Se conecta vía MCP a 12 agentes: Claude Code,
-                OpenCode, Kilo Code, Gemini CLI, Cursor, VS Code Copilot,
-                Codex, Windsurf, Antigravity, Kimi Code, Qwen Code, Kiro IDE
-                — y cualquier agente MCP-compatible.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Un binario:</strong> sin dependencias externas.
+                </li>
+                <li>
+                  <strong>Almacenamiento:</strong> SQLite con Full-Text Search 5.
+                </li>
+                <li>
+                  <strong>Se conecta vía MCP:</strong> Claude Code, OpenCode, Kilo Code, Gemini CLI, Cursor y Copilot.
+                </li>
+                <li>
+                  <strong>Y también:</strong> Codex, Windsurf, Antigravity, Kimi Code, Qwen Code y Kiro IDE.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -13644,12 +13820,17 @@
             <div class="slide-content">
               <p class="slide-kicker">43 · Engram</p>
               <h2>Las herramientas de memoria</h2>
-              <p>
-                Las 5 herramientas críticas. mem_current_project (nueva)
-                confirma qué proyecto recibe tus saves antes de escribir. Y
-                mem_save ahora captura solo el prompt asociado — no necesitás
-                llamar a mem_save_prompt explícitamente.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Cinco herramientas críticas:</strong> son el núcleo de la memoria en cualquier agente.
+                </li>
+                <li>
+                  <strong>mem_current_project:</strong> confirma qué proyecto recibe tus saves antes de escribir.
+                </li>
+                <li>
+                  <strong>mem_save:</strong> captura el prompt asociado sin llamar a mem_save_prompt.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" fill="none" font-family="Space Grotesk,sans-serif">
@@ -13710,12 +13891,17 @@
             <div class="slide-content">
               <p class="slide-kicker">44 · Engram</p>
               <h2>El Engram Loop: dos sesiones</h2>
-              <p>
-                Sesión 1: diseñar → mem_save. Sesión 2: implementar →
-                mem_search recupera la decisión → código consistente. Sin
-                Engram la sesión 2 ignora la 1; con Engram hay continuidad
-                real.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Sesión 1:</strong> diseñas y guardas la decisión con mem_save.
+                </li>
+                <li>
+                  <strong>Sesión 2:</strong> mem_search la recupera y el código sale consistente.
+                </li>
+                <li>
+                  <strong>La diferencia:</strong> sin Engram la sesión 2 ignora la 1, con Engram hay continuidad.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -14053,14 +14239,20 @@
             <div class="slide-content">
               <p class="slide-kicker">45 · Engram</p>
               <h2>Dos formas de sincronizar: git o Cloud</h2>
-              <p>
-                Dos caminos válidos para sincronizar: uno para uso individual,
-                otro para equipo. Git sync usa tu repo existente, sin infra
-                extra, async (commit-based). Engram Cloud es un servidor
-                self-hosted con dashboard web, autosync real-time, multi-user
-                con roles. Elegís según tu necesidad: simplicidad o
-                visibilidad.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Dos caminos válidos:</strong> uno para uso individual y otro para equipo.
+                </li>
+                <li>
+                  <strong>Git sync:</strong> usa tu repo existente, sin infra extra y de forma asíncrona.
+                </li>
+                <li>
+                  <strong>Engram Cloud:</strong> servidor self-hosted con dashboard, autosync y roles.
+                </li>
+                <li>
+                  <strong>El criterio:</strong> eliges entre simplicidad o visibilidad.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -14144,14 +14336,20 @@
             <div class="slide-content">
               <p class="slide-kicker">46 · Engram</p>
               <h2>Cloud mode: el mismo binario engram, multi-máquina y real-time</h2>
-              <p>
-                Cloud no es un producto aparte — es un MODO del mismo binario
-                engram. Pasás de SQLite local a Postgres + servidor con
-                <em>engram cloud serve</em>. Sumás dashboard web (templ +
-                htmx), autosync background con backoff exponencial, JWT auth +
-                roles. 100% self-hosted — tu hardware, tu data, sin
-                telemetría.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>No es otro producto:</strong> es un modo del mismo binario engram.
+                </li>
+                <li>
+                  <strong>Qué cambia:</strong> pasas de SQLite local a Postgres con <em>engram cloud serve</em>.
+                </li>
+                <li>
+                  <strong>Qué sumas:</strong> dashboard web, autosync con backoff exponencial y JWT con roles.
+                </li>
+                <li>
+                  <strong>Self-hosted:</strong> tu hardware, tu data y sin telemetría.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" fill="none" font-family="Space Grotesk,sans-serif">
@@ -14245,13 +14443,20 @@
             <div class="slide-content">
               <p class="slide-kicker">47 · Engram</p>
               <h2>Auto-detect: el proyecto lo decide tu cwd, no el LLM</h2>
-              <p>
-                Antes los agentes inventaban nombres distintos para el mismo
-                proyecto y rompían la búsqueda. Ahora Engram detecta el
-                proyecto desde tu cwd vía git remote (normalizado). Los write
-                tools ya no aceptan project — el LLM no puede mentir. Si hay
-                ambigüedad, te avisa con la lista de proyectos disponibles.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>El problema:</strong> los agentes inventaban nombres distintos y rompían la búsqueda.
+                </li>
+                <li>
+                  <strong>La solución:</strong> Engram detecta el proyecto desde tu cwd vía git remote.
+                </li>
+                <li>
+                  <strong>El LLM no puede mentir:</strong> los write tools ya no aceptan el campo project.
+                </li>
+                <li>
+                  <strong>Si hay ambigüedad:</strong> te avisa con la lista de proyectos disponibles.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" fill="none" font-family="Space Grotesk,sans-serif">
@@ -14334,14 +14539,20 @@
             <div class="slide-content">
               <p class="slide-kicker">48 · Engram</p>
               <h2>Prompt capture automático: contexto que se guarda solo</h2>
-              <p>
-                mem_save ahora captura el prompt del usuario asociado, sin que
-                tengas que pedirlo. SessionActivity recuerda el último
-                prompt; mem_save lo dedupea y lo persiste con la observación.
-                Resultado: cada decisión guardada viene con el contexto que
-                la motivó. mem_save_prompt sigue disponible para casos donde
-                un hook necesita anticiparse.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Captura automática:</strong> mem_save guarda el prompt asociado sin que lo pidas.
+                </li>
+                <li>
+                  <strong>Cómo funciona:</strong> SessionActivity recuerda el último prompt y mem_save lo dedupea.
+                </li>
+                <li>
+                  <strong>El resultado:</strong> cada decisión guardada trae el contexto que la motivó.
+                </li>
+                <li>
+                  <strong>mem_save_prompt:</strong> sigue disponible cuando un hook necesita anticiparse.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" fill="none" font-family="Space Grotesk,sans-serif">
@@ -14421,11 +14632,17 @@
             <div class="slide-content">
               <p class="slide-kicker">49 · Engram</p>
               <h2>Engram vs alternativas: por qué lightweight gana</h2>
-              <p>
-                Sin servidor, sin embeddings, sin infra cloud. Un binario
-                local que funciona offline. Para equipos que arrancan, la
-                simplicidad es la feature más importante.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Sin infraestructura:</strong> sin servidor, sin embeddings y sin cloud.
+                </li>
+                <li>
+                  <strong>Un binario local:</strong> funciona offline.
+                </li>
+                <li>
+                  <strong>Para equipos que arrancan:</strong> la simplicidad es la feature más importante.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -14823,14 +15040,20 @@
             <div class="slide-content">
               <p class="slide-kicker">50 · Skills Registry</p>
               <h2>skill-creator: el equipo enseña al agente</h2>
-              <p>
-                El conocimiento institucional lo tiene el equipo. Con
-                skill-creator cada persona crea sus propias skills:
-                convenciones, patrones, checklists. El agente aprende del equipo
-                real. Y la directiva contextual loading hace que el agente
-                cargue automáticamente las skills relevantes al detectar
-                triggers — no más "olvidé usar la skill X".
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>El conocimiento lo tiene el equipo:</strong> no el modelo.
+                </li>
+                <li>
+                  <strong>Con skill-creator:</strong> cada persona crea sus convenciones, patrones y checklists.
+                </li>
+                <li>
+                  <strong>Contextual loading:</strong> el agente carga las skills relevantes al detectar triggers.
+                </li>
+                <li>
+                  <strong>El efecto:</strong> se acaba el «olvidé usar la skill X».
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -15278,15 +15501,20 @@
             <div class="slide-content">
               <p class="slide-kicker">51 · Skills Registry</p>
               <h2>Contextual skill loading: orchestrator resuelve, sub-agents consumen</h2>
-              <p>
-                El orchestrator lee el skill-registry UNA vez al inicio de
-                sesión y cachea las compact rules. Por cada delegación,
-                matchea triggers (file context + task context) e inyecta las
-                rules pre-digeridas en el prompt del sub-agent. Los sub-agents
-                NO leen SKILL.md ni el registry — reciben todo pre-resuelto.
-                Compaction-safe: si el caché se pierde, la siguiente
-                delegación re-lee el registry.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Una sola lectura:</strong> el orchestrator lee el registry al inicio y cachea las rules.
+                </li>
+                <li>
+                  <strong>Por delegación:</strong> matchea triggers de archivo y tarea, e inyecta las rules digeridas.
+                </li>
+                <li>
+                  <strong>Los sub-agents no leen nada:</strong> reciben todo pre-resuelto.
+                </li>
+                <li>
+                  <strong>Compaction-safe:</strong> si el caché se pierde, la siguiente delegación re-lee el registry.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" fill="none" font-family="Space Grotesk,sans-serif">
@@ -15371,11 +15599,17 @@
             <div class="slide-content">
               <p class="slide-kicker">52 · SDD Agent Team</p>
               <h2>SDD Agent Team: la biblioteca</h2>
-              <p>
-                Open source. Orquestador delegate-only, sub-agentes con
-                skills, DAG de dependencias, integración con Engram. Listo
-                para usar en cualquier stack.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Open source:</strong> listo para usar en cualquier stack.
+                </li>
+                <li>
+                  <strong>La arquitectura:</strong> orquestador delegate-only y sub-agentes con skills.
+                </li>
+                <li>
+                  <strong>El flujo:</strong> un DAG de dependencias con integración a Engram.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -15742,14 +15976,20 @@
             <div class="slide-content">
               <p class="slide-kicker">53 · SDD Agent Team</p>
               <h2>Model router: un motor por fase</h2>
-              <p>
-                No existe el "mejor modelo". Gemini para arquitectura, Opus
-                para implementación, Codex para testing. La selección de
-                modelo configurable por fase SDD ya está soportada por tres
-                plataformas: OpenCode, Kilo Code y Kiro IDE (con subagents
-                nativos vía model: frontmatter). Vos elegís qué motor maneja
-                cada fase del DAG.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>No existe el «mejor modelo»:</strong> existe el adecuado para cada fase.
+                </li>
+                <li>
+                  <strong>El reparto:</strong> Gemini para arquitectura, Opus para implementación y Codex para testing.
+                </li>
+                <li>
+                  <strong>Ya soportado:</strong> OpenCode, Kilo Code y Kiro IDE, con subagents nativos.
+                </li>
+                <li>
+                  <strong>Tú decides:</strong> qué motor maneja cada fase del DAG.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -16035,13 +16275,20 @@
             <div class="slide-content">
               <p class="slide-kicker">54 · SDD Agent Team</p>
               <h2>BMAD y OpenSpec: las piezas del flujo</h2>
-              <p>
-                Ya vimos la especificación por ejemplo y la matriz de trazabilidad.
-                Estas son las herramientas que las producen: BMAD te lleva de la
-                idea a la historia; OpenSpec arranca en el contrato y lo valida
-                en estricto. Cada una resuelve bien su tramo — y ninguna de las
-                dos cubre el tramo de la otra.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Las herramientas que las producen:</strong> especificación por ejemplo y matriz de trazabilidad.
+                </li>
+                <li>
+                  <strong>BMAD:</strong> te lleva de la idea a la historia.
+                </li>
+                <li>
+                  <strong>OpenSpec:</strong> arranca en el contrato y lo valida en estricto.
+                </li>
+                <li>
+                  <strong>El hueco:</strong> cada una resuelve su tramo y ninguna cubre el de la otra.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -16300,14 +16547,17 @@
             <div class="slide-content">
               <p class="slide-kicker">55 · SDD Agent Team</p>
               <h2>un-specweaver: el puente que faltaba</h2>
-              <p>
-                La fase 4 no la resolvía nadie: BMAD terminaba en la historia y
-                OpenSpec arrancaba en el contrato. El puente la cierra de forma
-                determinista — mismo <code>epics.md</code>, mismos contratos,
-                byte por byte — y es el eslabón que le faltaba a la matriz: el
-                enlace requisito ↔ historia ↔ contrato queda escrito en un
-                archivo, no en la cabeza de alguien.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>La fase 4 no la resolvía nadie:</strong> BMAD terminaba en la historia y OpenSpec arrancaba en el contrato.
+                </li>
+                <li>
+                  <strong>El puente la cierra:</strong> mismo <code>epics.md</code> y mismos contratos, byte por byte.
+                </li>
+                <li>
+                  <strong>Lo que aporta:</strong> el enlace requisito ↔ historia ↔ contrato queda escrito en un archivo.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -16629,16 +16879,20 @@
             <div class="slide-content">
               <p class="slide-kicker">56 · SDD Agent Team</p>
               <h2>Solo-agent vs Full delegation: dos formas de hacer SDD</h2>
-              <p>
-                Full delegation: cada fase SDD corre en un sub-agent con
-                contexto fresco — el orchestrator coordina, los sub-agents
-                ejecutan. Soportado por Claude Code, OpenCode, Kilo Code,
-                Cursor, Gemini CLI, VS Code Copilot, Kimi Code, Qwen Code,
-                Kiro IDE. Solo-agent: todas las fases corren inline en la
-                misma conversación — el orchestrator ES el ejecutor. Engram
-                da la persistencia entre fases. Soportado por Codex,
-                Windsurf, Antigravity.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Full delegation:</strong> cada fase corre en un sub-agent con contexto fresco.
+                </li>
+                <li>
+                  <strong>Quién lo soporta:</strong> Claude Code, OpenCode, Kilo Code, Cursor, Gemini CLI y Copilot.
+                </li>
+                <li>
+                  <strong>Solo-agent:</strong> todas las fases corren inline y el orchestrator es el ejecutor.
+                </li>
+                <li>
+                  <strong>Quién lo soporta:</strong> Codex, Windsurf y Antigravity, con Engram dando persistencia.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" fill="none" font-family="Space Grotesk,sans-serif">
@@ -16752,11 +17006,20 @@
             <div class="slide-content">
               <p class="slide-kicker">57 · SetUp y cierre</p>
               <h2>Resultado: velocidad + consistencia + calidad</h2>
-              <p>
-                Velocidad por automatización. Consistencia por skills.
-                Calidad por verificación contra specs. El developer pasa de
-                escribir código a dirigir y validar código.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>Velocidad:</strong> por automatización.
+                </li>
+                <li>
+                  <strong>Consistencia:</strong> por skills.
+                </li>
+                <li>
+                  <strong>Calidad:</strong> por verificación contra specs.
+                </li>
+                <li>
+                  <strong>El cambio de rol:</strong> el developer pasa de escribir código a dirigir y validar código.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
@@ -17285,14 +17548,12 @@
                   entorno.
                 </li>
                 <li>
-                  <strong>Cuatro agentes CLI:</strong> Claude Code, Codex, OpenCode
-                  y Pi — donde gentle-ai deja el stack completo instalado, con
-                  el mismo protocolo en los cuatro.
+                  <strong>Cuatro agentes CLI:</strong> Claude Code, Codex, OpenCode y Pi, con el mismo protocolo en los 
+                  cuatro.
                 </li>
                 <li>
-                  <strong>El stack no es el agente:</strong> skills, SDD,
-                  memoria y reglas de orquestación viven fuera del modelo, así
-                  que cambiar de agente no te cuesta el setup.
+                  <strong>El stack no es el agente:</strong> skills, SDD y memoria viven fuera del modelo, así que cambiar de 
+                  agente no cuesta el setup.
                 </li>
               </ul>
             </div>
@@ -17353,7 +17614,7 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">59 · SetUp y cierre</p>
-              <h2>Por qué CLI y no el chat web o la app de escritorio</h2>
+              <h2>¿Por qué CLI y no el chat web o la app de escritorio?</h2>
               <ul class="slide-list">
                 <li>
                   <strong>El agente vive donde vive el código:</strong> lee,
@@ -17548,12 +17809,17 @@
             <div class="slide-content">
               <p class="slide-kicker">61 · SetUp y cierre</p>
               <h2>La diferencia: arquitectura alrededor del modelo</h2>
-              <p>
-                El modelo es el motor. Pero un motor sin chasis, sin
-                dirección y sin frenos no es un auto: es un peligro. La
-                arquitectura alrededor del LLM define si tenés un juguete o
-                una herramienta.
-              </p>
+              <ul class="slide-list">
+                <li>
+                  <strong>El modelo es el motor:</strong> potente, pero solo una pieza.
+                </li>
+                <li>
+                  <strong>Sin chasis ni frenos:</strong> un motor suelto no es un auto, es un peligro.
+                </li>
+                <li>
+                  <strong>La arquitectura decide:</strong> define si tienes un juguete o una herramienta.
+                </li>
+              </ul>
             </div>
             <figure class="slide-figure">
               <svg
