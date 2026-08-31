@@ -24,8 +24,7 @@ const modeMap = {
   8: "insert",
   9: "visual",
   10: "replace",
-  11: "terminal",
-  12: "normal"
+  11: "terminal"
 };
 
 function buildDots() {
