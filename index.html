@@ -693,7 +693,7 @@
               <h2>Forward Deployed Engineer: dónde se cruza todo</h2>
               <ul class="slide-list">
                 <li>
-                  <strong>Qué es:</strong> un ingeniero que trabaja dentro del
+                  <strong>¿Qué es?:</strong> un ingeniero que trabaja dentro del
                   problema del cliente, no detrás de un ticket. Despliega,
                   observa y corrige en el terreno.
                 </li>
@@ -765,7 +765,7 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">8 · IA Generativa</p>
-              <h2>Qué es un LLM: predicción, no pensamiento</h2>
+              <h2>¿Qué es un LLM?: predicción, no pensamiento</h2>
               <p>
                 Un Large Language Model es una red neuronal con billones de
                 parámetros entrenada para predecir el siguiente token. No
@@ -929,7 +929,7 @@
                   font-family="Space Grotesk,sans-serif"
                   font-size="10"
                 >
-                  Billones de parametros
+                  Billones de parámetros
                 </text>
                 <text
                   x="260"
@@ -939,7 +939,7 @@
                   font-family="Space Grotesk,sans-serif"
                   font-size="10"
                 >
-                  Patrones estadisticos
+                  Patrones estadísticos
                 </text>
                 <circle cx="205" cy="155" r="3" fill="#7189B8" opacity="0.3" />
                 <circle cx="300" cy="155" r="3" fill="#7189B8" opacity="0.3" />
@@ -1091,7 +1091,7 @@
                   font-size="11"
                   font-weight="500"
                 >
-                  Predice el mas probable · No "entiende"
+                  Predice el más probable · No "entiende"
                 </text>
                 <!-- Not equals annotation -->
                 <text
@@ -1426,8 +1426,7 @@
               <p>
                 Kimi K2.6, MiniMax M2.7 y GLM-5 dan ~90% de la capacidad de
                 Opus/GPT a 1/15 del precio: frontier ya no es exclusivo de las
-                grandes. <cite>(Guo et al., 2025)</cite> Podés reservar el motor
-                caro para lo que de verdad lo necesita.
+                grandes. <cite>(Guo et al., 2025)</cite>.
               </p>
             </div>
             <figure class="slide-figure">
@@ -1836,7 +1835,7 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">11 · IA Generativa</p>
-              <h2>Qué NO es un LLM</h2>
+              <h2>¿Qué NO es un LLM?</h2>
               <p>
                 No es una base de datos, no aprende de tus conversaciones, no
                 entiende como un humano, no es determinista. <cite>(Ji et al., 2023)</cite> Si no sabes esto,
@@ -1931,7 +1930,7 @@
                   font-size="12"
                   font-weight="600"
                 >
-                  No aprende de vos
+                  No aprende de ti
                 </text>
                 <text
                   x="316"
@@ -2401,8 +2400,7 @@
               <h2>Tools: las capacidades del agente</h2>
               <p>
                 Terminal, editor de archivos, buscador, memoria. Cada tool es
-                una capacidad externa. <cite>(Wang et al., 2024)</cite> Sin tools es chat. Con tools es agente.
-                Así de simple.
+                una capacidad externa. Sin tools es chat. Con tools es agente <cite>(Wang et al., 2024)</cite>.
               </p>
             </div>
             <figure class="slide-figure">
@@ -3475,7 +3473,7 @@
               <h2>Compactación: la amnesia forzada</h2>
               <p>
                 Cuando la pizarra se llena, el sistema genera un resumen
-                comprimido y borra los mensajes originales. <cite>(Wang et al., 2024)</cite> Pierdes nombres de
+                comprimido y borra los mensajes originales <cite>(Wang et al., 2024)</cite>. Pierdes nombres de
                 variables, decisiones de diseño, preferencias del usuario.
               </p>
             </div>
@@ -3592,7 +3590,7 @@
                   stroke="#4E93B0"
                   stroke-width="1.2"
                 />
-                <text x="46" y="190" font-size="8" fill="#454F61">Patron</text>
+                <text x="46" y="190" font-size="8" fill="#454F61">Patrón</text>
                 <text
                   x="46"
                   y="202"
@@ -3855,11 +3853,11 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">17 · Context Window</p>
-              <h2>Cómo lo ataca la industria</h2>
+              <h2>¿Cómo lo ataca la industria?</h2>
               <p>
                 Long context (1M+ tokens), RAG, fine-tuning, memory layers,
                 vector stores. Cada approach tiene tradeoffs: costo, latencia,
-                precisión, complejidad. Nadie lo resolvió <cite>(Fan et al., 2024)</cite> del todo.
+                precisión, complejidad <cite>(Fan et al., 2024)</cite>.
               </p>
             </div>
             <figure class="slide-figure">
@@ -4105,13 +4103,13 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">18 · Context Window</p>
-              <h2>Por qué ninguna solución es completa</h2>
+              <h2>¿Por qué ninguna solución es completa?</h2>
               <p>
-                Long context degrada calidad. <cite>(Liu et al., 2024)</cite> RAG depende de embeddings.
+                Long context degrada calidad.  RAG depende de embeddings.
                 Fine-tuning es lento. Memory layers son experimentales. Lo que
                 falta no es más ventana: es memoria persistente, memoria que
                 sobreviva a las sesiones, a las compactaciones y a los cambios
-                de modelo.
+                de modelo <cite>(Liu et al., 2024)</cite>.
               </p>
             </div>
             <figure class="slide-figure">
@@ -4443,12 +4441,12 @@
           >
             <div class="slide-content">
               <p class="slide-kicker">19 · Memoria persistente</p>
-              <h2>Qué tiene que sobrevivir a la compactación</h2>
+              <h2>¿Qué tiene que sobrevivir a la compactación?</h2>
               <p>
                 La transcripción no: las decisiones. Definiste Clean Architecture
                 con DI durante dos horas; si eso no persiste, la próxima sesión
-                te devuelve código genérico. <cite>(Wang et al., 2024)</cite>
-                Hay que guardar el porqué, no el qué.
+                te devuelve código genérico 
+                Hay que guardar el porqué, no el qué <cite>(Wang et al., 2024)</cite>.
               </p>
             </div>
             <figure class="slide-figure">
